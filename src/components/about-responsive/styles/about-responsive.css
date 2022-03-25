@@ -1,0 +1,45 @@
+.about-resp {
+    display: none;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 6rem;
+    align-items: center;
+}
+
+.responsive-desc {
+    order: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 50%;
+}
+
+.hexagon-p {
+    text-align: left;
+}
+
+.grid-container {
+    order: 2;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-resp {
+        display: block;
+    }
+
+    .icons-map {
+        width: 100%;
+        order: 1;
+        overflow: scroll;
+        gap: 5rem;
+        box-sizing: border-box;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+}
