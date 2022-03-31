@@ -33,6 +33,7 @@
 
 .navbar__logo {
     width: 2rem;
+    cursor: pointer;
 }
 
 .navbar__link {
@@ -49,7 +50,41 @@
 .navbar__select-toggle {
     align-items: center;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+
+    .css-qc6sy-singleValue {
+        color: #fff;
+    }
+
+    .css-1pahdxg-control,
+    .css-1s2u09g-control {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    .css-319lph-ValueContainer,
+    .css-tlfecz-indicatorContainer,
+    .css-1gtu0rj-indicatorContainer {
+        padding: 0;
+    }
+
+    .css-tlfecz-indicatorContainer {
+        color: #DB1A6A
+    }
+
+    .css-1gtu0rj-indicatorContainer {
+        color: #420A1A;
+    }
+
+    .css-2613qy-menu {
+        border: none;
+    }
+
+    .css-1okebmr-indicatorSeparator {
+        display: none;
+    }
+    
 }
 
 .navbar__select {
@@ -67,7 +102,7 @@
 .navbar__toggle {
     align-items: center;
     border: 2px solid #DB1A6A;
-    background-color: rgba(220, 20, 60, 0.3);
+    background-color: #420A1A;
     border-radius: 3rem;
     color: #DB1A6A;
     cursor: pointer;

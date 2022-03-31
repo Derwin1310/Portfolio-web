@@ -2,8 +2,7 @@
     animation-name: fadeDown;
     animation-duration: 1s;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 5rem;
     gap: 1rem;
     justify-content: space-between;
 }
@@ -23,7 +22,9 @@
 
 .hexagon-grid {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     margin-top: 5rem;
 }
 
@@ -32,10 +33,9 @@
     animation-duration: 3s;
     display: flex;
     flex-direction: column;
-    max-width: 30%;
     align-items: center;
     justify-content: center ;
-    gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .hexagon__name,
@@ -43,17 +43,21 @@
     color: #009ADA;
 }
 
+.hexagon__name {
+    font-size:2.3rem ;
+    margin-bottom: 3rem;
+}
+
 .grid-container {
     animation-name: fadeDown;
     animation-duration: 6s;
-    width: 30%;
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(2, 100px);
-    justify-content: space-evenly;
-    align-content:center;
-    border-radius: 20px ;
-    gap: 1rem;
+    grid-auto-rows: 100px;
+    /* grid-template-rows: repeat(auto-fill, 100px); */
+    grid-template-columns: repeat(6, 100px);
+    flex-wrap: wrap;
+    column-gap: 5rem;
+    place-items: center;
 }
 
 .grid-icon {

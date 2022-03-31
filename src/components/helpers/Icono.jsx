@@ -16,6 +16,12 @@ export function Icono({
         linkedin: 'akar-icons:linkedin-box-fill',
 		like: 'akar-icons:heart',
 		share: 'bi:share-fill',
+		html: 'bi:filetype-html',
+		css: 'bi:filetype-css',
+		js: 'fluent:javascript-16-regular',
+		git: 'uil:github-alt',
+		react: 'akar-icons:react-fill',
+		redux: 'akar-icons:redux-fill',
 	};
 
 	return (

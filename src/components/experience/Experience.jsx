@@ -1,9 +1,14 @@
 import React from 'react';
+import { locales } from '../locales';
 import {Careers} from './Careers';
 import { Education } from './Education';
 import './styles/experience.css';
 
+
 export function Experience () {
+	const {quote, cite} = locales.experience;
+
+	
 	return (
 		<div className='background-color'>
 			<div id='experience' className='section'>
@@ -11,10 +16,10 @@ export function Experience () {
 
 				<q className='quote'>
 					<blockquote>
-						Protons give an atom it's identify, electrons its personality.
+						{quote}
 					</blockquote>
 					<cite>
-						-Bill Bryson, A shot history of nearly everything
+						{cite}
 					</cite>
 				</q>
 				<h3 className='careers-edu'>Careers</h3>

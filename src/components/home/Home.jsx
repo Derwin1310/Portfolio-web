@@ -19,7 +19,7 @@ export function Home () {
 					work
 				</q>
 			</header>
-			<button className='home__button'>{responsiveText}</button>
+			<a className='home__button' href='https://github.com/Derwin1310/assets-for-portfolio/raw/main/about-imgs/Curr%C3%ADculum.pdf'>{responsiveText}</a>
 		</div>
 	);
 };

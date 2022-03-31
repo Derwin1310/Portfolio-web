@@ -1,4 +1,5 @@
 import React from 'react';
+import { locales } from '../locales';
 
 export function Careers() {
 	const careers = [

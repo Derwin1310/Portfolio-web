@@ -1,41 +1,14 @@
-import React from 'react';
+import { Icono } from '../helpers/Icono';
 
 //Componente para recorrer los iconos de las tecnologias que sabemos utilizar por los momentos y agregar mas a futuro sin sobrecargar el componente about.
-export function TechIcons () {
-	const techIcons = [
-		{
-			src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/icon-html.webp',
-			alt: 'HTML icon',
-		},
-		{
-			src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/icon-css.webp',
-			alt: 'CSS icon',
-		},
-		{
-			src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/icon-js.webp',
-			alt: 'JS icon',
-		},
-		{
-			src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/icon-react.webp',
-			alt: 'React icon',
-		},
-		{
-			src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/icon-redux.webp',
-			alt: 'Redux icon',
-		},
-		{
-			src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/icon-github.webp',
-			alt: 'Github icon',
-		},
-	];
+export function TechIcons() {
+	const techIcons = ['js', 'html', 'css', 'react', 'redux', 'git'];
 
 	return (
 		<div className='grid-container'>
-			{
-				techIcons.map(({src, alt}) => (
-					<img className='grid-icon' key={alt} src={src} alt={alt} />
-				))
-			}
+			{techIcons.map(item => (
+				<Icono className='grid-icon' key={item} name={item} width='100' height='100' />
+			))}
 		</div>
 	);
-};
+}

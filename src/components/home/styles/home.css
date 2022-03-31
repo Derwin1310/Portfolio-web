@@ -42,6 +42,7 @@
 }
 
 .home__button {
+    text-decoration: none;
     background-color: transparent;
     color: #fff;
     border: 3px solid #fff;
@@ -136,7 +137,7 @@
         color: #DB1A6A;
         border-color: #DB1A6A;
     }
-    
+
 }
 
 @media only screen and (max-width: 480px) {
