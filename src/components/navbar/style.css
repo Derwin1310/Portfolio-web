@@ -7,6 +7,7 @@
     position: sticky;
     top: 0;
     background-color: #000000bb;
+    z-index: 100;
 }
 
 .navbar {
@@ -16,9 +17,7 @@
     justify-content: space-between;
     max-width: 1600px;
     height: 6vh;
-    box-sizing: border-box;
     padding: 0.5rem 1rem;
-    z-index: 100;
 }
 
 .navbar {
@@ -43,7 +42,7 @@
 }
 
 .navbar__link:hover {
-    color: #DB1A6A;
+    color: var(--pink-color);
     transition: color .5s;
 }
 
@@ -70,7 +69,7 @@
     }
 
     .css-tlfecz-indicatorContainer {
-        color: #DB1A6A
+        color: var(--pink-color)
     }
 
     .css-1gtu0rj-indicatorContainer {
@@ -101,10 +100,10 @@
 
 .navbar__toggle {
     align-items: center;
-    border: 2px solid #DB1A6A;
+    border: 2px solid var(--pink-color);
     background-color: #420A1A;
     border-radius: 3rem;
-    color: #DB1A6A;
+    color: var(--pink-color);
     cursor: pointer;
     display: flex;
 }
@@ -118,7 +117,7 @@
 
 .navbar__toggle--dark {
     border-radius: 50%;
-    outline: 2px solid #DB1A6A;
+    outline: 2px solid var(--pink-color);
     padding: 6px;
 }
 

@@ -25,7 +25,7 @@
 
 .link {
     text-decoration: none;
-    color: #009ADA;
+    color: var(--blue-color);
     font-weight: 600;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .form__title {
-    color: #DB1A6A;
+    color: var(--pink-color);
     margin-bottom: .6rem;
 }
 
@@ -48,7 +48,7 @@
 .input {
     margin-bottom: 1rem;
     background-color: transparent;
-    border: 1px solid #DB1A6A;
+    border: 1px solid var(--pink-color);
     border-radius: 0.3rem;
     padding: 0.7rem 0.5rem;
     color: #fff;
@@ -73,9 +73,9 @@
 }
 
 .form__submit {
-    border: 3px solid #DB1A6A;
+    border: 3px solid var(--pink-color);
     background-color: transparent;
-    color: #DB1A6A;
+    color: var(--pink-color);
     margin: 1rem auto;
     padding: .5rem 3rem;
     font-size: 1.3rem;
@@ -99,12 +99,6 @@
         width: 100%;
     }
 
-    .form,
-    .social,
-    .subtitle-no {
-        max-width: 350px;
-    }
-
     .social {
         flex-wrap: wrap;
     }
@@ -114,7 +108,7 @@
     }
 
     .subtitle__h3 {
-        color: #009ADA;
+        color: var(--blue-color);
     }
 
 }

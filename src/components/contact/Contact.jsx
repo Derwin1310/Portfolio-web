@@ -1,39 +1,50 @@
 import { Social } from './Social';
-import './styles/contact.css';
+import { langContext } from '../helpers/langContext';
+import { useContext } from 'react';
+import './style.css';
 
 export const Contact = () => {
+	const {language} = useContext(langContext);
+
+	const {
+		title,
+		subtitle,
+		contactDesc,
+		formTitle,
+		name,
+		surname,
+		email,
+		message,
+		typeYourMessage,
+		submit	
+	} = language.contact;
 	
 	return (
 		<footer className='background-color'>
 			<div id='contact' className='section'>
-				<h2 className='subtitle'>Contact</h2>
+				<h2 className='subtitle'>{title}</h2>
 				
 
 				<div className='subtitle-no'>
-					<h3 className='subtitle__h3'>OK, LET'S CREATE SOMETHING GREAT</h3>
+					<h3 className='subtitle__h3'>{subtitle}</h3>
 
-					<p className='subtitle__p'>
-						If you like my work and have some cool project to work on, just send
-						me direct message or contact me through social sites listed below.
-					</p>
+					<p className='subtitle__p'>{contactDesc}</p>
 				</div>
 
-				<div className='social'>
-					<Social />
-				</div>
+				<Social />				
 
 				<form className='form'>
-					<h3 className='form__title'>Send me a message</h3>
+					<h3 className='form__title'>{formTitle}</h3>
 
 					<div className='form__fullname'>
 						
 						<div className='form__wrapper-name'>
 							<label htmlFor='first name' className='form__label'>
-								First Name
+								{name}
 							</label>
 							<input
 								className='form__name input'
-								placeholder='First Name'
+								placeholder={name}
 								type='text'
 								id='first name'
 							/>
@@ -41,11 +52,11 @@ export const Contact = () => {
 
 						<div className='form__wrapper-lastname'>
 							<label htmlFor='last name' className='form__label'>
-								Last Name
+								{surname}
 							</label>
 							<input
 								className='form__lastname input'
-								placeholder='Last Name'
+								placeholder={surname}
 								type='text'
 								id='last name'
 							/>
@@ -53,27 +64,27 @@ export const Contact = () => {
 					</div>
 
 					<label htmlFor='email' className='form__label'>
-						Email Address
+						{email}
 					</label>
 					<input
 						autoComplete='off'
 						className='form__email input'
-						placeholder='Email Address'
+						placeholder={email}
 						type='email'
 						id='email'
 					/>
 
 					<label htmlFor='message' className='form__label'>
-						Message
+						{message}
 					</label>
 					<textarea
 						className='form__text input'
-						placeholder='Write here your message'
+						placeholder={typeYourMessage}
 						id='message'
-					></textarea>
-
+					/>	
+					
 					<button className='form__submit' type='submit'>
-						Send
+						{submit}
 					</button>
 				</form>
 

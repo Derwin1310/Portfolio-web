@@ -20,14 +20,17 @@ export const Social = () => {
 		},
 	];
 	return (
-		
-		socialMedias.map(({icon, href, social}) => (
-			<section className='social__medias' key={social}>
-				<Icono name={icon} />
-				<a className='link' target='_blank' href={href}>
-					{social}
-				</a>
-			</section>
-		))
+		<div className='social'>
+			{
+				socialMedias.map(({icon, href, social}) => (
+					<section className='social__medias' key={social}>
+						<Icono name={icon} />
+						<a className='link' target='_blank' href={href}>
+							{social}
+						</a>
+					</section>
+				))
+			}
+		</div>
 	);
 };

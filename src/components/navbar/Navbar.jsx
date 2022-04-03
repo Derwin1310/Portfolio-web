@@ -1,18 +1,21 @@
 import darkMode from '../../../public/assets/dark theme.svg';
 import {NavLinks} from './NavLinks';
 import Select from 'react-select'
-import './styles/navbar.css';
-
+import { useContext } from 'react';
+import { langContext } from '../helpers/langContext';
+import './style.css';
 
 export function Navbar () {
+	const {locale, setLanguage} = useContext(langContext);
+
 	const option = [
 		{value: 'en', label: 'US'},
 		{value: 'es', label: 'ES'}
 	];
-
-	const defaultLang = localStorage.getItem('lang') && JSON.parse(localStorage.getItem('lang')) || option[1];
 	
-	const handleLang = (e) => localStorage.setItem('lang', JSON.stringify(e));
+	const handleLang = (e) => setLanguage(e.value);
+
+	const defaultValue = option.filter(item => item.value === locale);
 
 	return (
 		<div className='navbar-bg'>
@@ -29,7 +32,7 @@ export function Navbar () {
 				</ul>
 
 				<div className='navbar__select-toggle'>
-					<Select options={option} defaultValue={defaultLang} onChange={handleLang} />
+					<Select menuPlacement='auto' options={option} defaultValue={defaultValue} onChange={handleLang} />
 					<div className='navbar__toggle'>
 						<span className='navbar__toggle--text'>Off</span>
 						<img

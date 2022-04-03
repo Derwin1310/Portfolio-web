@@ -1,6 +1,6 @@
 import React from 'react';
 import { ListProjects } from './ListProjects';
-import './styles.css/projects.css';
+import './style.css';
 
 export function Projects () {
 

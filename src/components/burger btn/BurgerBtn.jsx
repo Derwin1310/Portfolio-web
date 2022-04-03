@@ -1,5 +1,5 @@
 import { Navbar } from '../navbar/Navbar'
-import './style/burgerbtn.css'
+import './style.css'
 
 export function BurgerBtn () {
     const responsiveBtn = () => {

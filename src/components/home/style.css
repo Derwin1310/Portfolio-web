@@ -20,7 +20,6 @@
     font-size: 5rem;
     justify-content: start;
     line-height: 120%;
-    box-sizing: border-box;
     padding: 0 1rem;
 }
 
@@ -99,14 +98,11 @@
         position: relative;
         max-width: 768px;
         justify-content: space-between;
-        box-sizing: border-box;
-        padding-top: 1.5rem;
-
+        padding-top: 5rem;
 
         &__name {
             line-height: 120%;
-            font-size: 4rem;
-            margin-right: 50px;
+            font-size: 3rem;
         }
 
         &__logo {
@@ -115,7 +111,7 @@
         }
 
         &__subtitle {
-            font-size: 3rem;
+            font-size: 2rem;
             margin-top: 5rem;
             line-height: 120%;
         }
@@ -134,8 +130,8 @@
     .home__button {
         margin: 0 auto 2rem;
         font-size: 1.5rem;
-        color: #DB1A6A;
-        border-color: #DB1A6A;
+        color: var(--pink-color);
+        border-color: var(--pink-color);
     }
 
 }

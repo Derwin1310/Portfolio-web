@@ -17,14 +17,14 @@
     }
 
     &__title {
-        color: #DB1A6A ;
+        color: var(--pink-color) ;
     }
 
     &__icons {
         display: flex;
         align-items: center;
         gap: 1rem;
-        color: #009ADA;
+        color: var(--blue-color);
     }
 
     &__link {
@@ -53,7 +53,6 @@
         &__title,
         &__desc,
         &__icons {
-            box-sizing: border-box;
             padding: 0 1rem;
         }
 
