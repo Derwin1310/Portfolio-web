@@ -1,25 +1,68 @@
 export const esLang ={
-    link: "...Ver más",
+    seeMore: "...Ver más",
     home: {
-        title: "Derwin Romero Frontend Developer: codifica más rápido de lo que hablas y aprende más de lo que trabajas",
+        title: "Desarrollador Frontend: Codifica más rápido de lo que hablas y aprende más de lo que trabajas",
         resume: "currículum",
-        navbar: "Acerca de Proyectos Experiencia Artículos Contacto"
+        resumePhone: 'Mantengámos el contacto',
     },
-    about: {
-        icons: {
-            fast: "Tiempos de carga rápidos e interacciones gratuitas para una mejor experiencia de usuario.",
-            usable: "Mis diseños siempre funcionarán en cualquier dispositivo, sin importar el tamaño.",
-            clean: "Siempre trato de hacer el código más limpio para facilitar la lectura, mi máxima prioridad.",
-            dynamic: "Los sitios web no tienen que ser estáticos, me encanta hacer que las páginas cobren vida.",
+    navbar: [
+        {
+            href: '#about',
+            name: 'Acerca',
         },
-        technologies: "Estas son todas las tecnologías que utilizo para hacer que todo parezca magia en Internet, siempre buscando más para hacer grandes cosas."
+        {
+            href: '#projects',
+            name: 'Proyectos',
+        },
+        {
+            href: '#experience',
+            name: 'Experiencia',
+        },
+        {
+            href: '#article',
+            name: 'Artículos',
+        },
+        {
+            href: '#contact',
+            name: 'Contacto',
+        }
+    ],
+    about: {
+        title: 'Acerca',
+        icons:  [
+            {
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/fast-icon.webp',
+                name: 'Rápido',
+                desc: 'Tiempos de carga rápidos e interacciones gratuitas para una mejor experiencia de usuario.',
+            },
+            {
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/usable-icon.webp',
+                name: 'Usable',
+                desc: "Mis diseños siempre funcionarán en cualquier dispositivo, sin importar el tamaño.",
+            },
+            {
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/clean-icon.webp',
+                name: 'Limpio',
+                desc: 'Siempre trato de hacer el código más limpio para facilitar la lectura, mi máxima prioridad.',
+            },
+            {
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/dynamic-icon.webp',
+                name: 'Dinámico',
+                desc: "Los sitios web no tienen que ser estáticos, me encanta hacer que las páginas cobren vida.",
+            },
+        ],
+        technologies: "Estas son todas las tecnologías que utilizo para hacer que todo parezca magia en Internet, ",
+        blueText: "siempre buscando más para hacer grandes cosas.",
     },
     projects: {   
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem lorem lorem",
     },   
     experience: {
+        title: 'Experiencia',
         quote: "Los protones le dan a un átomo su nombre, los electrones su personalidad.",
         cite: "-Bill Bryson, Una breve historia de casi todo",
+        career: 'Carreras',
+        courses: 'Educación',
         careers:[
             {
                 job: "Webmaster",
@@ -51,26 +94,28 @@ export const esLang ={
             }
         ]
     },
-    articles: [
-        {
-            title: "Buenas Prácticas con CSS",
-            desc: "El primer artículo que hice, y es sobre las buenas prácticas en CSS3",
-            date: "Marzo"
-        },
-    ],
+    articles:{
+        title: 'Artículos',
+        wrapper: [
+            {
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/css-wallpaper.webp',
+                article: "Buenas Prácticas con CSS",
+                desc: "El primer artículo que hice, y es sobre las buenas prácticas en CSS3",
+                date: "Marzo",
+                articleLink: 'https://medium.com/@derwin1310/aprende-las-buenas-practicas-en-css-cascade-style-sheets-3eab66cb738d',
+            },
+        ]
+    },
     contact: {
+        title: 'Contacto',
         subtitle: "OK, VAMOS A CREAR ALGO GRANDE",
         contactDesc: "Si te gusta mi trabajo y tienes algún proyecto genial en el que trabajar, solo envíame un mensaje directo o contáctame a través de los sitios sociales que se enumeran a continuación.",
-        form: {
-            paragraph: "Envíeme un mensaje",
-            label: {
-                name: "Nombre",
-                surname: "Apellido",
-                email: "Correo",
-                message: "Mensaje",
-                textBtn: "Escribe tu mensaje"
-            }
-        },
+        formTitle: "Envíeme un mensaje",
+        name: "Nombre",
+        surname: "Apellido",
+        email: "Correo electronico",
+        message: "Mensaje",
+        typeYourMessage: "Escribe tu mensaje",
         submit: "Enviar"
     }
 }

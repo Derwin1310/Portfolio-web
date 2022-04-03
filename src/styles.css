@@ -29,6 +29,15 @@ table {
 	border-spacing: 0;
 }
 
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--pink-color: #DB1A6A;
+	--blue-color: #009ADA;
+}
+
 .img-bg {
     height: 100%;
     object-fit: cover;
@@ -60,7 +69,6 @@ table {
 }
 
 h2 {
-	box-sizing: border-box;
     font-size: 2.3rem;
     font-weight: 800;
     position: relative;
@@ -74,7 +82,7 @@ h2 {
 		transform: translateX(-50%);
         top: 2rem;
         width: 4rem;
-        border-bottom: 0.2rem solid #DB1A6A;
+        border-bottom: 0.2rem solid var(--pink-color);
     }
 }
 

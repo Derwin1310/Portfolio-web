@@ -1,25 +1,68 @@
 export const enLang ={
-    link: "...See more",
+    seeMore: "...See more",
     home: {
-        title: "Derwin Romero Frontend Developer: Code faster than you talk and learn more than you work",
+        title: "Frontend Developer: Code faster than you talk and learn more than you work",
         resume: "resume",
-        navbar: "About Projects Experience Articles Contact"
+        resumePhone: "Let's get in touch",
     },
-    about: {
-        icons: {
-            fast: "Fast load times and free interactions for a better user experience.",
-            usable: "My designs will always work on any device, no matter the size.",
-            clean: "I always try to make code cleaner for readability, my top priority.",
-            dynamic: "Websites don't have to be static, I love making pages come to life.",
+    navbar: [
+        {
+            href: '#about',
+            name: 'About',
         },
-        technologies: "These are all the technologies I use to make everything seem like magic on the Internet, always looking for more to do great things."
+        {
+            href: '#projects',
+            name: 'Projects',
+        },
+        {
+            href: '#experience',
+            name: 'Experience',
+        },
+        {
+            href: '#article',
+            name: 'Articles',
+        },
+        {
+            href: '#contact',
+            name: 'Contact',
+        }
+    ],
+    about: {
+        title: 'About',
+        icons: [
+            {
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/fast-icon.webp',
+                name: 'Fast',
+                desc: 'Fast load times and free interactions for better user experience.',
+            },
+            {
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/usable-icon.webp',
+                name: 'Usable',
+                desc: "My layouts will always work on any device, doesn't matter the size.",
+            },
+            {
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/clean-icon.webp',
+                name: 'Clean',
+                desc: 'I always try to do the cleanest code for readability, my highest priorty.',
+            },
+            {
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/dynamic-icon.webp',
+                name: 'Dynamic',
+                desc: "Websites don't have to be static, I love making pages come to life.",
+            },
+        ],
+        technologies: "These are all the technologies I use to make everything seem like magic on the Internet, ",
+        blueText: "always looking for more to do great things.",
     },
     projects: {
         desc: "Lorem ipsum pain sit amet consectetur adipisicing elit. lorem lorem lorem",
     },
     experience: {
+        title: 'Experience',
         quote: "Protons give an atom its name, electrons its personality.",
         cite: "-Bill Bryson, A Brief History of Almost Everything",
+        career: 'Careers',
+        courses: 'Education',
         careers:[
             {
                 job: "Webmaster",
@@ -51,26 +94,28 @@ export const enLang ={
             }
         ]
     },
-    articles: [
-        {
-            title: "Best Practices with CSS",
-            desc: "The first article I did, and it's about good practices in CSS3",
-            date: "March"
-        },
-    ],
+    articles: {
+        title: 'Articles',
+        wrapper: [
+            {
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/css-wallpaper.webp',
+                article: "Best Practices with CSS",
+                desc: "The first article I did, and it's about good practices in CSS3",
+                date: "March",
+                articleLink: 'https://medium.com/@derwin1310/aprende-las-buenas-practicas-en-css-cascade-style-sheets-3eab66cb738d',
+            }
+        ],
+    },
     contact: {
+        title: 'Contact',
         subtitle: "OK, LET'S CREATE SOMETHING BIG",
         contactDesc: "If you like my work and have any cool projects to work on, just send me a direct message or contact me through the social sites listed below.",
-        form: {
-            paragraph: "Send me a message",
-            label: {
-                name: "Name",
-                surname: "Last name",
-                email: "Mail",
-                message: "Message",
-                textBtn: "Type your message"
-            }
-        },
+        formTitle: "Send me a message",
+        name: "First Name",
+        surname: "Last Name",
+        email: "Email address",
+        message: "Message",
+        typeYourMessage: "Type your message",
         submit: "Submit"
     }
 }

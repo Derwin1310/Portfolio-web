@@ -17,69 +17,39 @@
 .section-careers, 
 .section-education {
 	display: flex;
-	justify-content: space-between;
-	box-sizing: border-box;
 	padding-bottom: 3rem;
 	max-width: 1200px;
 	margin: 2rem auto 0;
-	gap: 2rem;
+	gap: 3rem;
 }
 
 .job-wrapper,
 .course-wrapper {
 	
-	max-width: 13rem;
+	min-width: 13rem;
 	
 	&__job,
 	&__course {
-		color: #DB1A6A;
-	}
-
-	&__time {
-		margin-top: 1rem;
-		display: block;
-	}
-
-}
-
-
-.org-wrapper {
-
-	max-width: 55rem;
-
-	&__org {
-		color: #009ADA;
-	}
-
-	&__desc {
-		margin-top: 1rem;
-
+		color: var(--pink-color);
+		margin-bottom: 1rem;
 	}
 }
 
-.education-wrapper{
-
-	max-width: 55rem;
-
-	&__desc {
-		font-size: 1rem;
-	}
+.org-wrapper__org {
+	color: var(--blue-color);
+	margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
-	.section-careers, .section-education {
+	.section-careers, 
+	.section-education {
 		flex-direction: column;
 		gap: 1rem;
-		max-width: 330px;
+		margin-left: 1rem;
 	}
 
 	.quote {
-		max-width: 350px;
 		margin-left: auto;
 		margin-right: auto;
-	}
-
-	.careers-edu {
-		max-width: 400px;
 	}
 }
