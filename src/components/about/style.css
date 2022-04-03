@@ -20,27 +20,19 @@
     font-weight: 600;
 }
 
-.hexagon-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 5rem;
-}
-
 .hexagon {
     animation-name: fadeDown;
     animation-duration: 3s;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center ;
     margin-bottom: 3rem;
 }
 
 .hexagon__name,
 .quote__span {
-    color: #009ADA;
+    line-height: 100%;
+    color: var(--blue-color);
 }
 
 .hexagon__name {
@@ -52,18 +44,11 @@
     animation-name: fadeDown;
     animation-duration: 6s;
     display: grid;
-    grid-auto-rows: 100px;
-    /* grid-template-rows: repeat(auto-fill, 100px); */
-    grid-template-columns: repeat(6, 100px);
-    flex-wrap: wrap;
-    column-gap: 5rem;
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+    column-gap: 1rem;
+    row-gap: 1rem;
     place-items: center;
-}
-
-.grid-icon {
-    width: 70%;
-    justify-self: center;
-    align-self: center;
+    width: 100%;
 }
 
 @keyframes fadeDown {
@@ -80,7 +65,18 @@
 /* ============ Media Querys ============== */
 
 @media only screen and (max-width: 768px) {
-    .about {
-        display: none;
+    .hexagon {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icons-map {
+        width: 100%;
+        order: 1;
+        overflow: scroll;
+        gap: 5rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }
