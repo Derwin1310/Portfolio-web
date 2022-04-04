@@ -34,8 +34,14 @@ table {
 }
 
 :root {
-	--pink-color: #DB1A6A;
-	--blue-color: #009ADA;
+	--light-bg: #fff;
+	--light2-bg: #F5F5F5;
+	--dark-bg: #0C002B;
+	--dark2-bg: #110239;
+	--full-dark: #000;
+	--primary-style-color: #DB1A6A;
+	--secondary-style-color: #009ADA;
+	--view-more-text: #777777;
 }
 
 .img-bg {
@@ -47,20 +53,20 @@ table {
 }
 
 .background-color {
-	background-color: #0C002B;
+	background-color: var(--dark-bg);
 	
 	&:nth-child(2n) {
-		background-color: #110239;
+		background-color: var(--dark2-bg) ;
 	}
 
 	&:last-child {
-		background-color: #000;
+		background-color: var(--full-dark);
 	}
 }
 
 
 .section {
-	color: #fff;
+	color: var(--light-bg);
     padding: 5rem 1rem;
     max-width: 1500px;
 	margin-left: auto;
@@ -82,7 +88,7 @@ h2 {
 		transform: translateX(-50%);
         top: 2rem;
         width: 4rem;
-        border-bottom: 0.2rem solid var(--pink-color);
+        border-bottom: 0.2rem solid var(--primary-style-color);
     }
 }
 

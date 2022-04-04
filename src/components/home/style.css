@@ -7,20 +7,18 @@
     display: flex;
     flex-direction: column;
     height: 94vh;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
+    padding: 0 1rem;
 }
 
 .header{
     display: flex;
     flex-direction: column;
-    color: #fff;
+    color: var(--light-bg);
     max-width: 1600px;
-    margin-bottom: 3rem;
     font-size: 5rem;
-    justify-content: start;
     line-height: 120%;
-    padding: 0 1rem;
 }
 
 .header__logo-name {
@@ -43,8 +41,8 @@
 .home__button {
     text-decoration: none;
     background-color: transparent;
-    color: #fff;
-    border: 3px solid #fff;
+    color: var(--light-bg);
+    border: 3px solid var(--light-bg);
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.5rem;
@@ -89,16 +87,16 @@
 @media only screen and (max-width: 768px){
     .home {
         display: flex;
-        justify-content: space-between;
+        justify-content:space-between;
         height: 100vh;
         
     }
 
     .header {
-        position: relative;
+        height: 50%;
         max-width: 768px;
+        margin-top: 5rem;
         justify-content: space-between;
-        padding-top: 5rem;
 
         &__name {
             line-height: 120%;
@@ -112,7 +110,6 @@
 
         &__subtitle {
             font-size: 2rem;
-            margin-top: 5rem;
             line-height: 120%;
         }
 
@@ -128,16 +125,20 @@
     }
 
     .home__button {
-        margin: 0 auto 2rem;
+        width: 100%;
+        padding: .8rem 0;
+        text-align: center;
+        margin-bottom: 2rem;
         font-size: 1.5rem;
-        color: var(--pink-color);
-        border-color: var(--pink-color);
+        color: var(--primary-style-color);
+        border-color: var(--primary-style-color);
     }
 
 }
 
 @media only screen and (max-width: 480px) {
     .header {
+        height: 100%;
 
         &__name {
             line-height: 120%;
@@ -145,8 +146,11 @@
         }
 
         &__subtitle {
-            margin-top: 10rem;
             font-size: 2rem;
         }
+    }
+
+    .home__button {
+        margin: 2rem 0
     }
 }

@@ -37,12 +37,12 @@
 
 .navbar__link {
     font-size: 1.2rem;
-    color: #fff;
+    color: var(--light-bg);
     text-decoration: none;
 }
 
 .navbar__link:hover {
-    color: var(--pink-color);
+    color: var(--primary-style-color);
     transition: color .5s;
 }
 
@@ -52,7 +52,7 @@
     gap: 2rem;
 
     .css-qc6sy-singleValue {
-        color: #fff;
+        color: var(--light-bg);
     }
 
     .css-1pahdxg-control,
@@ -69,7 +69,7 @@
     }
 
     .css-tlfecz-indicatorContainer {
-        color: var(--pink-color)
+        color: var(--primary-style-color)
     }
 
     .css-1gtu0rj-indicatorContainer {
@@ -89,21 +89,21 @@
 .navbar__select {
     background-color: transparent;
     border: none;
-    color: #fff;
+    color: var(--light-bg);
     font-size: 1.2rem;
     font-weight: 600;
 }
 
 .navbar__select option {
-    color: black;
+    color: var(--full-dark);
 }
 
 .navbar__toggle {
     align-items: center;
-    border: 2px solid var(--pink-color);
+    border: 2px solid var(--primary-style-color);
     background-color: #420A1A;
     border-radius: 3rem;
-    color: var(--pink-color);
+    color: var(--primary-style-color);
     cursor: pointer;
     display: flex;
 }
@@ -117,7 +117,7 @@
 
 .navbar__toggle--dark {
     border-radius: 50%;
-    outline: 2px solid var(--pink-color);
+    outline: 2px solid var(--primary-style-color);
     padding: 6px;
 }
 

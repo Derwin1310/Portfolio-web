@@ -3,7 +3,7 @@ import {Careers} from './Careers';
 import { Education } from './Education';
 import { langContext } from '../helpers/langContext';
 import { useContext } from 'react';
-import './styles/experience.css';
+import './style.css';
 
 
 export function Experience () {

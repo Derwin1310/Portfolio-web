@@ -2,19 +2,20 @@ import React, {useState, createContext, useEffect} from 'react';
 import { enLang } from '../locales/lang-en';
 import { esLang } from '../locales/lang-es';
 
-export const langContext = createContext({prueba:'prueba'});
+export const langContext = createContext();
 
 export const LangProvider = ({children}) => {
-	const [locale, setLocale] = useState(localStorage.getItem('lang') || 'en' );
+	const defaultLang = localStorage.getItem('lang')
+	const setDefaultLang = (lang) => localStorage.setItem('lang', lang);
 
-	useEffect(() => {
-		if (!localStorage.getItem('lang')) localStorage.setItem('lang', 'en')
-	}, [])
+	const [locale, setLocale] = useState( defaultLang || 'en' );
+
+	useEffect(() => !defaultLang && setDefaultLang('en'), [])
 	
 	const setLanguage = (language) => {
 		setLocale(language)
 
-		localStorage.setItem('lang', language);
+		setDefaultLang(language);
 	}
 
 	const languages = {

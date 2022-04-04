@@ -25,7 +25,7 @@
 
 .link {
     text-decoration: none;
-    color: var(--blue-color);
+    color: var(--secondary-style-color);
     font-weight: 600;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .form__title {
-    color: var(--pink-color);
+    color: var(--primary-style-color);
     margin-bottom: .6rem;
 }
 
@@ -48,10 +48,10 @@
 .input {
     margin-bottom: 1rem;
     background-color: transparent;
-    border: 1px solid var(--pink-color);
+    border: 1px solid var(--primary-style-color);
     border-radius: 0.3rem;
     padding: 0.7rem 0.5rem;
-    color: #fff;
+    color: var(--light-bg);
     resize: none;
 }
 
@@ -73,9 +73,9 @@
 }
 
 .form__submit {
-    border: 3px solid var(--pink-color);
+    border: 3px solid var(--primary-style-color);
     background-color: transparent;
-    color: var(--pink-color);
+    color: var(--primary-style-color);
     margin: 1rem auto;
     padding: .5rem 3rem;
     font-size: 1.3rem;
@@ -108,7 +108,7 @@
     }
 
     .subtitle__h3 {
-        color: var(--blue-color);
+        color: var(--secondary-style-color);
     }
 
 }
