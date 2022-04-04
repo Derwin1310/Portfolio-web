@@ -6,6 +6,7 @@
 	"scripts": {
 		"build": "webpack --config config/webpack.prod.js",
 		"start": "webpack serve --config config/webpack.dev.js",
+		"predeploy": "npm run build",
 		"deploy": "cp CNAME build/CNAME && gh-pages -d build"
 	},
 	"keywords": [],
