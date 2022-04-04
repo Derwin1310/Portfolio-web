@@ -142,7 +142,7 @@
 
 @media only screen and (max-width: 480px) {
     .home {
-        
+        height: 100vmax;
     }
     .header {
         height: 100%;
