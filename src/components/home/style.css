@@ -87,7 +87,7 @@
 @media only screen and (max-width: 768px){
     .home {
         justify-content:space-between;
-        max-height: 100%;
+        height: 90vh;
     }
 
     .header {
