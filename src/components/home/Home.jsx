@@ -4,11 +4,10 @@ import {langContext} from '../helpers/langContext';
 import './style.css';
 
 export function Home() {
-	// const {title, resume, resumePhone} = locales.home;
-
 	const {language} = useContext(langContext);
 	
 	const {title, resume, resumePhone} = language.home;
+	
 	const responsiveText = window.innerWidth >= 769 ? resume : resumePhone;
 
 	return (
