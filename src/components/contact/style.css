@@ -1,3 +1,6 @@
+.cont {
+    color: var(--home-contact-text);
+}
 
 .subtitle-no,
 .social {
@@ -8,6 +11,7 @@
     gap: 2rem;
     margin-left: auto;
     margin-right: auto;
+    color: var(--home-contact-text);
 }
 
 .social {  
@@ -25,7 +29,7 @@
 
 .link {
     text-decoration: none;
-    color: var(--secondary-style-color);
+    color: var(--secondary-color);
     font-weight: 600;
 }
 
@@ -37,7 +41,7 @@
 }
 
 .form__title {
-    color: var(--primary-style-color);
+    color: var(--primary-color);
     margin-bottom: .6rem;
 }
 
@@ -48,10 +52,10 @@
 .input {
     margin-bottom: 1rem;
     background-color: transparent;
-    border: 1px solid var(--primary-style-color);
+    border: 1px solid var(--primary-color);
     border-radius: 0.3rem;
     padding: 0.7rem 0.5rem;
-    color: var(--light-bg);
+    color: var(--home-contact-text);
     resize: none;
 }
 
@@ -73,9 +77,9 @@
 }
 
 .form__submit {
-    border: 3px solid var(--primary-style-color);
+    border: 3px solid var(--primary-color);
     background-color: transparent;
-    color: var(--primary-style-color);
+    color: var(--primary-color);
     margin: 1rem auto;
     padding: .5rem 3rem;
     font-size: 1.3rem;
@@ -108,7 +112,7 @@
     }
 
     .subtitle__h3 {
-        color: var(--secondary-style-color);
+        color: var(--secondary-color);
     }
 
 }

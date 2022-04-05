@@ -17,19 +17,19 @@
     }
 
     &__title {
-        color: var(--primary-style-color) ;
+        color: var(--primary-color) ;
     }
 
     &__icons {
         display: flex;
         align-items: center;
         gap: 1rem;
-        color: var(--secondary-style-color);
+        color: var(--secondary-color);
     }
 
     &__link {
         text-decoration: none;
-        color: var(--view-more-text);
+        color: var(--links);
     }
 }
 
@@ -45,7 +45,7 @@
 
     .articles {
         width: 300px;
-        border: 1px solid var(--view-more-text);
+        border: 1px solid var(--links);
         border-radius: 5px;
         margin-left: auto;
         margin-right: auto;

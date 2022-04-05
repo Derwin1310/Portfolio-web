@@ -1,5 +1,4 @@
 import {useContext} from 'react';
-import {BurgerBtn} from '../burger btn/BurgerBtn';
 import {langContext} from '../helpers/langContext';
 import './style.css';
 
@@ -7,7 +6,7 @@ export function Home() {
 	const {language} = useContext(langContext);
 	
 	const {title, resume, resumePhone} = language.home;
-	
+
 	const responsiveText = window.innerWidth >= 769 ? resume : resumePhone;
 
 	return (

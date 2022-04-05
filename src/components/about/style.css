@@ -33,7 +33,7 @@
 .hexagon__name,
 .quote__span {
     line-height: 100%;
-    color: var(--secondary-style-color);
+    color: var(--secondary-color);
 }
 
 .hexagon__name {

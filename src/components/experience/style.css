@@ -11,7 +11,7 @@
 }
 
 .section-careers {
-	border-bottom: 2px solid var(--view-more-text);
+	border-bottom: 2px solid var(--links);
 }
 
 .section-careers, 
@@ -30,13 +30,13 @@
 	
 	&__job,
 	&__course {
-		color: var(--primary-style-color);
+		color: var(--primary-color);
 		margin-bottom: 1rem;
 	}
 }
 
 .org-wrapper__org {
-	color: var(--secondary-style-color);
+	color: var(--secondary-color);
 	margin-bottom: 1rem;
 }
 

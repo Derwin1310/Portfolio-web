@@ -22,7 +22,7 @@ export const Contact = () => {
 	return (
 		<footer className='background-color'>
 			<div id='contact' className='section'>
-				<h2 className='subtitle'>{title}</h2>
+				<h2 className='subtitle cont'>{title}</h2>
 				
 
 				<div className='subtitle-no'>

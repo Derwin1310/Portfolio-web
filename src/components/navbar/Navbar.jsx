@@ -3,7 +3,9 @@ import {NavLinks} from './NavLinks';
 import Select from 'react-select'
 import { useContext } from 'react';
 import { langContext } from '../helpers/langContext';
+// import { getTheme } from '../../toggleTheme';
 import './style.css';
+
 
 export function Navbar () {
 	const {locale, setLanguage} = useContext(langContext);
