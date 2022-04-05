@@ -67,6 +67,7 @@ table {
 
 .background-color {
 	background-color: var(--bg-color1);
+	/* background: linear-gradient(0deg, #110239 8%, #0C002B 79%, #000 90%); */
 	
 	&:nth-child(2n) {
 		background-color: var(--bg-color2) ;
