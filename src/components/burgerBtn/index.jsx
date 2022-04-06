@@ -1,4 +1,4 @@
-import { Navbar } from '../navbar/Navbar'
+import { Navbar } from '../navbar'
 import './style.css'
 
 export function BurgerBtn () {
@@ -9,9 +9,9 @@ export function BurgerBtn () {
 
   return (
     <div onClick={responsiveBtn} className="burger-btn">
-        <div className="btn-line" />
-        <div className="btn-line" />
-        <div className="btn-line" />
+        <div className="burger-btn__line" />
+        <div className="burger-btn__line" />
+        <div className="burger-btn__line" />
     </div>
   )
 }

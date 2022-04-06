@@ -10,7 +10,7 @@
     box-sizing: content-box;
     background-color: #0C002B;
     
-    .btn-line {
+    &__line {
         position: absolute;
         border: 1px solid var(--text-color);
         width: 50%;

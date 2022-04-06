@@ -13,6 +13,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
     font-family: 'Varela Round', sans-serif;
 	line-height: 1;
+	background-color: var(--bg-color2) ;
 }
 ol, ul {
 	list-style: none;
@@ -57,27 +58,9 @@ table {
 	--links: #777777;
 }
 
-.img-bg {
-    object-fit: cover;
-    position: absolute;
-    width: 100%;
-	z-index: -1;
-	height: 100vh;
-}
-
-.background-color {
+.bg-color2 {
 	background-color: var(--bg-color1);
-	/* background: linear-gradient(0deg, #110239 8%, #0C002B 79%, #000 90%); */
-	
-	&:nth-child(2n) {
-		background-color: var(--bg-color2) ;
-	}
-
-	&:last-child {
-		background-color: var(--dark);
-	}
 }
-
 
 .section {
 	color: var(--text-color);
@@ -86,6 +69,12 @@ table {
 	margin-left: auto;
 	margin-right: auto;
 	line-height: 140%;
+
+}
+
+.footer-wrapper {
+	color: var(--home-contact-text);
+	background-color: var(--dark);
 }
 
 h2 {

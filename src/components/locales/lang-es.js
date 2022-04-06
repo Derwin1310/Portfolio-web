@@ -23,7 +23,7 @@ export const esLang ={
             name: 'Artículos',
         },
         {
-            href: '#contact',
+            href: '#footer',
             name: 'Contacto',
         }
     ],

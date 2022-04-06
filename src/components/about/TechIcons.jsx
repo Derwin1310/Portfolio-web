@@ -7,7 +7,7 @@ export function TechIcons() {
 	return (
 		<div className='grid-container'>
 			{techIcons.map(item => (
-				<Icono className='grid-icon' key={item} name={item} width='100' height='100' />
+				<Icono key={item} name={item} width='100' height='100' />
 			))}
 		</div>
 	);

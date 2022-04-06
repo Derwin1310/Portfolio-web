@@ -12,12 +12,12 @@ export function Careers() {
 			<section key={job} className='section-careers'>
 				<div className='job-wrapper'>
 					<h4 className='job-wrapper__job'>{job}</h4>
-					<time className='job-wrapper__time'>{time}</time>
+					<time>{time}</time>
 				</div>
-	
-				<div className='org-wrapper'>
-					<h4 className='org-wrapper__org'>{org}</h4>
-					<p className='org-wrapper__desc'>{desc}</p>
+				
+				<div>
+					<h4 className='organization'>{org}</h4>
+					<p>{desc}</p>
 				</div>
 			</section>
 		))

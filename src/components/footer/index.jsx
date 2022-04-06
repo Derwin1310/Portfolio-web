@@ -3,7 +3,7 @@ import { langContext } from '../helpers/langContext';
 import { useContext } from 'react';
 import './style.css';
 
-export const Contact = () => {
+export const Footer = () => {
 	const {language} = useContext(langContext);
 
 	const {
@@ -20,9 +20,9 @@ export const Contact = () => {
 	} = language.contact;
 	
 	return (
-		<footer className='background-color'>
-			<div id='contact' className='section'>
-				<h2 className='subtitle cont'>{title}</h2>
+		<footer id='footer' className='footer-wrapper'>
+			<div className='section'>
+				<h2 className='subtitle footer'>{title}</h2>
 				
 
 				<div className='subtitle-no'>

@@ -23,7 +23,7 @@ export const enLang ={
             name: 'Articles',
         },
         {
-            href: '#contact',
+            href: '#footer',
             name: 'Contact',
         }
     ],

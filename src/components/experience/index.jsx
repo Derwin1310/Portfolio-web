@@ -12,20 +12,19 @@ export function Experience () {
 	const {quote, cite, courses, career, title} = language.experience;
 
 	return (
-		<div className='background-color'>
-			<div id='experience' className='section'>
-				<h2 className='subtitle'>{title}</h2>
+		<div id='experience' className='section'>
+			<h2 className='subtitle'>{title}</h2>
 
-				<q className='quote'>
-					<blockquote>{quote}</blockquote>
-					<cite>{cite}</cite>
-				</q>
-				<h3 className='careers-edu'>{career}</h3>
-				<Careers />
+			<q className='quote'>
+				<blockquote>{quote}</blockquote>
+				<cite>{cite}</cite>
+			</q>
 
-				<h3 className='careers-edu'>{courses}</h3>
-				<Education />
-			</div>
+			<h3 className='careers-education'>{career}</h3>
+			<Careers />
+
+			<h3 className='careers-education'>{courses}</h3>
+			<Education />
 		</div>
 	);
 };

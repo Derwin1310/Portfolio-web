@@ -5,7 +5,7 @@ import './style.css';
 export function Projects () {
 
 	return (
-		<div className='background-color'>
+		<div className='bg-color2'>
 			<div id='projects' className='section'>
 
 				<h2 className='subtitle'>Projects</h2>

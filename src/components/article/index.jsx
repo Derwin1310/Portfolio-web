@@ -10,12 +10,12 @@ export function Article() {
 	const {title} = language.articles;
 
 	return (
-		<div className='background-color'>
+		<div className='bg-color2'>
 			<div id='article' className='section'>
 				<h2 className='subtitle'>{title}</h2>
-				<article className='grid-article'>
-					<ListArticle />
-				</article>
+				
+				<ListArticle />
+
 			</div>
 		</div>
 	);
