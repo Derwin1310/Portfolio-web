@@ -1,7 +1,6 @@
-.navbar-bg {
+ .navbar-bg {
     display: flex;
     justify-content: center;
-    max-width: 100%;
     position: sticky;
     top: 0;
     background-color: #000000bb;
@@ -107,6 +106,35 @@
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        display: none;
+        background-color: #00000088;
+        background: linear-gradient(180deg, #0C002B, #110239);
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: fixed;
+        padding-top: 2rem;
+        top: 0;
+
+        &__wrapper {
+            flex-direction: column;;
+            gap: 2rem;
+        }
+
+        &__link {
+            font-size: 2rem;
+        }
+
+        &__logo {
+            width: 4rem;
+        }
+
+        &__select-toggle {
+            margin-top: 2rem;
+            flex-direction: column;
+
+            .css-qc6sy-singleValue {
+                font-size: 1.5rem;
+            }
+        }
     }
 }

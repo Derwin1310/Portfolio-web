@@ -1,4 +1,4 @@
-import {Icono} from '../helpers/Icono';
+import {Icono} from '../helpers';
 
 //Componente para recorrer las redes sociales de el componente contacto junto con los iconos importados del helper
 export const Social = () => {

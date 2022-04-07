@@ -1,5 +1,5 @@
 import {useContext} from 'react';
-import {langContext} from '../helpers/langContext';
+import {langContext} from '../helpers';
 import './style.css';
 
 export function Home() {

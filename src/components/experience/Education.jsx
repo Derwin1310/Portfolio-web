@@ -1,5 +1,5 @@
 import React from 'react';
-import { langContext } from '../helpers/langContext';
+import { langContext } from '../helpers';
 import { useContext } from 'react';
 
 export function Education() {

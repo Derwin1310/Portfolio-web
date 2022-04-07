@@ -1,6 +1,6 @@
 import React from 'react';
 import { ListArticle } from './ListArticle';
-import { langContext } from '../helpers/langContext';
+import { langContext } from '../helpers';
 import { useContext } from 'react';
 import './style.css';
 

@@ -1,4 +1,4 @@
-import { Icono } from '../helpers/Icono';
+import { Icono } from '../helpers';
 
 //Componente para recorrer los iconos de las tecnologias que sabemos utilizar por los momentos y agregar mas a futuro sin sobrecargar el componente about.
 export function TechIcons() {

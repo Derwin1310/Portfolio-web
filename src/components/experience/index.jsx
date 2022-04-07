@@ -1,7 +1,7 @@
 import React from 'react';
 import {Careers} from './Careers';
 import { Education } from './Education';
-import { langContext } from '../helpers/langContext';
+import { langContext } from '../helpers';
 import { useContext } from 'react';
 import './style.css';
 

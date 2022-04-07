@@ -1,3 +1,7 @@
+.footer {
+    color: var(--home-contact-text);
+}
+
 .subtitle-no,
 .social {
     max-width: 768px;
@@ -42,6 +46,7 @@
 }
 
 .form__label {
+    color: var(--home-contact-text);
     margin-bottom: .3rem;
 }
 

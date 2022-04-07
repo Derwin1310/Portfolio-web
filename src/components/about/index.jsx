@@ -1,6 +1,6 @@
 import {SectionIcons} from './SectionIcons';
 import {TechIcons} from './TechIcons';
-import {langContext} from '../helpers/langContext';
+import {langContext} from '../helpers';
 import {useContext} from 'react';
 import './style.css';
 

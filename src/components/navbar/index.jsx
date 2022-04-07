@@ -2,13 +2,13 @@ import darkMode from '../../../public/assets/dark theme.svg';
 import {NavLinks} from './NavLinks';
 import Select from 'react-select'
 import { useContext } from 'react';
-import { langContext } from '../helpers/langContext';
-// import { getTheme } from '../../toggleTheme';
+import { toogleTheme, getTheme, langContext } from '../helpers';
 import './style.css';
-
 
 export function Navbar () {
 	const {locale, setLanguage} = useContext(langContext);
+
+	const themeText = getTheme() === 'dark' ? 'ON' : 'OFF';
 
 	const option = [
 		{value: 'en', label: 'US'},
@@ -35,7 +35,7 @@ export function Navbar () {
 
 				<div className='navbar__select-toggle'>
 					<Select menuPlacement='auto' options={option} defaultValue={defaultValue} onChange={handleLang} />
-					<div className='navbar__toggle'>
+					<div className='navbar__toggle' onClick={toogleTheme}>
 						<span className='navbar__toggle--text'>Off</span>
 						<img
 							className='navbar__toggle--dark'

@@ -9,6 +9,7 @@
     display: none;
     box-sizing: content-box;
     background-color: #0C002B;
+    z-index: 500;
     
     &__line {
         position: absolute;

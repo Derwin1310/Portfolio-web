@@ -1,5 +1,5 @@
 import React from 'react';
-import {Icono} from '../helpers/Icono';
+import {Icono} from '../helpers';
 import {langContext} from '../helpers/langContext';
 import {useContext} from 'react';
 
