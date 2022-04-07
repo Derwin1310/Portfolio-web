@@ -77,6 +77,18 @@ table {
 	background-color: var(--dark);
 }
 
+.theme {
+	opacity: 0;
+    visibility: hidden;
+
+	&--animation {
+		opacity: 1;
+		visibility: visible;
+		transition: all 500ms linear;
+	}
+}
+
+
 h2 {
     font-size: 2.3rem;
     font-weight: 800;
