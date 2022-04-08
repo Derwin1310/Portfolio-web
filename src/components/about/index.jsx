@@ -2,7 +2,8 @@ import {SectionIcons} from './SectionIcons';
 import {TechIcons} from './TechIcons';
 import {langContext} from '../helpers';
 import {useContext} from 'react';
-import './style.css';
+import { Sections, Subtitles } from '../../globalStyles';
+import { Desc, DescName, DescSpan } from './styles';
 
 export function About() {
 	const {language} = useContext(langContext);
@@ -10,21 +11,21 @@ export function About() {
 	const {title, technologies, blueText} = language.about;
 
 	return (
-		<div id='about' className='section'>
-			<h2 className='subtitle'>{title}</h2>
-
+		<Sections id='about'>
+			<Subtitles>{title}</Subtitles>
+			
 			<SectionIcons />
 
-				<div className='desc'>
-					<h4 className='desc__name'>Derwin Romero</h4>
-					<p className='desc__p'>
-						{technologies}
-						<span className='desc__span'>{blueText}</span>
-					</p>
-				</div>
+			<Desc>
+				<DescName>Derwin Romero</DescName>
+				<p>
+					{technologies}
+					<DescSpan>{blueText}</DescSpan>
+				</p>
+			</Desc>
 			
 			<TechIcons />
 
-		</div>
+		</Sections>
 	);
 }

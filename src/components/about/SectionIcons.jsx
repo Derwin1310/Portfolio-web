@@ -1,6 +1,7 @@
 import React from 'react';
 import { langContext } from '../helpers/langContext';
 import { useContext } from 'react';
+import { IconsSection, IconWrapper } from './styles';
 
 //Componente para recorrer las imagenes de fast, usable, clean and dynamic de nuestro componente about.
 export function SectionIcons () {
@@ -9,16 +10,16 @@ export function SectionIcons () {
 	const {icons} = language.about;
 
 	return (
-		<section className='icons-map'>
+		<IconsSection>
 			{
 				icons.map(({name, desc, src}) => (
-					<div className='icons-map__wrapper' key={name}>
+					<IconWrapper key={name}>
 						<img src={src} alt={name} />
-						<h3 className='icons-map__name'>{name}</h3>
+						<h3 style={{fontWeight: 600}}>{name}</h3>
 						<p>{desc}</p>
-					</div>
+					</IconWrapper>
 				))
 			}	
-		</section>	
+		</IconsSection>
 	);
 };

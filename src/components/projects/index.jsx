@@ -1,17 +1,17 @@
 import React from 'react';
 import { ListProjects } from './ListProjects';
+import { Sections, Subtitles } from '../../globalStyles';
 import './style.css';
 
 export function Projects () {
 
 	return (
 		<div className='bg-color2'>
-			<div id='projects' className='section'>
-
-				<h2 className='subtitle'>Projects</h2>
+			<Sections id='projects'>
+				<Subtitles>Projects</Subtitles>
 
 				<ListProjects />
-			</div>
+			</Sections>
 		</div>
 	);
 };

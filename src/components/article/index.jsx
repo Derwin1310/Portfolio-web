@@ -2,6 +2,7 @@ import React from 'react';
 import { ListArticle } from './ListArticle';
 import { langContext } from '../helpers';
 import { useContext } from 'react';
+import { Sections, Subtitles } from '../../globalStyles';
 import './style.css';
 
 export function Article() {
@@ -11,12 +12,11 @@ export function Article() {
 
 	return (
 		<div className='bg-color2'>
-			<div id='article' className='section'>
-				<h2 className='subtitle'>{title}</h2>
+			<Sections id='article'>
+				<Subtitles>{title}</Subtitles>
 				
 				<ListArticle />
-
-			</div>
+			</Sections>
 		</div>
 	);
 }

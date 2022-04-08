@@ -3,6 +3,7 @@ import {Careers} from './Careers';
 import { Education } from './Education';
 import { langContext } from '../helpers';
 import { useContext } from 'react';
+import { Sections, Subtitles } from '../../globalStyles';
 import './style.css';
 
 
@@ -12,8 +13,8 @@ export function Experience () {
 	const {quote, cite, courses, career, title} = language.experience;
 
 	return (
-		<div id='experience' className='section'>
-			<h2 className='subtitle'>{title}</h2>
+		<Sections id='experience'>
+			<Subtitles>{title}</Subtitles>
 
 			<q className='quote'>
 				<blockquote>{quote}</blockquote>
@@ -25,6 +26,6 @@ export function Experience () {
 
 			<h3 className='careers-education'>{courses}</h3>
 			<Education />
-		</div>
+		</Sections>
 	);
 };
