@@ -18,14 +18,11 @@ export function About() {
 
 			<Desc>
 				<DescName>Derwin Romero</DescName>
-				<p>
 					{technologies}
 					<DescSpan>{blueText}</DescSpan>
-				</p>
 			</Desc>
 			
 			<TechIcons />
-
 		</Sections>
 	);
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { langContext } from '../helpers';
 import { useContext } from 'react';
+import { CourseAndJob, SectionExp} from './styles';
 
 export function Education() {
     const {language} = useContext(langContext);
@@ -9,14 +10,16 @@ export function Education() {
 
 	return (
         education.map(({name, time, desc}) => (
-            <section key={name} className='section-education'>
-                <div className='course-wrapper'>
-                    <h4 className='course-wrapper__course'>{name}</h4>
-                    <time>{time}</time>
-                </div>
+            <article key={name}>
+                    <SectionExp>
+                        <div>
+                            <CourseAndJob>{name}</CourseAndJob>
+                            <time>{time}</time>
+                        </div>
 
-                <p>{desc}</p>
-            </section>
+                        <p>{desc}</p>
+                    </SectionExp>
+            </article>
         ))
     );
 };

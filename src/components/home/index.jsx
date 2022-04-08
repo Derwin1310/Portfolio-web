@@ -25,7 +25,7 @@ export function Home() {
 			</header>
 			<a
 				className='home__button'
-				href='https://github.com/Derwin1310/assets-for-portfolio/raw/main/about-imgs/Curr%C3%ADculum.pdf'
+				href='https://github.com/Derwin1310/assets-for-portfolio/raw/main/about-imgs/CV%20Derwin%20Romero.pdf'
 			>
 				{responsiveText}
 			</a>

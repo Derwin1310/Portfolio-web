@@ -4,27 +4,27 @@ import { Education } from './Education';
 import { langContext } from '../helpers';
 import { useContext } from 'react';
 import { Sections, Subtitles } from '../../globalStyles';
-import './style.css';
+import { Quote, SectionTitle } from './styles';
 
 
 export function Experience () {
 	const {language} = useContext(langContext);
 
-	const {quote, cite, courses, career, title} = language.experience;
+	const {quote, cite, title, career, courses} = language.experience;
 
 	return (
 		<Sections id='experience'>
 			<Subtitles>{title}</Subtitles>
 
-			<q className='quote'>
+			<Quote>
 				<blockquote>{quote}</blockquote>
 				<cite>{cite}</cite>
-			</q>
+			</Quote>
 
-			<h3 className='careers-education'>{career}</h3>
+			<SectionTitle>{career}</SectionTitle>
 			<Careers />
 
-			<h3 className='careers-education'>{courses}</h3>
+			<SectionTitle>{courses}</SectionTitle>
 			<Education />
 		</Sections>
 	);

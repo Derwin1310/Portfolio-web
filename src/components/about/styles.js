@@ -8,7 +8,7 @@ export const Desc = styled.div`
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem;
-    gap: 2rem;
+    gap: 1rem;
 
     @media only screen and (max-width: 768px) {
         text-align: center;

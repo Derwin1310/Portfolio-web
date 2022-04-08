@@ -110,7 +110,8 @@
         background: linear-gradient(180deg, #0C002B, #110239);
         height: 100%;
         width: 100%;
-        display: block;
+        /* display: block; */
+        display: none;
         position: fixed;
         padding-top: 2rem;
         top: 0;
