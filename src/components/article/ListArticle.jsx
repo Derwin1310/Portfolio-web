@@ -2,6 +2,7 @@ import React from 'react';
 import {Icono} from '../helpers';
 import {langContext} from '../helpers/langContext';
 import {useContext} from 'react';
+import { Articles, ArticlesWrapper, ShareIcons } from './styles';
 
 export function ListArticle() {
 	const {language} = useContext(langContext);
@@ -11,10 +12,10 @@ export function ListArticle() {
 	const {seeMore} = language;
 
 	return (
-		<article className='grid-article'>
+		<Articles>
 			{
-				wrapper.map(({src, article, desc, date, articleLink}) => (
-					<div key={article} className='articles'>
+				wrapper.map(({src, article, desc, date, articleLink}) => ( 
+					<ArticlesWrapper key={article}>
 						<img className='articles__img' src={src} alt='CSS article' />
 						<h4 className='articles__title'>{article}</h4>
 						<p className='articles__desc'>
@@ -24,14 +25,14 @@ export function ListArticle() {
 							</a>
 						</p>
 
-						<div className='articles__icons'>
+						<ShareIcons>
 							<Icono name='share' small />
 							<Icono name='like' small />
 							<time>{date}</time>
-						</div>
-					</div>
+						</ShareIcons>
+					</ArticlesWrapper>
 				))
 			}
-		</article>
+		</Articles>
 	);
 }

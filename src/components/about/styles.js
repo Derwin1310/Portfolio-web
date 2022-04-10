@@ -51,7 +51,6 @@ export const IconWrapper = styled.div`
     gap: .5rem;
     text-align: center;
     width: 20rem;
-    /* font-weight: ${props => props.variant === 'weight' ? '600' : '' }; */
 `
 
 export const GridTechs = styled.div`
@@ -64,4 +63,3 @@ export const GridTechs = styled.div`
     place-items: center;
     width: 100%;
 `
-

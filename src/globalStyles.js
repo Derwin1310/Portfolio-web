@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { getTheme } from "./components/helpers";
 
 export const Subtitles = styled.h2`
     font-size: 2.3rem;
@@ -19,47 +20,50 @@ export const Subtitles = styled.h2`
 `
 
 export const Sections = styled.section`
-    color: var(--text-color);
-    padding: 5rem 1rem;
-    max-width: 1500px;
-	margin-left: auto;
-	margin-right: auto;
-	line-height: 140%;
+    /* background-color: ${props => props.variant === 'bgc-2' && '#0C002B'}; */
+    &:nth-child(2n) {
+        background-color: var(--bg-color2);
+    }
+
+    > div {
+        color: var(--text-color);
+        padding: 5rem 1rem;
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 140%;
+
+    }
 
     @media only screen and (max-width: 768px) {
 	    max-width: 700px;
     }
 `
 
-export const Theme = styled.div`
-	opacity: 0;
-    visibility: hidden;
 
-	&--animation {
-		opacity: 1;
-		visibility: visible;
-		transition: all 500ms linear;
-	}
-`
+export const Theme = styled.div.attrs({
+    className: 'theme theme--animation'
+})``
 
-export const Colors = {
+export const Colors = getTheme() === 'dark' ?  {
     primary: '#DB1A6A',
     secondary: '#009ADA',
-    dark: '#000',
-    light: '#fff',
-    bgLight1: '#fff',
-    bgLight2: '#F5F5F5',
-    bgDark1: '#0C002B',
-    bgDark2: '#110239',
+    bgLight: '#fff',
+    bgDark: '#0C002B',
+    tertiary: '#fff',
+} : {
+    primary: '#DB1A6A',
+    secondary: '#009ADA',
+    bgLight: '#F5F5F5',
+    bgDark: '#110239',
+    tertiary: '#000',
 }
 
 export const Fonts = {
     pSize: '16px',
     h3Size: '22px',
     h4Size: '20px',
-    familyPrimary: 'Varela Round',
-    familySecondary: 'sans-serif',
     height: '120%',
-    weight1: '600',
-    weight2: '900'    
+    family: true ? 'Varela Round' : 'sans-serif',
+    weight: true ? '600' : '900',   
 }

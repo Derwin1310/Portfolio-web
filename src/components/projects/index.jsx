@@ -1,17 +1,15 @@
 import React from 'react';
 import { ListProjects } from './ListProjects';
-import { Sections, Subtitles } from '../../globalStyles';
+import { Subtitles } from '../../globalStyles';
+import { Section } from '../helpers/Section';
 import './style.css';
 
 export function Projects () {
 
 	return (
-		<div className='bg-color2'>
-			<Sections id='projects'>
-				<Subtitles>Projects</Subtitles>
-
-				<ListProjects />
-			</Sections>
-		</div>
+		<Section name='projects'>
+			<Subtitles>Projects</Subtitles>
+			<ListProjects />
+		</Section>
 	);
 };

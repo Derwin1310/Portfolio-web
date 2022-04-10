@@ -13,7 +13,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
     font-family: 'Varela Round', sans-serif;
 	line-height: 1;
-	background-color: var(--bg-color2) ;
+	background-color: var(--bg-color1) ;
 }
 ol, ul {
 	list-style: none;
@@ -106,5 +106,25 @@ html {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scale(0.6);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;;
+    }
+
+    to {
+        opacity: 1;
     }
 }

@@ -4,16 +4,16 @@ import { Education } from './Education';
 import { langContext } from '../helpers';
 import { useContext } from 'react';
 import { Sections, Subtitles } from '../../globalStyles';
-import { Quote, SectionTitle } from './styles';
-
+import { Quote } from './styles';
+import { Section } from '../helpers/Section';
 
 export function Experience () {
 	const {language} = useContext(langContext);
 
-	const {quote, cite, title, career, courses} = language.experience;
+	const {quote, cite, title} = language.experience;
 
 	return (
-		<Sections id='experience'>
+		<Section name='experience'>
 			<Subtitles>{title}</Subtitles>
 
 			<Quote>
@@ -21,11 +21,9 @@ export function Experience () {
 				<cite>{cite}</cite>
 			</Quote>
 
-			<SectionTitle>{career}</SectionTitle>
 			<Careers />
 
-			<SectionTitle>{courses}</SectionTitle>
 			<Education />
-		</Sections>
+		</Section>
 	);
 };

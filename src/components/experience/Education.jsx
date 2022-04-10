@@ -1,25 +1,30 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { langContext } from '../helpers';
 import { useContext } from 'react';
-import { CourseAndJob, SectionExp} from './styles';
+import { CourseAndJob, SectionExp, SectionTitle} from './styles';
 
 export function Education() {
     const {language} = useContext(langContext);
 
-	const {education} = language.experience
+	const {education, courses} = language.experience
 
 	return (
-        education.map(({name, time, desc}) => (
-            <article key={name}>
-                    <SectionExp>
-                        <div>
-                            <CourseAndJob>{name}</CourseAndJob>
-                            <time>{time}</time>
-                        </div>
-
-                        <p>{desc}</p>
-                    </SectionExp>
-            </article>
-        ))
+        <Fragment>
+            <SectionTitle>{courses}</SectionTitle>
+            {
+                education.map(({name, time, desc}) => (
+                    <article key={name}>
+                            <SectionExp>
+                                <div>
+                                    <CourseAndJob>{name}</CourseAndJob>
+                                    <time>{time}</time>
+                                </div>
+        
+                                <p>{desc}</p>
+                            </SectionExp>
+                    </article>
+                ))
+            }
+        </Fragment>
     );
 };

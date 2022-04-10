@@ -1,13 +1,14 @@
 import React from 'react';
 import {Home, Navbar, BurgerBtn, About, Projects, Experience, Article, Footer} from './components';
 import { LangProvider } from './components/helpers';
+import { Theme } from './globalStyles';
 import './styles.css';
 
 export function App () {
 
 	return (
 		<LangProvider>
-			<div id='theme' className='theme theme--animation'>
+			<Theme id='theme' >
 				<Home />
 				<Navbar />
 				<BurgerBtn />
@@ -16,7 +17,7 @@ export function App () {
 				<Experience />
 				<Article />
 				<Footer />
-			</div>
+			</Theme>
 		</LangProvider>
 	);
 };

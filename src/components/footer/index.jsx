@@ -1,7 +1,8 @@
 import { Social } from './Social';
 import { langContext } from '../helpers';
 import { useContext } from 'react';
-import { Sections, Subtitles } from '../../globalStyles';
+import { Subtitles } from '../../globalStyles';
+import { Section } from '../helpers/Section';
 import './style.css';
 
 export const Footer = () => {
@@ -22,8 +23,8 @@ export const Footer = () => {
 	
 	return (
 		<footer id='footer' className='footer-wrapper'>
-			<Sections>
-				<Subtitles>{title}</Subtitles>
+			<Section name='name'>
+				<Subtitles className='footer'>{title}</Subtitles>
 
 				<div className='subtitle-no'>
 					<h3 className='subtitle__h3'>{subtitle}</h3>
@@ -91,7 +92,7 @@ export const Footer = () => {
 				<div className='copyright'>
 					<img src='https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/gaiden.webp' alt='gaiden' />
 				</div>
-			</Sections>
+			</Section>
 		</footer>
 	);
 };

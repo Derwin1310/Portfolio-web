@@ -2,8 +2,10 @@ import React from 'react';
 import { ListArticle } from './ListArticle';
 import { langContext } from '../helpers';
 import { useContext } from 'react';
-import { Sections, Subtitles } from '../../globalStyles';
+import { Subtitles } from '../../globalStyles';
 import './style.css';
+import { Section } from '../helpers/Section';
+
 
 export function Article() {
 	const {language} = useContext(langContext);
@@ -11,12 +13,9 @@ export function Article() {
 	const {title} = language.articles;
 
 	return (
-		<div className='bg-color2'>
-			<Sections id='article'>
-				<Subtitles>{title}</Subtitles>
-				
-				<ListArticle />
-			</Sections>
-		</div>
+		<Section name='article'>
+			<Subtitles>{title}</Subtitles>
+			<ListArticle />
+		</Section>
 	);
 }

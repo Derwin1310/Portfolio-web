@@ -1,141 +1,63 @@
- .navbar-bg {
+.navbar__select-toggle {
+    align-items: center;
     display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    background-color: #000000bb;
-    z-index: 100;
-    box-shadow: 0px 10px 10px  #0007;
-}
+    gap: 2rem;
 
-.navbar {
-    animation-name: fade, fadeIn;
-    animation-duration: 3s;
-    display: flex;
-    justify-content: space-between;
-    height: 6vh;
-    padding: 0.5rem 1rem;
-    width: 1600px;
-
-    &__wrapper {
-        align-items: center;
-        display: flex;
-        gap: 0.5rem;
-    }
-
-    &__logo {
-        width: 2rem;
-        cursor: pointer;
-    }
-
-    &__link {
-        font-size: 1.2rem;
+    .css-qc6sy-singleValue {
         color: #fff;
-        text-decoration: none;
     }
 
-    &__link:hover {
-        color: var(--primary-color);
-        transition: color .5s;
+    .css-1pahdxg-control,
+    .css-1s2u09g-control {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
     }
 
-    &__select-toggle {
-        align-items: center;
-        display: flex;
-        gap: 2rem;
-    
-        .css-qc6sy-singleValue {
-            color: #fff;
-        }
-    
-        .css-1pahdxg-control,
-        .css-1s2u09g-control {
-            background-color: transparent;
-            border: none;
-            box-shadow: none;
-        }
-    
-        .css-319lph-ValueContainer,
-        .css-tlfecz-indicatorContainer,
-        .css-1gtu0rj-indicatorContainer {
-            padding: 0;
-        }
-    
-        .css-tlfecz-indicatorContainer {
-            color: var(--primary-color)
-        }
-    
-        .css-1gtu0rj-indicatorContainer {
-            color: #420A1A;
-        }
-    
-        .css-2613qy-menu {
-            border: none;
-        }
-    
-        .css-1okebmr-indicatorSeparator {
-            display: none;
-        }    
+    .css-319lph-ValueContainer,
+    .css-tlfecz-indicatorContainer,
+    .css-1gtu0rj-indicatorContainer {
+        padding: 0;
     }
 
-    &__toggle {
-        align-items: center;
-        border: 2px solid var(--primary-color);
-        background-color: #420A1A;
-        border-radius: 3rem;
-        color: var(--primary-color);
-        cursor: pointer;
-        display: flex;
+    .css-tlfecz-indicatorContainer {
+        color: var(--primary-color)
     }
 
-    &__toggle--text {
-        font-size: 1.3rem;
-        margin-right: 0.5rem;
-        margin-top: 3px;
-        margin-left: 0.5rem;
+    .css-1gtu0rj-indicatorContainer {
+        color: #420A1A;
     }
-    
-    &__toggle--dark {
-        border-radius: 50%;
-        outline: 2px solid var(--primary-color);
-        padding: 6px;
+
+    .css-2613qy-menu {
+        border: none;
     }
+
+    .css-1okebmr-indicatorSeparator {
+        display: none;
+    }   
+
 }
 
+.navbar__toggle--text {
+    font-size: 1.3rem;
+    margin: 3px .5rem 0;
+}
+
+.navbar__toggle--dark {
+    border-radius: 50%;
+    outline: 2px solid var(--primary-color);
+    padding: 6px;
+}
 /*============== Media Querys =============*/
 
 @media only screen and (max-width: 768px) {
-    .navbar {
-        background-color: #00000088;
-        background: linear-gradient(180deg, #0C002B, #110239);
-        height: 100%;
-        width: 100%;
-        /* display: block; */
-        display: none;
-        position: fixed;
-        padding-top: 2rem;
-        top: 0;
+    .navbar__select-toggle {
+        margin-top: 2rem;
+        flex-direction: column;
 
-        &__wrapper {
-            flex-direction: column;;
-            gap: 2rem;
+        .css-qc6sy-singleValue {
+            font-size: 1.5rem;
         }
-
-        &__link {
-            font-size: 2rem;
-        }
-
-        &__logo {
-            width: 4rem;
-        }
-
-        &__select-toggle {
-            margin-top: 2rem;
-            flex-direction: column;
-
-            .css-qc6sy-singleValue {
-                font-size: 1.5rem;
-            }
-        }
-    }
+    
+    }   
 }

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { langContext } from '../helpers/langContext';
+import { Link } from './styles';
 
 export const NavLinks = () => {
     const {language} = useContext(langContext);
@@ -9,7 +10,7 @@ export const NavLinks = () => {
     return (  
         links.map(({href, name}) => (
             <li key={name}>
-                <a className='navbar__link' href={href}>{name}</a>
+                <Link href={href}>{name}</Link>
             </li> 
         ))   
     );
