@@ -1,30 +1,28 @@
-import {SectionIcons} from './SectionIcons';
-import {TechIcons} from './TechIcons';
-import {langContext} from '../helpers';
-import {useContext} from 'react';
-import { Subtitles } from '../../globalStyles';
+import React, { useContext } from 'react';
+import { SectionIcons } from './sectionIcons';
+import { TechIcons } from './techIcons';
+import { langContext, SectionsStyles } from '/src/helpers';
+import { Subtitles } from '/src/globalStyles.js';
 import { Desc, DescName, DescSpan } from './styles';
-import { Section } from '../helpers/Section';
-
 
 export function About() {
-	const {language} = useContext(langContext);
+	const { language } = useContext(langContext);
 
-	const {title, technologies, blueText} = language.about;
+	const { title, technologies, blueText } = language.about;
 
 	return (
-		<Section name='about'>
+		<SectionsStyles name='about'>
 			<Subtitles>{title}</Subtitles>
-			
+
 			<SectionIcons />
 
 			<Desc>
 				<DescName>Derwin Romero</DescName>
-					{technologies}
-					<DescSpan>{blueText}</DescSpan>
+				{technologies}
+				<DescSpan>{blueText}</DescSpan>
 			</Desc>
-			
+
 			<TechIcons />
-		</Section>
+		</SectionsStyles>
 	);
 }

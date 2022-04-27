@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors } from "../../globalStyles";
+import { Colors } from "/src/globalStyles";
 
 export const Desc = styled.div`
     animation-name: fadeDown;
@@ -51,6 +51,10 @@ export const IconWrapper = styled.div`
     gap: .5rem;
     text-align: center;
     width: 20rem;
+
+    h3 {
+        font-weight: 600;
+    }
 `
 
 export const GridTechs = styled.div`

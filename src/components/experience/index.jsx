@@ -1,19 +1,17 @@
-import React from 'react';
-import {Careers} from './Careers';
-import { Education } from './Education';
-import { langContext } from '../helpers';
-import { useContext } from 'react';
-import { Sections, Subtitles } from '../../globalStyles';
+import React, { useContext } from 'react';
+import { Careers } from './careers';
+import { Education } from './education';
+import { langContext, SectionsStyles } from '/src/helpers';
+import { Subtitles } from '/src/globalStyles';
 import { Quote } from './styles';
-import { Section } from '../helpers/Section';
 
-export function Experience () {
-	const {language} = useContext(langContext);
+export function Experience() {
+	const { language } = useContext(langContext);
 
-	const {quote, cite, title} = language.experience;
+	const { quote, cite, title } = language.experience;
 
 	return (
-		<Section name='experience'>
+		<SectionsStyles name='experience'>
 			<Subtitles>{title}</Subtitles>
 
 			<Quote>
@@ -24,6 +22,6 @@ export function Experience () {
 			<Careers />
 
 			<Education />
-		</Section>
+		</SectionsStyles>
 	);
-};
+}

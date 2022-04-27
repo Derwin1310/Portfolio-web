@@ -1,7 +1,8 @@
-import {Icono} from '../helpers';
+import React from 'react';
+import { Icono } from '/src/helpers';
 
 //Componente para recorrer las redes sociales de el componente contacto junto con los iconos importados del helper
-export const Social = () => {
+export function Social() {
 	const socialMedias = [
 		{
 			icon: 'facebook',
@@ -21,16 +22,14 @@ export const Social = () => {
 	];
 	return (
 		<div className='social'>
-			{
-				socialMedias.map(({icon, href, social}) => (
-					<section className='social__medias' key={social}>
-						<Icono name={icon} />
-						<a className='link' target='_blank' href={href}>
-							{social}
-						</a>
-					</section>
-				))
-			}
+			{socialMedias.map(({ icon, href, social }) => (
+				<section className='social__medias' key={social}>
+					<Icono name={icon} />
+					<a className='link' target='_blank' href={href}>
+						{social}
+					</a>
+				</section>
+			))}
 		</div>
 	);
-};
+}

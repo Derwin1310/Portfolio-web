@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors, Fonts } from "../../globalStyles";
+import { Colors, Fonts } from "/src/globalStyles";
 
 export const Quote = styled.q`
     line-height: ${Fonts.height};
@@ -18,7 +18,7 @@ export const SectionTitle = styled.h3`
 	margin: 4rem auto 0;
 `
 
-export const SectionExp = styled.section`
+export const Careers_Exp = styled.section`
 	display: flex;
 	padding-bottom: 3rem;
 	max-width: 1200px;

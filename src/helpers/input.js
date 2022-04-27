@@ -1,6 +1,6 @@
-import {Icon} from '@iconify/react';
-import React from 'react';
-import {Fragment} from 'react/cjs/react.production.min';
+import React, { Fragment } from 'react';
+import { Icon } from '@iconify/react';
+
 
 export function Input({
 	name = 'notFound',

@@ -1,12 +1,11 @@
-import { Social } from './Social';
-import { langContext } from '../helpers';
-import { useContext } from 'react';
-import { Subtitles } from '../../globalStyles';
-import { Section } from '../helpers/Section';
+import React, { useContext } from 'react';
+import { Social } from './social';
+import { langContext, SectionsStyles } from '/src/helpers';
+import { Subtitles } from '/src/globalStyles';
 import './style.css';
 
-export const Footer = () => {
-	const {language} = useContext(langContext);
+export function Footer() {
+	const { language } = useContext(langContext);
 
 	const {
 		title,
@@ -18,12 +17,12 @@ export const Footer = () => {
 		email,
 		message,
 		typeYourMessage,
-		submit	
+		submit,
 	} = language.contact;
-	
+
 	return (
 		<footer id='footer' className='footer-wrapper'>
-			<Section name='name'>
+			<SectionsStyles name='name'>
 				<Subtitles className='footer'>{title}</Subtitles>
 
 				<div className='subtitle-no'>
@@ -32,13 +31,12 @@ export const Footer = () => {
 					<p className='subtitle__p'>{contactDesc}</p>
 				</div>
 
-				<Social />				
+				<Social />
 
 				<form className='form'>
 					<h3 className='form__title'>{formTitle}</h3>
 
 					<div className='form__fullname'>
-						
 						<div className='form__wrapper-name'>
 							<label htmlFor='first name' className='form__label'>
 								{name}
@@ -82,17 +80,20 @@ export const Footer = () => {
 						className='form__text input'
 						placeholder={typeYourMessage}
 						id='message'
-					/>	
-					
+					/>
+
 					<button className='form__submit' type='submit'>
 						{submit}
 					</button>
 				</form>
 
 				<div className='copyright'>
-					<img src='https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/gaiden.webp' alt='gaiden' />
+					<img
+						src='https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/gaiden.webp'
+						alt='gaiden'
+					/>
 				</div>
-			</Section>
+			</SectionsStyles>
 		</footer>
 	);
-};
+}

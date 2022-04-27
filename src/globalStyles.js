@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { getTheme } from "./components/helpers";
+import { getTheme } from "./helpers";
 
 export const Subtitles = styled.h2`
     font-size: 2.3rem;

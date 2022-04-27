@@ -1,6 +1,5 @@
-import React from 'react';
-import { langContext } from '../helpers/langContext';
-import { useContext } from 'react';
+import React, { useContext } from 'react';
+import { langContext } from '/src/helpers';
 import { IconsSection, IconWrapper } from './styles';
 
 //Componente para recorrer las imagenes de fast, usable, clean and dynamic de nuestro componente about.
@@ -15,7 +14,7 @@ export function SectionIcons () {
 				icons.map(({name, desc, src}) => (
 					<IconWrapper key={name}>
 						<img src={src} alt={name} />
-						<h3 style={{fontWeight: 600}}>{name}</h3>
+						<h3>{name}</h3>
 						<p>{desc}</p>
 					</IconWrapper>
 				))

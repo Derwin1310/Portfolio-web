@@ -1,19 +1,20 @@
-import darkMode from '../../../public/assets/dark theme.svg';
-import {NavLinks} from './NavLinks';
+import React, { useContext } from 'react';
 import Select from 'react-select';
-import {useContext} from 'react';
-import {toogleTheme, getTheme, langContext} from '../helpers';
-import {NavbarBg, Navigator, NavLogo, NavToggle, NavWrapper} from './styles';
+import { NavLinks } from './navLinks';
+import { toogleTheme, getTheme, langContext } from '/src/helpers';
+import { NavbarBg, Navigator, NavLogo, NavToggle, NavWrapper } from './styles';
+import darkMode from '/public/assets/dark theme.svg';
 import './style.css';
+// revisar estilos y factorizar el componente
 
 export function Navbar() {
-	const {locale, setLanguage} = useContext(langContext);
+	const { locale, setLanguage } = useContext(langContext);
 
 	// const themeText = getTheme() === 'dark' ? 'ON' : 'OFF';
 
 	const option = [
-		{value: 'en', label: 'US'},
-		{value: 'es', label: 'ES'},
+		{ value: 'en', label: 'US' },
+		{ value: 'es', label: 'ES' },
 	];
 
 	const handleLang = e => setLanguage(e.value);
@@ -32,7 +33,6 @@ export function Navbar() {
 					</a>
 
 					<NavLinks />
-
 				</NavWrapper>
 
 				<div className='navbar__select-toggle'>

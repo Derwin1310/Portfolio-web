@@ -1,11 +1,11 @@
-import {useContext} from 'react';
-import {langContext} from '../helpers';
-import {Button, Div, Header, HomePage, Logo, Name, Slogan} from './styles';
+import React, { useContext } from 'react';
+import { langContext } from '/src/helpers';
+import { Button, Div, Header, HomePage, Logo, Name, Slogan } from './styles';
 
 export function Home() {
-	const {language} = useContext(langContext);
+	const { language } = useContext(langContext);
 
-	const {title, resume, resumePhone} = language.home;
+	const { title, resume, resumePhone } = language.home;
 
 	const responsiveText = window.innerWidth >= 769 ? resume : resumePhone;
 

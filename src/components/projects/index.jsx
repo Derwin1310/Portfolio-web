@@ -1,15 +1,14 @@
 import React from 'react';
-import { ListProjects } from './ListProjects';
-import { Subtitles } from '../../globalStyles';
-import { Section } from '../helpers/Section';
+import { ListProjects } from './listProjects';
+import { Subtitles } from '/src/globalStyles';
+import { SectionsStyles } from '/src/helpers';
 import './style.css';
 
-export function Projects () {
-
+export function Projects() {
 	return (
-		<Section name='projects'>
+		<SectionsStyles name='projects'>
 			<Subtitles>Projects</Subtitles>
 			<ListProjects />
-		</Section>
+		</SectionsStyles>
 	);
-};
+}

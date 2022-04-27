@@ -1,7 +1,7 @@
 import { Navbar } from '../navbar'
 import './style.css'
 
-export function BurgerBtn () {
+export function BurgerBtn() {
     const responsiveBtn = () => {
         console.log('btn presionado');
         return <Navbar />
