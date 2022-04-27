@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { langContext } from '/src/helpers';
 import { Button, Div, Header, HomePage, Logo, Name, Slogan } from './styles';
 
