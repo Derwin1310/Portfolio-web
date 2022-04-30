@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Icono, langContext } from '/src/helpers';
 import { Articles, ArticlesWrapper, ShareIcons } from './styles';
-// revisar los estilos de css para ver si no hacen falta
+
 export function ListArticle() {
 	const { language } = useContext(langContext);
 
@@ -13,11 +13,11 @@ export function ListArticle() {
 		<Articles>
 			{wrapper.map(({ src, article, desc, date, articleLink }) => (
 				<ArticlesWrapper key={article}>
-					<img className='articles__img' src={src} alt='CSS article' />
-					<h4 className='articles__title'>{article}</h4>
-					<p className='articles__desc'>
-						{desc}{' '}
-						<a className='articles__link' href={articleLink} target='_blank'>
+					<img src={src} alt='CSS article' />
+					<h4>{article}</h4>
+					<p>
+						{desc}
+						<a href={articleLink} target='_blank'>
 							{seeMore}
 						</a>
 					</p>

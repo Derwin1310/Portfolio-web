@@ -55,7 +55,16 @@ export const enLang ={
         blueText: "always looking for more to do great things.",
     },
     projects: {
-        desc: "Lorem ipsum pain sit amet consectetur adipisicing elit. lorem lorem lorem",
+        title: 'Projects',
+        wrapper: [
+            {
+                name: 'Online Pokedex',
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/portfolio-image-ligero.webp',
+                techs: ['React js', 'Sass', 'Git'],
+                about: 'A fun project that i made while experimenting with the PokeApi',
+                view: 'View site',
+            }
+        ],
     },
     experience: {
         title: 'Experience',

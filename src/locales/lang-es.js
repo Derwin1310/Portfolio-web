@@ -54,8 +54,17 @@ export const esLang ={
         technologies: "Estas son todas las tecnologías que utilizo para hacer que todo parezca magia en Internet, ",
         blueText: "siempre buscando más para hacer grandes cosas.",
     },
-    projects: {   
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem lorem lorem",
+    projects: {
+        title: 'Proyectos',
+        wrapper: [
+            {
+                name: 'Pokedex Online',
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/portfolio-image-ligero.webp',
+                techs: ['React js', 'Sass', 'Git'],
+                about: 'Un proyecto divertido que hice mientras experimentaba con la PokeApi',
+                view: 'Ver sitio',
+            },
+        ],
     },   
     experience: {
         title: 'Experiencia',

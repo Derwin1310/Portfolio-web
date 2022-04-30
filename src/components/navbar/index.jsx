@@ -3,8 +3,7 @@ import Select from 'react-select';
 import { NavLinks } from './navLinks';
 import { ThemeButton } from './themeButton';
 import { langContext } from '/src/helpers';
-import { NavbarBg, Navigator, NavLogo, NavWrapper } from './styles';
-import './style.css';
+import { NavbarBg, Navigator, NavLogo, NavWrapper, Lang_Theme } from './styles';
 // revisar estilos y factorizar el componente
 
 export function Navbar() {
@@ -22,6 +21,7 @@ export function Navbar() {
 	return (
 		<NavbarBg>
 			<Navigator>
+				
 				<NavWrapper>
 					<a href='#home'>
 						<NavLogo
@@ -33,7 +33,7 @@ export function Navbar() {
 					<NavLinks />
 				</NavWrapper>
 
-				<div className='navbar__select-toggle'>
+				<Lang_Theme>
 					<Select
 						menuPlacement='auto'
 						options={option}
@@ -41,7 +41,8 @@ export function Navbar() {
 						onChange={handleLang}
 					/>
 					<ThemeButton />
-				</div>
+				</Lang_Theme>
+
 			</Navigator>
 		</NavbarBg>
 	);

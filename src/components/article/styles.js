@@ -22,6 +22,19 @@ export const ArticlesWrapper = styled.div`
     flex-direction: column;
     justify-content: space-around;
     gap: 1rem;
+    
+    img {
+        height: 450px;
+    }
+
+    h4 {
+        color: var(--primary-color) ;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--links);
+    }
 
     @media only screen and (max-width: 768px) {
         width: 300px;
@@ -29,6 +42,16 @@ export const ArticlesWrapper = styled.div`
         border-radius: 5px;
         margin-left: auto;
         margin-right: auto;
+
+        h4,
+        p {
+            padding: 0 1rem;
+        }
+
+        img {
+            width: 300px;
+            height: 230px;
+        }
     }
 `
 

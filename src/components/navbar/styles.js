@@ -68,12 +68,72 @@ export const Link = styled.a`
 
 `
 
-export const NavToggle = styled.div`
+export const Lang_Theme = styled.div`
     align-items: center;
-    border: 2px solid var(--primary-color);
-    background-color: #420A1A;
+    display: flex;
+    gap: 2rem;
+
+    .css-qc6sy-singleValue {
+        color: #fff;
+    }
+
+    .css-1pahdxg-control,
+    .css-1s2u09g-control {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    .css-319lph-ValueContainer,
+    .css-tlfecz-indicatorContainer,
+    .css-1gtu0rj-indicatorContainer {
+        padding: 0;
+    }
+
+    .css-tlfecz-indicatorContainer {
+        color: var(--primary-color)
+    }
+
+    .css-1gtu0rj-indicatorContainer {
+        color: #420A1A;
+    }
+
+    .css-2613qy-menu {
+        border: none;
+    }
+
+    .css-1okebmr-indicatorSeparator {
+        display: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+        margin-top: 2rem;
+        flex-direction: column;
+
+        .css-qc6sy-singleValue {
+            font-size: 1.5rem;
+        }
+    }
+`
+
+export const ThemeSelect = styled.div`
+    align-items: center;
+    border: 2px solid ${props => props.variant === 'light' ? 'var(--bg-color1)' : 'var(--primary-color)'};
+    background-color: ${props => props.variant === 'light' ? 'var(--links)' : '#420A1A' };
     border-radius: 3rem;
     color: var(--primary-color);
+    color: ${props => props.variant === 'light' ? 'var(--bg-color1)' : 'var(--primary-color)'};
     cursor: pointer;
     display: flex;
+
+    span {
+        font-size: 1.3rem;
+        margin: 3px .5rem 0;
+    }
+
+    img {
+        border-radius: 50%;
+        outline: 2px solid ${props => props.variant === 'light' ? 'var(--bg-color1)' : 'var(--primary-color)'};
+        padding: 6px;
+    }
 `

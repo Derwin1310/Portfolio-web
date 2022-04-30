@@ -1,38 +1,30 @@
-import React from 'react';
-// aplicar styled components, deben ser lo mismos que el de articles, y meter los textos en lang ademas de meter el el proyecto de pokemon
+import React, { useContext } from 'react';
+import { langContext } from '/src/helpers';
+import { ProjectsWrapper, Projects, ProjectsDesc, ViewSite } from './styles';
+
 export function ListProjects() {
-	const projectsList = [
-		{
-			name: 'Portfolio',
-			src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/portfolio-image-ligero.webp',
-			techs: ['React js', 'Css', 'Git'],
-			about:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem lorem lorem',
-		},
-	];
+	const { language } = useContext(langContext);
+
+	const { wrapper } = language.projects;
+
+	const { seeMore } = language;
 
 	return (
-		<section className='projects-wrapper'>
-			{projectsList.map(({ name, src, about, techs }) => (
-				<article key={name} className='project'>
-					<img className='project__img' src={src} alt={name} />
-					<div className='project__desc'>
-						<h4 className='project__title'>{name}</h4>
-						<p className='project__techs'>
-							{techs.map(item => item).join(', ')}.
+		<ProjectsWrapper>
+			{wrapper.map(({ name, src, about, techs, view }) => (
+				<Projects key={name}>
+					<img src={src} alt={name} />
+					<ProjectsDesc>
+						<h4>{name}</h4>
+						<span>{techs.map(item => item).join(', ')}.</span>
+						<p>
+							{about}
+							<a href='#' target='_blank'>{seeMore}</a>
 						</p>
-						<p className='project__about'>
-							{about}{' '}
-							<a className='articles__link' href='#' target='_blank'>
-								...See more
-							</a>
-						</p>
-						<a className='project__link' href='#'>
-							View site
-						</a>
-					</div>
-				</article>
+						<ViewSite href='#'>{view}</ViewSite>
+					</ProjectsDesc>
+				</Projects>
 			))}
-		</section>
+		</ProjectsWrapper>
 	);
 }
