@@ -59,7 +59,7 @@ export const enLang ={
         wrapper: [
             {
                 name: 'Online Pokedex',
-                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/portfolio-image-ligero.webp',
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/pokedex.webp',
                 techs: ['React js', 'Sass', 'Git'],
                 about: 'A fun project that i made while experimenting with the PokeApi',
                 view: 'View site',

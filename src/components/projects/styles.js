@@ -11,6 +11,8 @@ export const ProjectsWrapper = styled.section `
 
     img {
         width: 100%;
+        height: 450px;
+        object-fit: cover;
     }
 
     @media only screen and (max-width: 768px) {

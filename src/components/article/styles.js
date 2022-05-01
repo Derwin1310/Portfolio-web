@@ -24,7 +24,9 @@ export const ArticlesWrapper = styled.div`
     gap: 1rem;
     
     img {
+        width: 100%;
         height: 450px;
+        object-fit: cover;
     }
 
     h4 {
