@@ -20,15 +20,19 @@ export const Navigator = styled.nav`
     width: 1600px;
 
     @media only screen and (max-width: 768px) {
-        background-color: #00000088;
-        background: linear-gradient(180deg, #0C002B, #110239);
+        /* background-color: #00000088; */
+        animation-name: ${({variant}) => variant ? 'fadeRight' : 'fadeExit' };
+        animation-duration: 1s;
+        background-color: #0C002Bee;
         height: 100%;
         width: 100%;
-        /* display: block; */
-        display: none;
+        visibility: ${({variant}) => variant ? 'visible' : 'hidden'};
+        transition: all .7s ease-in-out;
         position: fixed;
         padding-top: 2rem;
         top: 0;
+        flex-direction: column;
+        justify-content: center;
     }
 `
 
@@ -38,8 +42,9 @@ export const NavWrapper = styled.ul`
     gap: 0.5rem;
 
     @media only screen and (max-width: 768px) {
-        flex-direction: column;;
+        flex-direction: column;
         gap: 2rem;
+        margin: 0 auto;
     }
 `
 
@@ -118,11 +123,12 @@ export const Lang_Theme = styled.div`
 
 export const ThemeSelect = styled.div`
     align-items: center;
-    border: 2px solid ${props => props.variant === 'light' ? 'var(--bg-color1)' : 'var(--primary-color)'};
-    background-color: ${props => props.variant === 'light' ? 'var(--links)' : '#420A1A' };
+    border: 2px solid ${({variant}) => variant ? 'var(--bg-color1)' : 'var(--primary-color)'};
+    background-color: ${({variant}) => variant ? 'var(--links)' : '#420A1A' };
     border-radius: 3rem;
     color: var(--primary-color);
-    color: ${props => props.variant === 'light' ? 'var(--bg-color1)' : 'var(--primary-color)'};
+    color: ${({variant}) => variant ? 'var(--bg-color1)' : 'var(--primary-color)'};
+    ${({variant}) => variant && 'flex-direction: row-reverse'};
     cursor: pointer;
     display: flex;
 
@@ -133,7 +139,7 @@ export const ThemeSelect = styled.div`
 
     img {
         border-radius: 50%;
-        outline: 2px solid ${props => props.variant === 'light' ? 'var(--bg-color1)' : 'var(--primary-color)'};
+        outline: 2px solid ${({variant}) => variant ? 'var(--bg-color1)' : 'var(--primary-color)'};
         padding: 6px;
     }
 `

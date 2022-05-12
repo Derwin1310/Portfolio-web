@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import { langContext } from '/src/helpers';
+import { appContext } from '/src/context'
 import { Link } from './styles';
 
 export function NavLinks() {
-	const { language } = useContext(langContext);
+	const { language } = useContext(appContext);
 
 	const links = language.navbar;
 

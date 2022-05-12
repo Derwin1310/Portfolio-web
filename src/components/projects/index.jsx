@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import { ListProjects } from './listProjects';
 import { Subtitles } from '/src/globalStyles';
-import { SectionsStyles, langContext } from '/src/helpers';
+import { SectionsStyles } from '/src/helpers';
+import { appContext } from '/src/context'
 
 export function Projects() {
-	const { language } = useContext(langContext);
+	const { language } = useContext(appContext);
 
 	const { title } = language.projects;
 

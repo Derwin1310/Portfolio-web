@@ -1,9 +1,9 @@
 import React, { Fragment, useContext } from 'react';
-import { langContext } from '/src/helpers';
+import { appContext } from '/src/context'
 import { CourseAndJob, Careers_Exp, SectionTitle } from './styles';
 
 export function Education() {
-	const { language } = useContext(langContext);
+	const { language } = useContext(appContext);
 
 	const { education, courses } = language.experience;
 

@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import { Social } from './social';
-import { langContext, SectionsStyles } from '/src/helpers';
+import { SectionsStyles } from '/src/helpers';
+import { appContext } from '/src/context'
 import { Subtitles } from '/src/globalStyles';
 import './style.css';
 
 export function Footer() {
-	const { language } = useContext(langContext);
+	const { language } = useContext(appContext);
 
 	const {
 		title,

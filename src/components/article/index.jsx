@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import { ListArticle } from './listArticle';
-import { langContext, SectionsStyles } from '/src/helpers';
+import { SectionsStyles } from '/src/helpers';
+import { appContext } from '/src/context'
 import { Subtitles } from '/src/globalStyles';
 
 export function Article() {
-	const { language } = useContext(langContext);
+	const { language } = useContext(appContext);
 
 	const { title } = language.articles;
 

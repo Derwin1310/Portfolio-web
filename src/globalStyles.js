@@ -20,7 +20,6 @@ export const Subtitles = styled.h2`
 `
 
 export const Sections = styled.section`
-    /* background-color: ${props => props.variant === 'bgc-2' && '#0C002B'}; */
     &:nth-child(2n) {
         background-color: var(--bg-color2);
     }

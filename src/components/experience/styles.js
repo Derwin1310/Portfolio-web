@@ -24,7 +24,7 @@ export const Careers_Exp = styled.section`
 	max-width: 1200px;
 	margin: 2rem auto 0;
 	gap: 3rem;
-	border-bottom: ${props => props.variant === 'border-b' && '2px solid var(--links)'};
+	${({variant}) => variant && 'border-bottom: 2px solid var(--links)'};
 
 	@media only screen and (max-width: 768px) {
 		flex-direction: column;

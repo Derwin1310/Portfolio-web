@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import { langContext } from '/src/helpers';
+import { appContext } from '/src/context'
 import { IconsSection, IconWrapper } from './styles';
 
 //Componente para recorrer las imagenes de fast, usable, clean and dynamic de nuestro componente about.
 export function SectionIcons () {
-	const {language} = useContext(langContext);
+	const {language} = useContext(appContext);
 	
 	const {icons} = language.about;
 

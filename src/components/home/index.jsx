@@ -1,9 +1,9 @@
-import { useContext } from 'react';
-import { langContext } from '/src/helpers';
+import React, { useContext } from 'react';
+import { appContext } from '/src/context'
 import { Button, Div, Header, HomePage, Logo, Name, Slogan } from './styles';
 
 export function Home() {
-	const { language } = useContext(langContext);
+	const { language } = useContext(appContext);
 
 	const { title, resume, resumePhone } = language.home;
 

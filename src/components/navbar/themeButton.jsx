@@ -1,22 +1,19 @@
-import React, { Fragment, useEffect, useState } from 'react';
-import { toogleTheme, getTheme, setTheme } from '/src/helpers';
+import React, { useContext } from 'react';
 import darkImg from '/public/assets/dark theme.svg';
 import lightImg from '/public/assets/light-theme.png';
+import { appContext } from '/src/context';
 import { ThemeSelect } from './styles';
 
 export function ThemeButton() {
-	const [theme, setTheme] = useState(getTheme());
+	const { changeTheme, defaultTheme } = useContext(appContext);
 
-	const tema = theme === 'light' && 'light';
-	const pathImg = theme === 'light' ? lightImg : darkImg;
-	const text = theme === 'light' ? 'Off' : 'On';
+	const pathImg = defaultTheme === 'light' ? lightImg : darkImg;
+	const text = defaultTheme === 'light' ? 'Off' : 'On';
 
 	return (
-		<Fragment>
-			<ThemeSelect variant={tema} onClick={toogleTheme}>
-				<span>{text}</span>
-				<img src={pathImg} alt='img theme' />
-			</ThemeSelect>
-		</Fragment>
+		<ThemeSelect variant={defaultTheme === 'light'} onClick={changeTheme}>
+			<span>{text}</span>
+			<img src={pathImg} alt='img theme' />
+		</ThemeSelect>
 	);
 }

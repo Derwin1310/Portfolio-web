@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
-import { Icono, langContext } from '/src/helpers';
+import { Icono } from '/src/helpers';
+import { appContext } from '/src/context'
 import { Articles, ArticlesWrapper, ShareIcons } from './styles';
 
 export function ListArticle() {
-	const { language } = useContext(langContext);
+	const { language } = useContext(appContext);
 
 	const { wrapper } = language.articles;
 
