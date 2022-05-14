@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { appContext } from '/src/context';
+import { Input } from '/src/helpers';
 
-export function Input({ name, type = 'input', placeholder }) {
+export const Formulary = () => {
+	const { language } = useContext(appContext);
+	const { name, surname, email, message, typeYourMessage, formTitle, submit } = language.contact;
+
+	const inputs = [
+		{ name },
+		{ name: surname },
+		{ name: email, type: 'email' },
+		{ name: message, placeholder: typeYourMessage },
+	];
+
 	return (
-		<div className={type === 'input' ? 'form__input' : 'form__textarea'}>
-			<label htmlFor={name}>{name}</label>
-			<input placeholder={placeholder || name} type={type} id={name} />
-		</div>
+		<form className='form'>
+			<h3 className='form__title'>{formTitle}</h3>
+
+			{ inputs.map(props => (<Input {...props} key={props.name} />)) }
+
+			<button className='form__submit' type='submit'>
+				{submit}
+			</button>
+		</form>
 	);
-}
+};

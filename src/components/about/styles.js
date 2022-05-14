@@ -38,6 +38,7 @@ export const IconsSection = styled.section`
         width: 100%;
         order: 1;
         overflow: scroll;
+        overflow-y: hidden;
         gap: 5rem;
         padding-left: 4rem;
         padding-right: 4rem;

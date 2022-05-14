@@ -20,6 +20,7 @@ export const ProjectsWrapper = styled.section `
         gap: 2rem;
         flex-wrap: nowrap;
         overflow: scroll;
+        overflow-y: hidden;
         justify-content: space-between;
     }
 `

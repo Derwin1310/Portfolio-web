@@ -2,7 +2,7 @@
     color: #fff;
 }
 
-.subtitle-no,
+.subtitle,
 .social {
     max-width: 768px;
     display: flex;
@@ -35,19 +35,40 @@
 
 .form {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 768px;
     margin:2rem auto 0;
-}
 
-.form__title {
-    color: var(--primary-color);
-    margin-bottom: .6rem;
-}
+    &__title {
+        color: var(--primary-color);
+        width: 100%;
+        margin-bottom: .6rem;
+    }
 
-.form__label {
-    color: var(--home-contact-text);
-    margin-bottom: .3rem;
+    &__label {
+        width: 100%;
+        color: var(--home-contact-text);
+        margin-bottom: .3rem;
+        display: flex;
+        flex-direction: column;
+
+        &:nth-child(-n+3) {
+            width: 48%;
+        }
+    }
+
+    &__submit {
+        border: 3px solid var(--primary-color);
+        background-color: transparent;
+        color: var(--primary-color);
+        width: 100%;
+        padding: .5rem 3rem;
+        font-size: 1.3rem;
+        font-family: 'Varela Round', sans-serif;
+        border-radius: .3rem;
+        cursor: pointer;
+    }
 }
 
 .input {
@@ -58,35 +79,10 @@
     padding: 0.7rem 0.5rem;
     color: var(--home-contact-text);
     resize: none;
-}
 
-.input::placeholder {
-    font-family: 'Varela Round', sans-serif;
-}
-
-.form__fullname {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.form__wrapper-name,
-.form__wrapper-lastname {
-    display: flex;
-    flex-direction: column;
-    width: 47%;
-}
-
-.form__submit {
-    border: 3px solid var(--primary-color);
-    background-color: transparent;
-    color: var(--primary-color);
-    margin: 1rem auto;
-    padding: .5rem 3rem;
-    font-size: 1.3rem;
-    font-family: 'Varela Round', sans-serif;
-    border-radius: .3rem;
-    cursor: pointer;
+    &::placeholder {
+        font-family: 'Varela Round', sans-serif;
+    }
 }
 
 .copyright {
@@ -95,21 +91,8 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .form__fullname {
-        flex-direction: column;
-    }
-
-    .form__wrapper-name,
-    .form__wrapper-lastname {
-        width: 100%;
-    }
-
     .social {
         flex-wrap: wrap;
-    }
-
-    .form__submit {
-        width: 100%;
     }
 
     .subtitle__h3 {

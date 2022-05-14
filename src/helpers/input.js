@@ -1,24 +1,20 @@
-import React, { Fragment } from 'react';
-import { Icon } from '@iconify/react';
+import React from 'react';
 
-
-export function Input({
-	name = 'notFound',
-	color = '#009ada',
-	width = '28',
-	height = '28',
-}) {
+export function Input({ name = '', type = 'text', placeholder }) {
 	return (
-		<Fragment>
-			<label htmlFor='first name' className='form__label'>
-				First Name
-			</label>
-			<input
-				className='form__name input'
-				placeholder='First Name'
-				type='text'
-				id='first name'
-			/>
-		</Fragment>
+		<label className='form__label'>
+			{name}
+			{
+				placeholder 
+				? <textarea className='input' placeholder={placeholder} />
+				: <input
+					autoComplete='off'
+					className='input'
+					placeholder={name}
+					type={type}
+					id={name}
+				/>
+			}
+		</label>
 	);
 }

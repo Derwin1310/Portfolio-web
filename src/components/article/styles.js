@@ -11,6 +11,7 @@ export const Articles = styled.article`
         display: flex;
         gap: 2rem;
         overflow: scroll;
+        overflow-y: hidden;
         width: 100%;
         flex-wrap: nowrap;
         justify-content: space-between;
