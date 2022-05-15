@@ -20,7 +20,6 @@ export const Navigator = styled.nav`
     width: 1600px;
 
     @media only screen and (max-width: 768px) {
-        /* background-color: #00000088; */
         animation-name: ${({variant}) => variant ? 'fadeRight' : 'fadeExit' };
         animation-duration: 1s;
         background-color: #0C002Bee;
@@ -59,11 +58,11 @@ export const NavLogo = styled.img`
 
 export const Link = styled.a`
     font-size: 1.2rem;
-    color: #fff;
+    color: var(--light-text);
     text-decoration: none;
 
     &:hover {
-        color: var(--primary-color);
+        color: var(--primary);
         transition: color .5s;
     }
 
@@ -79,7 +78,7 @@ export const Lang_Theme = styled.div`
     gap: 2rem;
 
     .css-qc6sy-singleValue {
-        color: #fff;
+        color: var(--light-text);
     }
 
     .css-1pahdxg-control,
@@ -96,7 +95,7 @@ export const Lang_Theme = styled.div`
     }
 
     .css-tlfecz-indicatorContainer {
-        color: var(--primary-color)
+        color: var(--primary);
     }
 
     .css-1gtu0rj-indicatorContainer {
@@ -123,11 +122,10 @@ export const Lang_Theme = styled.div`
 
 export const ThemeSelect = styled.div`
     align-items: center;
-    border: 2px solid ${({variant}) => variant ? 'var(--bg-color1)' : 'var(--primary-color)'};
+    border: 2px solid ${({variant}) => variant ? 'var(--light-text)' : 'var(--primary)'};
     background-color: ${({variant}) => variant ? 'var(--links)' : '#420A1A' };
     border-radius: 3rem;
-    color: var(--primary-color);
-    color: ${({variant}) => variant ? 'var(--bg-color1)' : 'var(--primary-color)'};
+    color: ${({variant}) => variant ? 'var(--light-text)' : 'var(--primary)'};
     ${({variant}) => variant && 'flex-direction: row-reverse'};
     cursor: pointer;
     display: flex;
@@ -139,7 +137,7 @@ export const ThemeSelect = styled.div`
 
     img {
         border-radius: 50%;
-        outline: 2px solid ${({variant}) => variant ? 'var(--bg-color1)' : 'var(--primary-color)'};
+        outline: 2px solid ${({variant}) => variant ? 'var(--light-text)' : 'var(--primary)'};
         padding: 6px;
     }
 `

@@ -1,7 +1,3 @@
-.footer {
-    color: #fff;
-}
-
 .subtitle,
 .social {
     max-width: 768px;
@@ -11,11 +7,10 @@
     gap: 2rem;
     margin-left: auto;
     margin-right: auto;
-    color: var(--home-contact-text);
+    color: var(--light-text);
 }
 
-.social {  
-    display: flex;
+.social {
     flex-direction: row;
     justify-content: center;
     margin-top: 2rem;
@@ -29,7 +24,7 @@
 
 .link {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--secondary);
     font-weight: 600;
 }
 
@@ -41,14 +36,14 @@
     margin:2rem auto 0;
 
     &__title {
-        color: var(--primary-color);
+        color: var(--primary);
         width: 100%;
         margin-bottom: .6rem;
     }
 
     &__label {
         width: 100%;
-        color: var(--home-contact-text);
+        color: var(--light-text);
         margin-bottom: .3rem;
         display: flex;
         flex-direction: column;
@@ -59,9 +54,9 @@
     }
 
     &__submit {
-        border: 3px solid var(--primary-color);
+        border: 3px solid var(--primary);
         background-color: transparent;
-        color: var(--primary-color);
+        color: var(--primary);
         width: 100%;
         padding: .5rem 3rem;
         font-size: 1.3rem;
@@ -74,10 +69,10 @@
 .input {
     margin-bottom: 1rem;
     background-color: transparent;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--primary);
     border-radius: 0.3rem;
     padding: 0.7rem 0.5rem;
-    color: var(--home-contact-text);
+    color: var(--light-text);
     resize: none;
 
     &::placeholder {
@@ -96,7 +91,13 @@
     }
 
     .subtitle__h3 {
-        color: var(--secondary-color);
+        color: var(--secondary);
+    }
+
+    .form__label {
+        &:nth-child(-n+3) {
+            width: 100%;
+        }
     }
 
 }

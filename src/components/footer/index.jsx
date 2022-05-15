@@ -12,9 +12,9 @@ export function Footer() {
 	const { title, subtitle, contactDesc } = language.contact;
 
 	return (
-		<footer id='footer' className='footer-wrapper'>
-			<SectionsStyles>
-				<Subtitles className='footer'>{title}</Subtitles>
+		<footer>
+			<SectionsStyles variant name='footer' >
+				<Subtitles variant>{title}</Subtitles>
 
 				<div className='subtitle'>
 					<h3 className='subtitle__h3'>{subtitle}</h3>

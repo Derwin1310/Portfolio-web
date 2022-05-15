@@ -1,71 +1,71 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Articles = styled.article`
-    display: grid;
-    grid-auto-rows: 450px;
-    grid-template-columns: repeat(auto-fill, 390px);
-    grid-gap: 3rem 1rem;
-    justify-content: space-evenly;
+	display: grid;
+	grid-auto-rows: 450px;
+	grid-template-columns: repeat(auto-fill, 390px);
+	grid-gap: 3rem 1rem;
+	justify-content: space-evenly;
 
-    @media only screen and (max-width: 768px) {
-        display: flex;
-        gap: 2rem;
-        overflow: scroll;
-        overflow-y: hidden;
-        width: 100%;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-`
+	@media only screen and (max-width: 768px) {
+		display: flex;
+		gap: 2rem;
+		overflow: scroll;
+		overflow-y: hidden;
+		width: 100%;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+`;
 
 export const ArticlesWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 1rem;
-    
-    img {
-        width: 100%;
-        height: 450px;
-        object-fit: cover;
-    }
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 1rem;
 
-    h4 {
-        color: var(--primary-color) ;
-    }
+	img {
+		width: 100%;
+		height: 450px;
+		object-fit: cover;
+	}
 
-    a {
-        text-decoration: none;
-        color: var(--links);
-    }
+	h4 {
+		color: var(--primary);
+	}
 
-    @media only screen and (max-width: 768px) {
-        width: 300px;
-        border: 1px solid var(--links);
-        border-radius: 5px;
-        margin-left: auto;
-        margin-right: auto;
+	a {
+		text-decoration: none;
+		color: var(--links);
+	}
 
-        h4,
-        p {
-            padding: 0 1rem;
-        }
+	@media only screen and (max-width: 768px) {
+		width: 300px;
+		border: 1px solid var(--links);
+		border-radius: 5px;
+		margin-left: auto;
+		margin-right: auto;
 
-        img {
-            width: 300px;
-            height: 230px;
-        }
-    }
-`
+		h4,
+		p {
+			padding: 0 1rem;
+		}
+
+		img {
+			width: 300px;
+			height: 230px;
+		}
+	}
+`;
 
 export const ShareIcons = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: var(--secondary-color);
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	color: var(--secondary);
 
-    @media only screen and (max-width: 768px) {
-        padding: 0 1rem;
-        padding-bottom: 1rem;
-    }
-`
+	@media only screen and (max-width: 768px) {
+		padding: 0 1rem;
+		padding-bottom: 1rem;
+	}
+`;

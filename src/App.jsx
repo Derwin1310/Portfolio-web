@@ -1,7 +1,7 @@
 import React from 'react';
-import { Home, Navbar, BurgerBtn, About, Projects, Experience, Article, Footer } from './components';
-import { ContextProvider } from './context';
-import { Theme } from './globalStyles';
+import { Home, Navbar, About, Projects, Experience, Article, Footer } from '/src/components';
+import { ContextProvider } from '/src/context';
+import { Theme } from '/src/globalStyles';
 import './styles.css';
 
 export function App() {

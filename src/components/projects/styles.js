@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Colors } from "/src/globalStyles";
 
 export const ProjectsWrapper = styled.section `
     display: grid;
@@ -72,7 +71,7 @@ export const ProjectsDesc = styled.div`
 
         span {
             display: block;
-            color: var(--primary-color);
+            color: var(--primary);
             margin-bottom: 3rem;
         }
 
@@ -88,7 +87,7 @@ export const ProjectsDesc = styled.div`
         gap: .5rem;
 
         span {
-            color: var(--primary-color);
+            color: var(--primary);
         }
 
         a {
@@ -102,7 +101,7 @@ export const ViewSite  = styled.a`
     @media only screen and (min-width: 769px) {
         text-decoration: none;
         color: var(--text-color);
-        border: 3px solid var(--primary-color);
+        border: 3px solid var(--primary);
         padding: .2rem 1.5rem;
         border-radius: 3px;
     }

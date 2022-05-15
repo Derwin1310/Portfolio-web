@@ -9,7 +9,7 @@ export const HomePage = styled.div`
     justify-content: space-around;
     width: 100%;
     padding: 0 1rem;
-    color: var(--home-contact-text);
+    color: var(--light-text);
 
     &::before {
         content: '';
@@ -33,8 +33,8 @@ export const Button = styled.a`
     animation-duration: 3s;
     text-decoration: none;
     background-color: transparent;
-    color: var(--home-contact-text);
-    border: 3px solid var(--home-contact-text);
+    color: var(--light-text);
+    border: 3px solid var(--light-text);
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.5rem;
@@ -55,8 +55,8 @@ export const Button = styled.a`
         text-align: center;
         margin-bottom: 2rem;
         font-size: 1.5rem;
-        color: var(--primary-color);
-        border-color: var(--primary-color);
+        color: var(--primary);
+        border-color: var(--primary);
 
         &:hover {
             transform: none;

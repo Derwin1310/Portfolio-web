@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { appContext } from '/src/context';
 import { Input } from '/src/helpers';
 
-export const Formulary = () => {
+export function Formulary() {
 	const { language } = useContext(appContext);
 	const { name, surname, email, message, typeYourMessage, formTitle, submit } = language.contact;
 

@@ -1,16 +1,8 @@
 import styled from "styled-components";
-import { Colors, Fonts } from "/src/globalStyles";
 
 export const Quote = styled.q`
-    line-height: ${Fonts.height};
 	display: block;
 	text-align: center;
-	font-size: ${Fonts.h4Size};
-
-	@media only screen and (max-width: 768px) {
-		margin-left: auto;
-		margin-right: auto;
-	}
 `
 
 export const SectionTitle = styled.h3`
@@ -35,11 +27,11 @@ export const Careers_Exp = styled.section`
 
 export const CourseAndJob = styled.h4`
 	width: 13rem;
-	color: ${Colors.primary};
+	color: var(--primary);
 	margin-bottom: 1rem;
 `
 
 export const Organization = styled.h4`
-	color: ${Colors.secondary};
+	color: var(--secondary);
 	margin-bottom: 1rem;
 `

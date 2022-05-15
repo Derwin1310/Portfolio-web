@@ -1,9 +1,6 @@
 import styled from "styled-components";
-import { Colors } from "/src/globalStyles";
 
 export const Desc = styled.div`
-    animation-name: fadeDown;
-    animation-duration: 3s;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,16 +16,14 @@ export const Desc = styled.div`
 
 export const DescName = styled.h4`
     font-size:2.3rem;
-    color: ${Colors.secondary};
+    color: var(--secondary);
 `
 
 export const DescSpan = styled.p`
-    color: ${Colors.secondary};
+    color: var(--secondary);
 `
 
 export const IconsSection = styled.section`
-    animation-name: fadeDown;
-    animation-duration: 1s;
     display: flex;
     margin: 0 auto 5rem;
     gap: 1rem;
@@ -40,8 +35,7 @@ export const IconsSection = styled.section`
         overflow: scroll;
         overflow-y: hidden;
         gap: 5rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding: 0 4rem;
     }
 `
 
@@ -59,8 +53,6 @@ export const IconWrapper = styled.div`
 `
 
 export const GridTechs = styled.div`
-    animation-name: fadeDown;
-    animation-duration: 6s;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
     column-gap: 1rem;

@@ -35,7 +35,7 @@ table {
 }
 
 :root {
-	--home-contact-text: #fff; 
+	--light-text: #fff; 
 }
 
 :root[data-color-theme=dark] {
@@ -43,8 +43,8 @@ table {
 	--bg-color1: #0C002B;
 	--bg-color2: #110239;
 	--dark: #000;
-	--primary-color: #DB1A6A;
-	--secondary-color: #009ADA;
+	--primary: #DB1A6A;
+	--secondary: #009ADA;
 	--links: #777777;
 }
 
@@ -53,18 +53,9 @@ table {
 	--bg-color1: #fff;
 	--bg-color2: #F5F5F5;
 	--dark: #000;
-	--primary-color: #DB1A6A;
-	--secondary-color: #009ADA;
+	--primary: #DB1A6A;
+	--secondary: #009ADA;
 	--links: #777777;
-}
-
-.bg-color2 {
-	background-color: var(--bg-color1);
-}
-
-.footer-wrapper {
-	color: var(--home-contact-text);
-	background-color: var(--dark);
 }
 
 .theme {
@@ -76,22 +67,6 @@ table {
 		visibility: visible !important;
 		transition: all 500ms linear;
 	}
-}
-
-h3 {
-	font-size: 22px;
-}
-
-h4 {
-	font-size: 20px;
-}
-
-p {
-	font-size: 16px;
-}
-
-p, span {
-	line-height: 120%;
 }
 
 html {
