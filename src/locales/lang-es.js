@@ -63,6 +63,7 @@ export const esLang ={
                 techs: ['React js', 'Sass', 'Git'],
                 about: 'Un proyecto divertido que hice mientras experimentaba con la PokeApi',
                 view: 'Ver sitio',
+                projectLink: 'https://derwin1310.github.io/Pokeapi/', 
             },
         ],
     },   

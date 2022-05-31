@@ -59,10 +59,11 @@ export const enLang ={
         wrapper: [
             {
                 name: 'Online Pokedex',
-                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/pokedex.webp',
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/pokedex.',
                 techs: ['React js', 'Sass', 'Git'],
                 about: 'A fun project that i made while experimenting with the PokeApi',
                 view: 'View site',
+                projectLink: 'https://derwin1310.github.io/Pokeapi/', 
             }
         ],
     },

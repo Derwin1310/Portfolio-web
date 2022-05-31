@@ -11,7 +11,7 @@ export function ListProjects() {
 
 	return (
 		<ProjectsWrapper>
-			{wrapper.map(({ name, src, about, techs, view }) => (
+			{wrapper.map(({ name, src, about, techs, view, projectLink }) => (
 				<Projects key={name}>
 					<img src={src} alt={name} />
 					<ProjectsDesc>
@@ -19,7 +19,7 @@ export function ListProjects() {
 						<span>{techs.map(item => item).join(', ')}.</span>
 						<p>
 							{about}
-							<a href='#' target='_blank'>{seeMore}</a>
+							<a href={projectLink} target='_blank'>{seeMore}</a>
 						</p>
 						<ViewSite href='#'>{view}</ViewSite>
 					</ProjectsDesc>
