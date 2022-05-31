@@ -21,7 +21,7 @@ export function ListProjects() {
 							{about}
 							<a href={projectLink} target='_blank'>{seeMore}</a>
 						</p>
-						<ViewSite href='#'>{view}</ViewSite>
+						<ViewSite href={projectLink} target='_blank'>{view}</ViewSite>
 					</ProjectsDesc>
 				</Projects>
 			))}
