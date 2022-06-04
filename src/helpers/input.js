@@ -1,20 +1,20 @@
 import React from 'react';
+import { InputWrapper } from '/src/globalStyles';
 
 export function Input({ name = '', type = 'text', placeholder }) {
 	return (
-		<label className='form__label'>
+		<InputWrapper>
 			{name}
-			{
-				placeholder 
-				? <textarea className='input' placeholder={placeholder} />
-				: <input
+			{placeholder ? (
+				<textarea placeholder={placeholder} />
+			) : (
+				<input
 					autoComplete='off'
-					className='input'
 					placeholder={name}
 					type={type}
 					id={name}
 				/>
-			}
-		</label>
+			)}
+		</InputWrapper>
 	);
 }

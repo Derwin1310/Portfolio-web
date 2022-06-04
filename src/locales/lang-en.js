@@ -127,5 +127,5 @@ export const enLang ={
         message: "Message",
         typeYourMessage: "Type your message",
         submit: "Submit"
-    }
+    },
 }

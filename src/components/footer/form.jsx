@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { appContext } from '/src/context';
 import { Input } from '/src/helpers';
+import { Form, Submit } from './styles';
 
 export function Formulary() {
 	const { language } = useContext(appContext);
@@ -14,14 +15,12 @@ export function Formulary() {
 	];
 
 	return (
-		<form className='form'>
-			<h3 className='form__title'>{formTitle}</h3>
+		<Form>
+			<h3>{formTitle}</h3>
 
 			{ inputs.map(props => (<Input {...props} key={props.name} />)) }
 
-			<button className='form__submit' type='submit'>
-				{submit}
-			</button>
-		</form>
+			<Submit type='submit'>{submit}</Submit>
+		</Form>
 	);
 };

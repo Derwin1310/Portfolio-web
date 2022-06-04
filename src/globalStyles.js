@@ -65,3 +65,36 @@ export const Sections = styled.section`
 		max-width: 700px;
 	}
 `;
+
+export const InputWrapper = styled.label`
+	width: 100%;
+	color: var(--light-text);
+	margin-bottom: .3rem;
+	display: flex;
+	flex-direction: column;
+
+	&:nth-child(-n+3) {
+		width: 48%;
+	}
+
+	input,
+	textarea {
+		margin-bottom: 1rem;
+		background-color: transparent;
+		border: 1px solid var(--primary);
+		border-radius: 0.3rem;
+		padding: 0.7rem 0.5rem;
+		color: var(--light-text);
+		resize: none;
+
+		&::placeholder {
+			font-family: 'Varela Round', sans-serif;
+		}
+	}
+    
+	@media only screen and (max-width: 768px) {
+		&:nth-child(-n+3) {
+			width: 100%;
+		}
+}
+`

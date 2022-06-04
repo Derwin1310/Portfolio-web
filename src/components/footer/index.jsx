@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import { Social } from './social';
 import { SectionsStyles } from '/src/helpers';
 import { appContext } from '/src/context';
-import { Subtitles } from '/src/globalStyles';
 import { Formulary } from './form';
-import './style.css';
+import { Subtitles } from '/src/globalStyles';
+import { TextWrapper, Copyright } from './styles';
 
 export function Footer() {
 	const { language } = useContext(appContext);
@@ -13,25 +13,24 @@ export function Footer() {
 
 	return (
 		<footer>
-			<SectionsStyles variant name='footer' >
+			<SectionsStyles variant name='footer'>
 				<Subtitles variant>{title}</Subtitles>
 
-				<div className='subtitle'>
-					<h3 className='subtitle__h3'>{subtitle}</h3>
-
-					<p className='subtitle__p'>{contactDesc}</p>
-				</div>
+				<TextWrapper>
+					<h3>{subtitle}</h3>
+					<p>{contactDesc}</p>
+				</TextWrapper>
 
 				<Social />
 
 				<Formulary />
 
-				<div className='copyright'>
+				<Copyright>
 					<img
 						src='https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/gaiden.webp'
 						alt='gaiden'
 					/>
-				</div>
+				</Copyright>
 			</SectionsStyles>
 		</footer>
 	);
