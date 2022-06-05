@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Articles = styled.article`
 	display: grid;
 	grid-auto-rows: 450px;
-	grid-template-columns: repeat(auto-fill, 390px);
+	grid-template-columns: repeat(1, 390px);
 	grid-gap: 3rem 1rem;
 	justify-content: space-evenly;
 

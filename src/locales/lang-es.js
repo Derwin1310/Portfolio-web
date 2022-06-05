@@ -69,8 +69,8 @@ export const esLang ={
     },   
     experience: {
         title: 'Experiencia',
-        quote: "Los protones le dan a un átomo su nombre, los electrones su personalidad.",
-        cite: "-Bill Bryson, Una breve historia de casi todo",
+        quote: "Cualquier necio puede escribir código que una computadora pueda entender. Los buenos programadores escriben código que los humanos podamos entender.",
+        cite: "-Martin Fowler",
         career: 'Carreras',
         courses: 'Educación',
         careers:[

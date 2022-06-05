@@ -69,8 +69,8 @@ export const enLang ={
     },
     experience: {
         title: 'Experience',
-        quote: "Protons give an atom its name, electrons its personality.",
-        cite: "-Bill Bryson, A Brief History of Almost Everything",
+        quote: "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+        cite: "-Martin Fowler",
         career: 'Careers',
         courses: 'Education',
         careers:[

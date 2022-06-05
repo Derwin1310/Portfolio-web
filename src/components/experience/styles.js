@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Quote = styled.q`
 	display: block;
 	text-align: center;
+	max-width: 75ch;
+	margin: 0 auto;
 `
 
 export const SectionTitle = styled.h3`
