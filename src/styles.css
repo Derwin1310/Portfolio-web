@@ -14,7 +14,18 @@ body {
     font-family: 'Varela Round', sans-serif;
 	line-height: 1;
 	background-color: var(--bg-color1) ;
+
+	&::-webkit-scrollbar {
+		background-color: var(--bg-color2);
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color:var(--secondary) ;
+		border-radius: 5px;
+	}
 }
+
 ol, ul {
 	list-style: none;
 }
