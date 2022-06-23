@@ -43,7 +43,7 @@ export const SocialProfiles = styled.div`
 	}
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -55,18 +55,38 @@ export const Form = styled.div`
 		width: 100%;
 		margin-bottom: 0.6rem;
 	}
+
+	form {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		max-width: 768px;
+		margin: 2rem auto 0;
+
+		h3 {
+			color: var(--primary);
+			width: 100%;
+			margin-bottom: 0.6rem;
+		}
+	}
 `;
 
-export const Submit = styled.button`
+export const Submit = styled.button.attrs({
+	type: 'submit',
+})`
 	border: 3px solid var(--primary);
 	background-color: transparent;
 	color: var(--primary);
 	width: 100%;
 	padding: 0.5rem 3rem;
 	font-size: 1.3rem;
-	font-family: 'Varela Round', sans-serif;
 	border-radius: 0.3rem;
+	transition: all 0.1s;
 	cursor: pointer;
+
+	&:active {
+		transform: scale(.9);
+	}
 `;
 
 export const Copyright = styled.figcaption`

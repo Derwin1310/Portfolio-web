@@ -13,6 +13,7 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"@formspree/react": "^2.2.5",
 		"@iconify/json": "^2.1.14",
 		"core-js": "^3.21.1",
 		"react": "^17.0.2",
