@@ -6,3 +6,4 @@ export * from './projects';
 export * from './experience';
 export * from './article';
 export * from './footer';
+export * from './modal';

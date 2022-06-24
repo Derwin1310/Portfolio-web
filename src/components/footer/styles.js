@@ -83,6 +83,8 @@ export const Submit = styled.button.attrs({
 	border-radius: 0.3rem;
 	transition: all 0.1s;
 	cursor: pointer;
+	animation-name: fadeIn;
+	animation-duration: 3s;
 
 	&:active {
 		transform: scale(.9);

@@ -5,9 +5,15 @@ import { enLang, esLang } from '/src/locales';
 export const appContext = createContext();
 
 export function ContextProvider({ children }) {
+	// Modal de footer
+	const [showModal, setShowModal] = useState(false)
+	// const [showModal, setShowModal] = useState('Thanks for your submission!')
+	// Tema por defecto 
 	const [defaultTheme, setDefaultTheme] = useState(getTheme());
+	// Funcion de btn burger
 	const [activeBtn, setActiveBtn] = useState(false)
 
+	// custom useState para el lenguaje por defecto
 	const defaultLang = localStorage.getItem('lang');
 	const setDefaultLang = lang => localStorage.setItem('lang', lang);
 
@@ -15,12 +21,14 @@ export function ContextProvider({ children }) {
 
 	useEffect(() => !defaultLang && setDefaultLang('en'), []);
 
+	//Cambio de idioma
 	const setLanguage = language => {
 		setLocale(language);
 
 		setDefaultLang(language);
 	};
 
+	//Cambio de tema
 	const changeTheme = () => {
 		const newTheme = getTheme() === 'dark' ? 'light' : 'dark';
 		setDefaultTheme(newTheme);
@@ -28,12 +36,16 @@ export function ContextProvider({ children }) {
 		fadeInAnimation();
 	};
 
+	//Todos los textos con sus traducciones
 	const languages = {
 		en: enLang,
 		es: esLang,
 	};
 
+	// Estado global
 	const state = {
+		showModal,
+		setShowModal,
 		setActiveBtn,
 		activeBtn,
 		locale,

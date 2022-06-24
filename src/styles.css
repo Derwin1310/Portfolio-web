@@ -57,6 +57,7 @@ table {
 	--primary: #DB1A6A;
 	--secondary: #009ADA;
 	--links: #777777;
+	--modal:  #111111;
 }
 
 :root[data-color-theme=light] {
@@ -67,6 +68,7 @@ table {
 	--primary: #DB1A6A;
 	--secondary: #009ADA;
 	--links: #777777;
+	--modal:  #eeeeee;
 }
 
 .theme {

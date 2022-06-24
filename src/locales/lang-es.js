@@ -127,6 +127,12 @@ export const esLang ={
         message: "Mensaje",
         typeYourMessage: "Escribe tu mensaje",
         submit: "Enviar"
+    },
+    modal: {
+        emailOk: 'Gracias por enviar tu mensaje',
+        emailError: '¡Ups! Hubo un problema al enviar su formulario',
+        text: 'Ahora, mientras leo tu correo, te invito a tomar un café de mi cafetera, nada mejor que un café recién hecho 😊',
+        textBtn: '¡Qué tengas un buen día!'
     }
 }
 

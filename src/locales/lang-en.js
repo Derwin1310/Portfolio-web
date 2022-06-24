@@ -128,4 +128,10 @@ export const enLang ={
         typeYourMessage: "Type your message",
         submit: "Submit"
     },
+    modal: {
+        emailOk: 'Thanks for your submission!',
+        emailError: 'Oops! There was a problem submitting your form',
+        text: 'Now, while i read your email, i invite you to take a coffee from my coffee machine, nothing better than a coffee recently done 😊',
+        textBtn: 'Have a nice day!'
+    }
 }
