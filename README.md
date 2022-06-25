@@ -4,7 +4,7 @@ This portfolio has the purpose of exhibit all my experience, projects, studies a
 
 ## Techs👾
 
-- ReachJS - A JavaScript library for building user interfaces!
+- ReactJS - A JavaScript library for building user interfaces!
 - Styled components - a popular library that is used to style React applications.
 - Node.js - evented I/O for the backend
 - Webpack - is a tool that lets you compile JavaScript modules, also known as module bundler.
