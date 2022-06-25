@@ -5,9 +5,7 @@ import { Articles, ArticlesWrapper, ShareIcons } from './styles';
 
 export function ListArticle() {
 	const { language } = useContext(appContext);
-
 	const { wrapper } = language.articles;
-
 	const { seeMore } = language;
 
 	return (

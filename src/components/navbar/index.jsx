@@ -1,13 +1,12 @@
-import React, { Fragment, useContext, useState } from 'react';
+import React, { Fragment, useContext } from 'react';
 import Select from 'react-select';
-import { BurgerBtn } from './burgerBtn';
 import { NavLinks } from './navLinks';
 import { ThemeButton } from './themeButton';
 import { appContext } from '/src/context';
 import { NavbarBg, Navigator, NavLogo, NavWrapper, Lang_Theme } from './styles';
 
 export function Navbar() {
-	const { locale, setLanguage, activeBtn } = useContext(appContext);
+	const { effects: { setLanguage }, locale, activeBtn } = useContext(appContext);
 
 	const option = [
 		{ value: 'en', label: 'US' },
@@ -20,8 +19,6 @@ export function Navbar() {
 
 	return (
 		<Fragment>
-			<BurgerBtn />
-
 			<NavbarBg>
 				<Navigator variant={activeBtn}>
 					<NavWrapper>

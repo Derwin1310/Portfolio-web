@@ -10,7 +10,7 @@ export const Subtitles = styled.h2`
 	position: relative;
 	text-align: center;
 	margin-bottom: 5rem;
-    ${({ variant })  => variant && 'color: var(--light-text)'};
+    ${({ variant }) => variant && 'color: var(--light-text)'};
 
 	&::before {
 		content: '';
@@ -24,10 +24,10 @@ export const Subtitles = styled.h2`
 `;
 
 export const Sections = styled.section`
-    ${({ variant })  => variant && (
-        'color: var(--light-text);',
-        'background-color: var(--dark);'
-    )}
+    ${({ variant }) => variant && `
+		color: var(--light-text);
+		background-color: var(--dark);
+	`}
     
 	&:nth-child(2n) {
         background-color: var(--bg-color2);

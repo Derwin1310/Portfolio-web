@@ -5,7 +5,7 @@ import { appContext } from '/src/context';
 import { ThemeSelect } from './styles';
 
 export function ThemeButton() {
-	const { changeTheme, defaultTheme } = useContext(appContext);
+	const { effects: { changeTheme }, defaultTheme } = useContext(appContext);
 
 	const pathImg = defaultTheme === 'light' ? lightImg : darkImg;
 	const text = defaultTheme === 'light' ? 'Off' : 'On';

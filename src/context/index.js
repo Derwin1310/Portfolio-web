@@ -42,18 +42,30 @@ export function ContextProvider({ children }) {
 		es: esLang,
 	};
 
-	// Estado global
-	const state = {
+	// global states
+	const initialState = {
 		showModal,
-		setShowModal,
-		setActiveBtn,
 		activeBtn,
 		locale,
 		defaultTheme,
-		setLanguage,
-		changeTheme,
 		language: languages[locale],
 	};
+
+	const setStates = () => {
+		return {
+			setShowModal,
+			setActiveBtn,
+			setLanguage,
+		}
+	}
+
+	const state = {
+		...initialState,
+		effects: {
+			...setStates(),
+			changeTheme,
+		},
+	}
 
 	return <appContext.Provider value={state}>{children}</appContext.Provider>;
 }

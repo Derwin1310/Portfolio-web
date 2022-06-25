@@ -4,7 +4,7 @@ import { Input } from '/src/helpers'
 import { Form, Submit } from './styles'
 
 export function Formulary() {
-	const { language, setShowModal } = useContext(appContext)
+	const { effects: { setShowModal }, language } = useContext(appContext)
 	const { name, surname, email, message, typeYourMessage, formTitle, submit } = language.contact
 	const { emailOk, emailError } = language.modal
 

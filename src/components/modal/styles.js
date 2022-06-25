@@ -18,7 +18,7 @@ export const ModalWrapper = styled.div`
 
 export const ModalInner = styled.div`
     animation-name: fade;
-	animation-duration: 1s;
+	animation-duration: .5s;
     justify-content: space-between;
     padding: 1rem;
     text-align: center;

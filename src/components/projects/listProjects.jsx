@@ -4,9 +4,7 @@ import { ProjectsWrapper, Projects, ProjectsDesc, ViewSite } from './styles';
 
 export function ListProjects() {
 	const { language } = useContext(appContext);
-
 	const { wrapper } = language.projects;
-
 	const { seeMore } = language;
 
 	return (

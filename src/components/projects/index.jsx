@@ -6,7 +6,6 @@ import { appContext } from '/src/context'
 
 export function Projects() {
 	const { language } = useContext(appContext);
-
 	const { title } = language.projects;
 
 	return (
