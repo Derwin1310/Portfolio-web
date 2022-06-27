@@ -18,31 +18,29 @@ export function Navbar() {
 	const defaultValue = option.filter(item => item.value === locale);
 
 	return (
-		<Fragment>
-			<NavbarBg>
-				<Navigator variant={activeBtn}>
-					<NavWrapper>
-						<a href='#home'>
-							<NavLogo
-								src='https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/logo.webp'
-								alt='small logo'
-							/>
-						</a>
-
-						<NavLinks />
-					</NavWrapper>
-
-					<Lang_Theme>
-						<Select
-							menuPlacement='auto'
-							options={option}
-							defaultValue={defaultValue}
-							onChange={handleLang}
+		<NavbarBg>
+			<Navigator variant={activeBtn}>
+				<NavWrapper>
+					<a href='#home'>
+						<NavLogo
+							src='https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/logo.webp'
+							alt='small logo'
 						/>
-						<ThemeButton />
-					</Lang_Theme>
-				</Navigator>
-			</NavbarBg>
-		</Fragment>
+					</a>
+
+					<NavLinks />
+				</NavWrapper>
+
+				<Lang_Theme>
+					<Select
+						menuPlacement='auto'
+						options={option}
+						defaultValue={defaultValue}
+						onChange={handleLang}
+					/>
+					<ThemeButton />
+				</Lang_Theme>
+			</Navigator>
+		</NavbarBg>
 	);
 }

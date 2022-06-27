@@ -30,7 +30,7 @@ export const HomePage = styled.div`
 
 export const Header = styled.header`
 	animation-name: fade, fadeIn;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	display: flex;
 	flex-direction: column;
 	max-width: 1600px;

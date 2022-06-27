@@ -113,7 +113,7 @@ export const enLang ={
                 desc: "The first article I did, and it's about good practices in CSS3",
                 date: "March",
                 articleLink: 'https://medium.com/@derwin1310/aprende-las-buenas-practicas-en-css-cascade-style-sheets-3eab66cb738d',
-            }
+            },
         ],
     },
     contact: {

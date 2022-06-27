@@ -8,6 +8,7 @@ export const NavbarBg = styled.div`
     background-color: #000000bb;
     z-index: 100;
     box-shadow: 0px 10px 10px  #0007;
+    margin-bottom: 1rem;
 `
 
 export const Navigator = styled.nav`
@@ -20,7 +21,7 @@ export const Navigator = styled.nav`
     width: 1600px;
 
     @media only screen and (max-width: 768px) {
-        animation-name: ${({variant}) => variant ? 'fadeRight' : 'fadeExit' };
+        animation-name: ${({variant}) => variant ? 'fadeToLeft' : 'fadeExit' };
         animation-duration: 1s;
         background-color: #0C002Bee;
         height: 100%;

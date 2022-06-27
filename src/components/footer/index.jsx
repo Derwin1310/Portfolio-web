@@ -13,7 +13,7 @@ export function Footer() {
 
 	return (
 		<footer>
-			<SectionsStyles variant name='footer'>
+			<SectionsStyles name='footer'>
 				<Subtitles variant>{title}</Subtitles>
 
 				<TextWrapper>
