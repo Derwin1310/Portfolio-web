@@ -51,8 +51,8 @@ export const esLang ={
                 desc: "Los sitios web no tienen que ser estáticos, me encanta hacer que las páginas cobren vida.",
             },
         ],
-        technologies: "Estas son todas las tecnologías que utilizo para hacer que todo parezca magia en Internet, ",
-        blueText: "siempre buscando más para hacer grandes cosas.",
+        shortDesc: "Estas son todas las tecnologías que utilizo para hacer que todo parezca magia en Internet, ",
+        spanDesc: "siempre buscando más para hacer grandes cosas.",
     },
     projects: {
         title: 'Proyectos',
@@ -71,9 +71,9 @@ export const esLang ={
         title: 'Experiencia',
         quote: "Cualquier necio puede escribir código que una computadora pueda entender. Los buenos programadores escriben código que los humanos podamos entender.",
         cite: "-Martin Fowler",
-        career: 'Carreras',
-        courses: 'Educación',
-        careers:[
+        jobs: 'Empresas',
+        education: 'Educación',
+        jobsList:[
             {
                 job: "Webmaster",
                 time: "Dic. 2020 - Oct. 2021",
@@ -81,24 +81,24 @@ export const esLang ={
                 desc: "Desarrollo de aplicación Web utilizando JavaScript, CSS3 y HTML5, Deploy de desarrollos en GitHub y GIT Pages."
             }
         ],
-        education: [
+        educationList: [
             {
-                name: 'ReactJs',
+                course: 'ReactJs',
                 time: "Oct. 2021 - Mar. 2022",
                 desc: "React es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones de una sola página. Es mantenido por Facebook y la comunidad de software libre."
             },
             {
-                name: 'JavaScript',
+                course: 'JavaScript',
                 time: "Jun. 2020 - Oct. 2020",
                 desc: "JavaScript es un lenguaje dinámico basado en prototipos, multiparadigma, de un solo subproceso, que admite estilos orientados a objetos, imperativos y declarativos (por ejemplo, programación funcional)."
             },
             {
-                name: 'CSS3',
+                course: 'CSS3',
                 time: "Feb. 2020 - Abr. 2020",
                 desc: "Es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcas (como HTML). Es ampliamente utilizado para establecer el diseño visual de los documentos web."
             },
             {
-                name: 'HTML5',
+                course: 'HTML5',
                 time: "Ene. 2020 - Feb. 2020",
                 desc: "HTML es un lenguaje de marcas que nos permite indicar la estructura de nuestro sitio web a través de etiquetas. Este lenguaje nos ofrece una gran adaptabilidad, una estructura lógica y es fácil de interpretar tanto por humanos como por máquinas."
             }

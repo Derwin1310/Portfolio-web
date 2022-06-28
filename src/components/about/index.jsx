@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
 import { SectionIcons } from './sectionIcons';
 import { TechIcons } from './techIcons';
-import { SectionsStyles } from '/src/helpers';
 import { appContext } from '/src/context'
+import { SectionsStyles } from '/src/helpers';
 import { Subtitles } from '/src/globalStyles.js';
-import { Desc, DescName, DescSpan } from './styles';
+import { Desc } from './styles';
 
 export function About() {
 	const { language } = useContext(appContext);
 
-	const { title, technologies, blueText } = language.about;
+	const { title, shortDesc, spanDesc } = language.about;
 
 	return (
 		<SectionsStyles name='about'>
@@ -18,9 +18,9 @@ export function About() {
 			<SectionIcons />
 
 			<Desc>
-				<DescName>Derwin Romero</DescName>
-				{technologies}
-				<DescSpan>{blueText}</DescSpan>
+				<h4>Derwin Romero</h4>
+				{shortDesc}
+				<span>{spanDesc}</span>
 			</Desc>
 
 			<TechIcons />

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Careers } from './careers';
+import { Jobs } from './jobs';
 import { Education } from './education';
 import { SectionsStyles } from '/src/helpers';
 import { appContext } from '/src/context'
@@ -20,8 +20,7 @@ export function Experience() {
 				<cite>{cite}</cite>
 			</Quote>
 
-			<Careers />
-
+			<Jobs />
 			<Education />
 		</SectionsStyles>
 	);

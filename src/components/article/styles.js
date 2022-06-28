@@ -9,26 +9,25 @@ export const Articles = styled.article`
 
 	@media only screen and (max-width: 768px) {
 		display: flex;
+		flex-wrap: nowrap;
 		gap: 2rem;
-		overflow: scroll;
+		justify-content: space-between;
+		overflow-x: scroll;
 		overflow-y: hidden;
 		width: 100%;
-		flex-wrap: nowrap;
-		justify-content: space-between;
 	}
 `;
 
 export const ArticlesWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	gap: 1rem;
-	
+	justify-content: space-around;
 
 	img {
-		width: 100%;
 		height: 450px;
 		object-fit: cover;
+		width: 100%;
 	}
 
 	h4 {
@@ -36,17 +35,17 @@ export const ArticlesWrapper = styled.div`
 	}
 
 	a {
-		text-decoration: none;
 		color: var(--links);
+		text-decoration: none;
 	}
 
 	@media only screen and (max-width: 768px) {
-		width: 300px;
 		border: 1px solid var(--links);
 		border-radius: 5px;
 		margin-left: auto;
 		margin-right: auto;
 		/* overflow-x: hidden; */
+		width: 300px;
 
 		h4,
 		p {
@@ -54,18 +53,18 @@ export const ArticlesWrapper = styled.div`
 		}
 
 		img {
-			width: 300px;
 			height: 230px;
+			width: 300px;
 			z-index: -1;
 		}
 	}
 `;
 
 export const ShareIcons = styled.div`
-	display: flex;
 	align-items: center;
-	gap: 1rem;
 	color: var(--secondary);
+	display: flex;
+	gap: 1rem;
 
 	@media only screen and (max-width: 768px) {
 		padding: 0 1rem;

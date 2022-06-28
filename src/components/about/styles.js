@@ -1,11 +1,20 @@
 import styled from "styled-components";
 
 export const Desc = styled.div`
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 3rem;
     gap: 1rem;
+    margin-bottom: 3rem;
+
+    h4 {
+        color: var(--secondary);
+        font-size:2.3rem;
+    }
+
+    span {
+        color: var(--secondary);
+    }
 
     @media only screen and (max-width: 768px) {
         text-align: center;
@@ -14,28 +23,19 @@ export const Desc = styled.div`
     }
 `
 
-export const DescName = styled.h4`
-    font-size:2.3rem;
-    color: var(--secondary);
-`
-
-export const DescSpan = styled.p`
-    color: var(--secondary);
-`
-
 export const IconsSection = styled.section`
     display: flex;
-    margin: 0 auto 5rem;
-    gap: 1rem;
     justify-content: space-between;
+    gap: 1rem;
+    margin: 0 auto 5rem;
 
     @media only screen and (max-width: 768px) {
-        width: 100%;
-        order: 1;
-        overflow: scroll;
-        overflow-y: hidden;
         gap: 5rem;
+        order: 1;
+        overflow-x: scroll;
+        overflow-y: hidden;
         padding: 0 4rem;
+        width: 100%;
     }
 `
 
@@ -53,10 +53,10 @@ export const IconWrapper = styled.div`
 `
 
 export const GridTechs = styled.div`
+    column-gap: 1rem;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
-    column-gap: 1rem;
-    row-gap: 1rem;
     place-items: center;
+    row-gap: 1rem;
     width: 100%;
 `

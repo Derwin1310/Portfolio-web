@@ -51,8 +51,8 @@ export const enLang ={
                 desc: "Websites don't have to be static, I love making pages come to life.",
             },
         ],
-        technologies: "These are all the technologies I use to make everything seem like magic on the Internet, ",
-        blueText: "always looking for more to do great things.",
+        shortDesc: "These are all the technologies I use to make everything seem like magic on the Internet, ",
+        spanDesc: "always looking for more to do great things.",
     },
     projects: {
         title: 'Projects',
@@ -71,34 +71,34 @@ export const enLang ={
         title: 'Experience',
         quote: "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
         cite: "-Martin Fowler",
-        career: 'Careers',
-        courses: 'Education',
-        careers:[
+        jobs: 'Jobs',
+        education: 'Education',
+        jobsList:[
             {
                 job: "Webmaster",
                 time: "Dec 2020 - Oct 2021",
                 org: "Network Speed",
                 desc: "Web application development using JavaScript, CSS3 and HTML5, Deploy developments on GitHub and GIT Pages."
-            }
+            },
         ],
-        education: [
+        educationList: [
             {
-                name: 'ReactJs',
+                course: 'ReactJs',
                 time: "Oct 2021 - Mar 2022",
                 desc: "React is an open source Javascript library designed to create user interfaces with the goal of facilitating the development of single page applications. It is maintained by Facebook and the free software community."
             },
             {
-                name: 'JavaScript',
+                course: 'JavaScript',
                 time: "Jun 2020 - Oct 2020",
                 desc: "JavaScript is a dynamic, prototype-based, multi-paradigm, single-threaded language that supports object-oriented, imperative, and declarative styles (for example, functional programming)."
             },
             {
-                name: 'CSS3',
+                course: 'CSS3',
                 time: "Feb 2020 - Apr 2020",
                 desc: "It is a graphic design language for defining and creating the presentation of a structured document written in a markup language (such as HTML). It is widely used to establish the visual design of web documents."
             },
             {
-                name: 'HTML5',
+                course: 'HTML5',
                 time: "Jan 2020 - Feb 2020",
                 desc: "HTML is a markup language that allows us to indicate the structure of our website through tags. This language offers us great adaptability, a logical structure and is easy to interpret by both humans and machines."
             }

@@ -1,26 +1,24 @@
 import React, { Fragment, useContext } from 'react';
 import { appContext } from '/src/context'
-import { CourseAndJob, Careers_Exp, SectionTitle } from './styles';
+import { CourseAndJob, JobsAndEducation, SectionTitle } from './styles';
 
 export function Education() {
 	const { language } = useContext(appContext);
 
-	const { education, courses } = language.experience;
+	const { educationList, education } = language.experience;
 
 	return (
 		<Fragment>
-			<SectionTitle>{courses}</SectionTitle>
-			{education.map(({ name, time, desc }) => (
-				<article key={name}>
-					<Careers_Exp>
-						<div>
-							<CourseAndJob>{name}</CourseAndJob>
-							<time>{time}</time>
-						</div>
+			<SectionTitle variant='divisorLine'>{education}</SectionTitle>
+			{educationList.map(({ course, time, desc }) => (
+				<JobsAndEducation key={course}>
+					<div>
+						<CourseAndJob>{course}</CourseAndJob>
+						<time>{time}</time>
+					</div>
 
-						<p>{desc}</p>
-					</Careers_Exp>
-				</article>
+					<p>{desc}</p>
+				</JobsAndEducation>
 			))}
 		</Fragment>
 	);

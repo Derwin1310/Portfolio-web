@@ -5,15 +5,15 @@ import '/src/styles.css';
 export function SectionsStyles({ children, name }) {
 
 	const [animation, setAnimation] = useState()
-	const animationRef = useRef()
+	const sectionRef = useRef()
 
 	useEffect(() => {
 		const handleScroll = () => {
-			const scrollAnimation =  animationRef.current
-			const sectionContent = scrollAnimation.getBoundingClientRect().top
-			const screenHeight = window.innerHeight
+			const section =  sectionRef.current
+			const sectionHeightScroll = section.getBoundingClientRect().top
+			const windowHeightScroll = window.innerHeight
 
-			const fadeAnimation = sectionContent < screenHeight ? 'animation on' : ''
+			const fadeAnimation = sectionHeightScroll < windowHeightScroll
 			setAnimation(fadeAnimation)
 		}
 
@@ -26,7 +26,7 @@ export function SectionsStyles({ children, name }) {
 
 	return (
 		<SectionAnimations variant={animation} id={name}>
-			<Sections ref={animationRef} >{children}</Sections>
+			<Sections ref={sectionRef} >{children}</Sections>
 		</SectionAnimations>
 	);
 }

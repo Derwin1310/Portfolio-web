@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Quote = styled.q`
 	display: block;
@@ -9,16 +9,24 @@ export const Quote = styled.q`
 
 export const SectionTitle = styled.h3`
 	max-width: 1200px;
-	margin: 4rem auto 0;
+	${({ variant }) =>
+		variant
+			? `
+		border-top: 2px solid var(--links);
+		margin: 0rem auto;
+		padding-top: 4rem;
+		`
+			: `
+		margin: 4rem auto 0
+		`};
 `
 
-export const Careers_Exp = styled.section`
+export const JobsAndEducation = styled.article`
 	display: flex;
-	padding-bottom: 3rem;
+	gap: 3rem;
 	max-width: 1200px;
 	margin: 2rem auto 0;
-	gap: 3rem;
-	${({variant}) => variant && 'border-bottom: 2px solid var(--links)'};
+	padding-bottom: 3rem;
 
 	@media only screen and (max-width: 768px) {
 		flex-direction: column;
@@ -28,9 +36,9 @@ export const Careers_Exp = styled.section`
 `
 
 export const CourseAndJob = styled.h4`
-	width: 13rem;
 	color: var(--primary);
 	margin-bottom: 1rem;
+	width: 13rem;
 `
 
 export const Organization = styled.h4`
