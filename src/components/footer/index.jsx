@@ -1,14 +1,13 @@
 import React, { useContext } from 'react';
 import { Social } from './social';
-import { SectionsStyles } from '/src/helpers';
 import { appContext } from '/src/context';
 import { Formulary } from './form';
+import { SectionsStyles } from '/src/helpers';
 import { Subtitles } from '/src/globalStyles';
 import { TextWrapper, Copyright } from './styles';
 
 export function Footer() {
 	const { language } = useContext(appContext);
-
 	const { title, subtitle, contactDesc } = language.contact;
 
 	return (

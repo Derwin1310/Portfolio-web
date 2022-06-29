@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from 'react'
 import { appContext } from '/src/context'
-import { Input } from '/src/helpers'
+import { Input, formSubmit } from '/src/helpers'
 import { Form, Submit } from './styles'
 
 export function Formulary() {
@@ -8,7 +8,7 @@ export function Formulary() {
 	const { name, surname, email, message, typeYourMessage, formTitle, submit } = language.contact
 	const { emailOk, emailError } = language.modal
 
-	const formReset = useRef()
+	const formRef = useRef()
 
 	const emailValidation = '^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,3}$'
 
@@ -19,35 +19,17 @@ export function Formulary() {
 		{ name: message, placeholder: typeYourMessage },
 	]
 
-	async function handleSubmit(event) {
-		event.preventDefault()
-		const data = new FormData(event.target)
-		fetch('https://formspree.io/f/mbjweyop', {
-			method: 'POST',
-			body: data,
-			headers: {
-				Accept: 'application/json',
-			},
-		})
-		.then(response => {
-			response.ok
-				? (setShowModal(emailOk), formReset.current.reset())
-				: setShowModal(emailError)
-		})
-		.catch(error =>
-			setShowModal(emailError),
-		)
-	}
+	const handlerSubmit = (e) => (
+		formSubmit(e, emailOk, emailError, formRef, setShowModal)
+	)
 
 	return (
-		<Form onSubmit={handleSubmit} ref={formReset}>
+		<Form onSubmit={handlerSubmit} ref={formRef}>
 			<h3>{formTitle}</h3>
 
-			{inputs.map(props => (
-				<Input {...props} key={props.name} />
-			))}
+			{inputs.map(props => <Input {...props} key={props.name} />)}
 
-			<Submit>{submit}</Submit>
+			<Submit type='submit'>{submit}</Submit>
 		</Form>
 	)
 }

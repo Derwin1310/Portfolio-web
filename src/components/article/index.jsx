@@ -6,7 +6,6 @@ import { Subtitles } from '/src/globalStyles';
 
 export function Article() {
 	const { language } = useContext(appContext);
-
 	const { title } = language.articles;
 
 	return (

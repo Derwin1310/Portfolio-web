@@ -4,7 +4,6 @@ import { Button, Div, Header, HomePage, Logo, Name, Slogan } from './styles';
 
 export function Home() {
 	const { language } = useContext(appContext);
-
 	const { title, resume, resumePhone } = language.home;
 
 	const responsiveText = window.innerWidth >= 769 ? resume : resumePhone;

@@ -4,7 +4,6 @@ import { CourseAndJob, Organization, JobsAndEducation, SectionTitle } from './st
 
 export function Jobs() {
 	const { language } = useContext(appContext);
-
 	const { jobsList, jobs } = language.experience;
 
 	return (

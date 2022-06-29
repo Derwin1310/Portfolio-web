@@ -4,7 +4,6 @@ import { Link } from './styles';
 
 export function NavLinks() {
 	const { language } = useContext(appContext);
-
 	const links = language.navbar;
 
 	return links.map(({ href, name }) => (

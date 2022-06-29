@@ -8,7 +8,6 @@ import { Desc } from './styles';
 
 export function About() {
 	const { language } = useContext(appContext);
-
 	const { title, shortDesc, spanDesc } = language.about;
 
 	return (

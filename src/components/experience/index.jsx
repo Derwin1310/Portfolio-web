@@ -8,7 +8,6 @@ import { Quote } from './styles';
 
 export function Experience() {
 	const { language } = useContext(appContext);
-
 	const { quote, cite, title } = language.experience;
 
 	return (

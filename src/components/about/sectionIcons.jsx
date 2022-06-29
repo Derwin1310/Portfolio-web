@@ -5,7 +5,6 @@ import { IconsSection, IconWrapper } from './styles'
 //Componente para recorrer las imagenes de fast, usable, clean and dynamic de nuestro componente about.
 export function SectionIcons() {
 	const { language } = useContext(appContext)
-
 	const { icons } = language.about
 
 	return (

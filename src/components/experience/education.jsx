@@ -4,7 +4,6 @@ import { CourseAndJob, JobsAndEducation, SectionTitle } from './styles';
 
 export function Education() {
 	const { language } = useContext(appContext);
-
 	const { educationList, education } = language.experience;
 
 	return (

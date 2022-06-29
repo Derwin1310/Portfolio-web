@@ -1,30 +1,30 @@
 import styled from 'styled-components'
 
 export const HomePage = styled.div`
-	background-color: #000000bb;
 	align-items: center;
+	background-color: #000000bb;
 	display: flex;
+	color: var(--light-text);
 	flex-direction: column;
 	height: 94vh;
 	justify-content: space-around;
-	width: 100%;
 	padding: 0 1rem;
-	color: var(--light-text);
+	width: 100%;
 
 	&::before {
 		content: '';
+		background-image: url('https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/galaxyWallpaper.webp');
+		position: absolute;
+		height: 100vh;
 		top: 0;
 		width: 100%;
-		height: 100vh;
 		z-index: -1;
-		position: absolute;
-		background-image: url('https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/galaxyWallpaper.webp');
 	}
 
 	@media only screen and (max-width: 768px) {
+		box-shadow: 0px 20px 20px #0007;
 		height: 100vh;
 		justify-content: space-between;
-		box-shadow: 0px 20px 20px #0007;
 	}
 `
 
@@ -33,15 +33,15 @@ export const Header = styled.header`
 	animation-duration: 2s;
 	display: flex;
 	flex-direction: column;
-	max-width: 1600px;
 	font-size: 5rem;
 	line-height: 120%;
+	max-width: 1600px;
 
 	@media only screen and (max-width: 768px) {
+		justify-content: space-between;
 		height: 50%;
 		max-width: 768px;
 		margin-top: 5rem;
-		justify-content: space-between;
 	}
 
 	@media only screen and (max-width: 480px) {
@@ -50,8 +50,8 @@ export const Header = styled.header`
 `
 
 export const Logo = styled.img`
-	width: 90px;
 	height: 90px;
+	width: 90px;
 
 	@media only screen and (max-width: 1280px) {
 		height: 70px;
@@ -65,8 +65,8 @@ export const Logo = styled.img`
 `
 
 export const Name = styled.h1`
-	font-size: 6rem;
 	display: inline;
+	font-size: 6rem;
 	font-weight: 100;
 	line-height: 120%;
 
@@ -95,8 +95,8 @@ export const Slogan = styled.q`
 `
 
 export const Div = styled.div`
-	display: flex;
 	align-items: center;
+	display: flex;
 	gap: 2rem;
 
 	@media only screen and (max-width: 768px) {
@@ -107,14 +107,14 @@ export const Div = styled.div`
 export const Button = styled.a`
 	animation-name: fade, fadeIn;
 	animation-duration: 3s;
-	text-decoration: none;
 	background-color: transparent;
-	color: var(--light-text);
 	border: 3px solid var(--light-text);
 	border-radius: 5px;
+	color: var(--light-text);
 	cursor: pointer;
 	font-size: 1.5rem;
 	padding: 0.8rem 4rem;
+	text-decoration: none;
 	transition: all 0.1s;
 
 	&:hover {
@@ -126,13 +126,13 @@ export const Button = styled.a`
 	}
 
 	@media only screen and (max-width: 768px) {
-		width: 100%;
-		padding: 0.8rem 0;
-		text-align: center;
-		margin-bottom: 2rem;
-		font-size: 1.5rem;
-		color: var(--primary);
 		border-color: var(--primary);
+		color: var(--primary);
+		font-size: 1.5rem;
+		padding: 0.8rem 0;
+		margin-bottom: 2rem;
+		text-align: center;
+		width: 100%;
 
 		&:hover {
 			transform: none;

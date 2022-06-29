@@ -8,9 +8,11 @@ export function ContextProvider({ children }) {
 	// Modal de footer
 	const [showModal, setShowModal] = useState(false)
 	// const [showModal, setShowModal] = useState('Thanks for your submission!')
-	// Tema por defecto 
+
+	// Tema por defecto
 	const [defaultTheme, setDefaultTheme] = useState(getTheme());
-	// Funcion de btn burger
+
+	// Funcion de btnBurger
 	const [activeBtn, setActiveBtn] = useState(false)
 
 	// custom useState para el lenguaje por defecto

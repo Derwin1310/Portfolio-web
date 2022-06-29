@@ -7,19 +7,19 @@ export const Theme = styled.div.attrs({
 export const Subtitles = styled.h2`
 	font-size: 2.3rem;
 	font-weight: 800;
+	margin-bottom: 5rem;
 	position: relative;
 	text-align: center;
-	margin-bottom: 5rem;
 	${({ variant }) => variant && 'color: var(--light-text)'};
 
 	&::before {
 		content: '';
-		position: absolute;
+		border-bottom: 0.2rem solid var(--primary);
 		left: 50%;
+		position: absolute;
 		transform: translateX(-50%);
 		top: 2rem;
 		width: 4rem;
-		border-bottom: 0.2rem solid var(--primary);
 	}
 `;
 
@@ -62,12 +62,12 @@ export const SectionAnimations = styled.section`
 
 export const Sections = styled.div`
 	color: var(--text-color);
-	opacity: 0;
-	padding: 5rem 1rem;
+	line-height: 140%;
 	max-width: 1500px;
 	margin-left: auto;
 	margin-right: auto;
-	line-height: 140%;
+	opacity: 0;
+	padding: 5rem 1rem;
 
 	h3 {
 		font-size: 22px;
@@ -93,11 +93,11 @@ export const Sections = styled.div`
 `;
 
 export const InputWrapper = styled.label`
-	width: 100%;
 	color: var(--light-text);
-	margin-bottom: 0.3rem;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 0.3rem;
+	width: 100%;
 
 	&:nth-child(-n + 3) {
 		width: 48%;
@@ -105,12 +105,12 @@ export const InputWrapper = styled.label`
 
 	input,
 	textarea {
-		margin-bottom: 1rem;
 		background-color: transparent;
 		border: 1px solid var(--primary);
 		border-radius: 0.3rem;
-		padding: 0.7rem 0.5rem;
 		color: var(--light-text);
+		margin-bottom: 1rem;
+		padding: 0.7rem 0.5rem;
 		resize: none;
 
 		&::placeholder {

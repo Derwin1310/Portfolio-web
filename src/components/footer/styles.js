@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const TextWrapper = styled.div`
-	max-width: 768px;
+	color: var(--light-text);
 	display: flex;
 	flex-direction: column;
-	text-align: center;
+	max-width: 768px;
 	gap: 2rem;
 	margin-left: auto;
 	margin-right: auto;
-	color: var(--light-text);
+	text-align: center;
 
 	@media only screen and (max-width: 768px) {
 		p {
@@ -18,24 +18,24 @@ export const TextWrapper = styled.div`
 `;
 
 export const SocialProfiles = styled.div`
+	color: var(--light-text);
+	display: flex;
 	flex-direction: row;
+	gap: 2rem;
 	justify-content: center;
 	margin: 2rem auto 0;
-	color: var(--light-text);
 	max-width: 768px;
-	display: flex;
-	gap: 2rem;
 
 	section {
-		display: flex;
 		align-items: flex-end;
+		display: flex;
 		gap: 0.3rem;
 	}
 
 	a {
-		text-decoration: none;
 		color: var(--secondary);
 		font-weight: 600;
+		text-decoration: none;
 	}
 
 	@media only screen and (max-width: 768px) {
@@ -45,43 +45,41 @@ export const SocialProfiles = styled.div`
 
 export const Form = styled.form`
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	max-width: 768px;
 	margin: 2rem auto 0;
 
 	h3 {
 		color: var(--primary);
-		width: 100%;
 		margin-bottom: 0.6rem;
+		width: 100%;
 	}
 
 	form {
 		display: flex;
-		justify-content: space-between;
 		flex-wrap: wrap;
+		justify-content: space-between;
 		max-width: 768px;
 		margin: 2rem auto 0;
 
 		h3 {
 			color: var(--primary);
-			width: 100%;
 			margin-bottom: 0.6rem;
+			width: 100%;
 		}
 	}
 `;
 
-export const Submit = styled.button.attrs({
-	type: 'submit',
-})`
-	border: 3px solid var(--primary);
+export const Submit = styled.button`
 	background-color: transparent;
-	color: var(--primary);
-	width: 100%;
-	padding: 0.5rem 3rem;
-	font-size: 1.3rem;
+	border: 3px solid var(--primary);
 	border-radius: 0.3rem;
+	color: var(--primary);
+	font-size: 1.3rem;
+	padding: 0.5rem 3rem;
 	transition: all 0.1s;
+	width: 100%;
 	cursor: pointer;
 	animation-name: fadeIn;
 	animation-duration: 3s;

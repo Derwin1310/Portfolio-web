@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from 'react';
+import React, { useContext } from 'react';
 import Select from 'react-select';
 import { NavLinks } from './navLinks';
 import { ThemeButton } from './themeButton';

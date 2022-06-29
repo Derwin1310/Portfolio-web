@@ -18,7 +18,8 @@ export const SectionTitle = styled.h3`
 		`
 			: `
 		margin: 4rem auto 0
-		`};
+		`
+	};
 `
 
 export const JobsAndEducation = styled.article`

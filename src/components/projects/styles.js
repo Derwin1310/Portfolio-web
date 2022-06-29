@@ -2,35 +2,35 @@ import styled from "styled-components";
 
 export const ProjectsWrapper = styled.section `
     display: grid;
-    width: 100%;
     grid-auto-rows: 300px;
     grid-template-columns: repeat(1, 390px);
     gap: 2rem;
     justify-content: center;
+    width: 100%;
 
     img {
-        width: 100%;
         height: 450px;
         object-fit: cover;
+        width: 100%;
         z-index: -1;
     }
 
     @media only screen and (max-width: 768px) {
         display: flex;
         gap: 2rem;
+        justify-content: space-between;
         flex-wrap: nowrap;
         overflow: scroll;
         overflow-y: hidden;
-        justify-content: space-between;
     }
 `
 
 export const Projects = styled.article`
     @media only screen and (min-width: 769px) {
-        position: relative;
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        position: relative;
         text-align: center;
         
         &:hover img {
@@ -45,34 +45,34 @@ export const Projects = styled.article`
     }
 
     @media only screen and (max-width: 768px) {
-        border-radius: 5px;
+        align-items: center;
         border: 1px solid var(--links);
+        border-radius: 5px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 300px;
         margin-left: auto;
         margin-right: auto;
+        width: 300px;
 
         img {
-            width: 300px;
             height: 230px;
+            width: 300px;
         }
     }
 `
 export const ProjectsDesc = styled.div`
     @media only screen and (min-width: 769px) {
+        opacity: 0;
         position: absolute;
         top: 2rem;
-        opacity: 0;
 
         h4 {
             font-size: 22px;
         }
 
         span {
-            display: block;
             color: var(--primary);
+            display: block;
             margin-bottom: 3rem;
         }
 
@@ -82,29 +82,29 @@ export const ProjectsDesc = styled.div`
     }
 
     @media only screen and (max-width: 768px) {
-        padding: 1rem;
         display: flex;
         flex-direction: column;
         gap: .5rem;
+        padding: 1rem;
 
         span {
             color: var(--primary);
         }
 
         a {
-            text-decoration: none;
             color: var(--links);
+            text-decoration: none;
         }
     }
 `
 
 export const ViewSite  = styled.a`
     @media only screen and (min-width: 769px) {
-        text-decoration: none;
-        color: var(--text-color);
         border: 3px solid var(--primary);
-        padding: .2rem 1.5rem;
         border-radius: 3px;
+        color: var(--text-color);
+        padding: .2rem 1.5rem;
+        text-decoration: none;
     }
 
     @media only screen and (max-width: 768px) {
