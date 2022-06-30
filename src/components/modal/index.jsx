@@ -5,8 +5,8 @@ import { Submit } from '/src/components/footer/styles'
 import { ModalInner, ModalWrapper } from './styles'
 
 export function Modal() {
-	const { effects: { setShowModal }, showModal, language } = useContext(appContext)
-	const { text, textBtn } = language.modal
+	const { effects: { setShowModal }, modalText, showModal, language } = useContext(appContext)
+	const { textBtn } = language.modal
 
 	const closeModal = () => setShowModal(false)
 
@@ -16,7 +16,7 @@ export function Modal() {
 				<ModalWrapper onClick={closeModal} />
 				<ModalInner>
 					<h3>{showModal}</h3>
-					<p>{text}</p>
+					<p>{modalText}</p>
 					<CoffeMachine />
 					<Submit onClick={closeModal}>{textBtn}</Submit>
 				</ModalInner>

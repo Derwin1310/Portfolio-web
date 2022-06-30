@@ -1,12 +1,12 @@
 import React, { useContext, useRef } from 'react'
 import { appContext } from '/src/context'
-import { Input, formSubmit } from '/src/helpers'
+import { Input } from '/src/helpers'
 import { Form, Submit } from './styles'
 
 export function Formulary() {
-	const { effects: { setShowModal }, language } = useContext(appContext)
+	const { effects: { setShowModal, setModalText }, language } = useContext(appContext)
 	const { name, surname, email, message, typeYourMessage, formTitle, submit } = language.contact
-	const { emailOk, emailError } = language.modal
+	const { emailOk, emailError, submitOk, submitError } = language.modal
 
 	const formRef = useRef()
 
@@ -19,9 +19,22 @@ export function Formulary() {
 		{ name: message, placeholder: typeYourMessage },
 	]
 
-	const handlerSubmit = (e) => (
-		formSubmit(e, emailOk, emailError, formRef, setShowModal)
-	)
+	async function handlerSubmit(e) {
+		e.preventDefault()
+		const data = new FormData(e.target)
+		const request = await fetch('https://formspree.io/f/mbjweyop', {
+			method: 'POST',
+			body: data,
+			headers: {
+				Accept: 'application/json',
+			},
+		})
+		const response = request.ok
+			? (setShowModal(emailOk), setModalText(submitOk), formRef.current.reset())
+			: (setShowModal(emailError), setModalText(submitError))
+	
+		return response
+	}
 
 	return (
 		<Form onSubmit={handlerSubmit} ref={formRef}>

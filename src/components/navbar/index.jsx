@@ -37,6 +37,7 @@ export function Navbar() {
 						options={option}
 						defaultValue={defaultValue}
 						onChange={handleLang}
+						isSearchable={false}
 					/>
 					<ThemeButton />
 				</Lang_Theme>

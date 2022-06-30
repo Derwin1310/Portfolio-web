@@ -6,6 +6,7 @@ export const appContext = createContext();
 
 export function ContextProvider({ children }) {
 	// Modal de footer
+	const [modalText, setModalText] = useState(false)
 	const [showModal, setShowModal] = useState(false)
 	// const [showModal, setShowModal] = useState('Thanks for your submission!')
 
@@ -46,6 +47,7 @@ export function ContextProvider({ children }) {
 
 	// global states
 	const initialState = {
+		modalText,
 		showModal,
 		activeBtn,
 		locale,
@@ -55,6 +57,7 @@ export function ContextProvider({ children }) {
 
 	const setStates = () => {
 		return {
+			setModalText,
 			setShowModal,
 			setActiveBtn,
 			setLanguage,

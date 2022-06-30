@@ -131,7 +131,8 @@ export const enLang ={
     modal: {
         emailOk: 'Thanks for your submission!',
         emailError: 'Oops! There was a problem submitting your form',
-        text: 'Now, while i read your email, i invite you to take a coffee from my coffee machine, nothing better than a coffee recently done 😊',
+        submitOk: 'Now, while i read your email, i invite you to take a coffee from my coffee machine, nothing better than a coffee recently done 😊',
+        submitError: "It looks like your email hasn't been sent yet 💩, i suggest you to take a coffee from this coffe Machine and try again in a minute.",
         textBtn: 'Have a nice day!'
     }
 }

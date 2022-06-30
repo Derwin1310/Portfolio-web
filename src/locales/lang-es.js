@@ -131,7 +131,8 @@ export const esLang ={
     modal: {
         emailOk: 'Gracias por enviar tu mensaje',
         emailError: '¡Ups! Hubo un problema al enviar su formulario',
-        text: 'Ahora, mientras leo tu correo, te invito a tomar un café de mi cafetera, nada mejor que un café recién hecho 😊',
+        modalTextOk: 'Ahora, mientras leo tu correo, te invito a tomar un café de mi cafetera, nada mejor que un café recién hecho 😊',
+        modalTextErr: "Parece que su correo electrónico aún no se ha enviado 💩, le sugiero que tome un café de esta máquina de café y vuelva a intentarlo en un minuto.",
         textBtn: '¡Qué tengas un buen día!'
     }
 }
