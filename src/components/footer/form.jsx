@@ -22,18 +22,23 @@ export function Formulary() {
 	async function handlerSubmit(e) {
 		e.preventDefault()
 		const data = new FormData(e.target)
-		const request = await fetch('https://formspree.io/f/mbjweyop', {
-			method: 'POST',
-			body: data,
-			headers: {
-				Accept: 'application/json',
-			},
-		})
-		const response = request.ok
-			? (setShowModal(emailOk), setModalText(submitOk), formRef.current.reset())
-			: (setShowModal(emailError), setModalText(submitError))
-	
-		return response
+		try {
+			const request = await fetch('https://formspree.io/f/mbjweyop', {
+				method: 'POST',
+				body: data,
+				headers: {
+					Accept: 'application/json',
+				},
+			})
+
+			if(!request.ok) throw new Error()
+
+			return (
+				setShowModal(emailOk), setModalText(submitOk), formRef.current.reset()
+			) 
+		} catch (error) {
+			setShowModal(emailError), setModalText(submitError)
+		}
 	}
 
 	return (
