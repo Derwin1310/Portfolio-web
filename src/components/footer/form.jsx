@@ -36,7 +36,7 @@ export function Formulary() {
 			return (
 				setShowModal(emailOk), setModalText(submitOk), formRef.current.reset()
 			) 
-		} catch (error) {
+		} catch {
 			setShowModal(emailError), setModalText(submitError)
 		}
 	}
