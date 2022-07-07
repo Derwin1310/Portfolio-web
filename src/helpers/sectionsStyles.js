@@ -7,19 +7,19 @@ export function SectionsStyles({ children, name }) {
 	const [animation, setAnimation] = useState()
 	const sectionRef = useRef()
 
+	const handleScroll = () => {
+		const section =  sectionRef.current
+		const sectionHeightScroll = section.getBoundingClientRect().top
+		const windowHeightScroll = window.innerHeight
+		
+		const fadeAnimation = sectionHeightScroll < windowHeightScroll
+		setAnimation(fadeAnimation)
+	}
+
 	useEffect(() => {
-		const handleScroll = () => {
-			const section =  sectionRef.current
-			const sectionHeightScroll = section.getBoundingClientRect().top
-			const windowHeightScroll = window.innerHeight
-
-			const fadeAnimation = sectionHeightScroll < windowHeightScroll
-			setAnimation(fadeAnimation)
-		}
-
 		window.addEventListener('scroll', handleScroll)
 
-		return () => {
+		return () => {	
 			window.removeEventListener('scroll', handleScroll)
 		}
 	}, [])
