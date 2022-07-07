@@ -33,9 +33,12 @@ export function Formulary() {
 
 			if(!request.ok) throw new Error()
 
-			setShowModal(emailOk), setModalText(submitOk), formRef.current.reset()
+			setShowModal(emailOk)
+			setModalText(submitOk)
+			formRef.current.reset()
 		} catch {
-			setShowModal(emailError), setModalText(submitError)
+			setShowModal(emailError)
+			setModalText(submitError)
 		}
 	}
 
