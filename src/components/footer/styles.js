@@ -94,8 +94,12 @@ export const Copyright = styled.div`
 	display: flex;
 	flex-direction: column;
     margin: 8rem auto 0;
-    text-align: center;
+    align-items: center;
 	gap: 10px;
+
+	a {
+		width: 140px;
+	}
 
 	img {
 		width: 140px;
