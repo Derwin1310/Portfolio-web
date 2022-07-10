@@ -89,7 +89,17 @@ export const Submit = styled.button`
 	}
 `;
 
-export const Copyright = styled.figcaption`
+export const Copyright = styled.div`
+	color: var(--secondary);
+	display: flex;
+	flex-direction: column;
     margin: 8rem auto 0;
     text-align: center;
+	gap: 10px;
+
+	img {
+		width: 140px;
+	}
 `
+
+

@@ -126,7 +126,8 @@ export const esLang ={
         email: "Correo electronico",
         message: "Mensaje",
         typeYourMessage: "Escribe tu mensaje",
-        submit: "Enviar"
+        submit: "Enviar",
+        design: "Diseñado por"
     },
     modal: {
         emailOk: 'Gracias por enviar tu mensaje',

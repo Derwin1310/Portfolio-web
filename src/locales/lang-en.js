@@ -126,7 +126,8 @@ export const enLang ={
         email: "Email address",
         message: "Message",
         typeYourMessage: "Type your message",
-        submit: "Submit"
+        submit: "Submit",
+        design: "Design by"
     },
     modal: {
         emailOk: 'Thanks for your submission!',

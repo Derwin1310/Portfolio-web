@@ -8,7 +8,7 @@ import { TextWrapper, Copyright } from './styles';
 
 export function Footer() {
 	const { language } = useContext(appContext);
-	const { title, subtitle, contactDesc } = language.contact;
+	const { title, subtitle, contactDesc, design } = language.contact;
 
 	return (
 		<footer>
@@ -25,10 +25,13 @@ export function Footer() {
 				<Formulary />
 
 				<Copyright>
-					<img
-						src='https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/gaiden.webp'
-						alt='gaiden'
-					/>
+					<span>{design}</span>
+					<a href='https://padronjose.com' target='_blank'>
+						<img
+							src='https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/gaiden.webp'
+							alt='gaiden'
+						/>
+					</a>
 				</Copyright>
 			</SectionsStyles>
 		</footer>
