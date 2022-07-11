@@ -2,14 +2,12 @@ import styled from "styled-components";
 
 export const ProjectsWrapper = styled.section `
     display: grid;
-    grid-auto-rows: 300px;
-    grid-template-columns: repeat(1, 390px);
+    grid-template-columns: repeat(1, 350px);
     gap: 2rem;
     justify-content: center;
-    width: 100%;
 
     img {
-        height: 450px;
+        height: 300px;
         object-fit: cover;
         width: 100%;
         z-index: -1;
@@ -17,7 +15,6 @@ export const ProjectsWrapper = styled.section `
 
     @media only screen and (max-width: 768px) {
         display: flex;
-        gap: 2rem;
         justify-content: space-between;
         flex-wrap: nowrap;
         overflow: scroll;
@@ -53,6 +50,7 @@ export const Projects = styled.article`
         margin-left: auto;
         margin-right: auto;
         width: 300px;
+        overflow: hidden;
 
         img {
             height: 230px;
@@ -85,7 +83,7 @@ export const ProjectsDesc = styled.div`
         display: flex;
         flex-direction: column;
         gap: .5rem;
-        padding: 1rem;
+        padding: .5rem 1rem;
 
         span {
             color: var(--primary);

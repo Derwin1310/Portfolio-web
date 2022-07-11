@@ -13,12 +13,12 @@ export const NavbarBg = styled.div`
 
 export const Navigator = styled.nav`
     animation-name: fade, fadeIn;
-    animation-duration: 3s;
+    animation-duration: 2s;
     display: flex;
     height: 6vh;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    width: 1600px;
+    width: 1000px;
 
     @media only screen and (max-width: 768px) {
         animation-name: ${({variant}) => variant ? 'fadeToLeft' : 'fadeExit' };

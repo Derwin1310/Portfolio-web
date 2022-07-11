@@ -4,7 +4,6 @@ export const TextWrapper = styled.div`
 	color: var(--light-text);
 	display: flex;
 	flex-direction: column;
-	max-width: 768px;
 	gap: 2rem;
 	margin-left: auto;
 	margin-right: auto;
@@ -24,7 +23,6 @@ export const SocialProfiles = styled.div`
 	gap: 2rem;
 	justify-content: center;
 	margin: 2rem auto 0;
-	max-width: 768px;
 
 	section {
 		align-items: flex-end;
@@ -47,8 +45,7 @@ export const Form = styled.form`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	max-width: 768px;
-	margin: 2rem auto 0;
+	margin: 2rem auto 5rem;
 
 	h3 {
 		color: var(--primary);
@@ -93,13 +90,8 @@ export const Copyright = styled.div`
 	color: var(--secondary);
 	display: flex;
 	flex-direction: column;
-    margin: 8rem auto 0;
     align-items: center;
 	gap: 10px;
-
-	a {
-		width: 140px;
-	}
 
 	img {
 		width: 140px;

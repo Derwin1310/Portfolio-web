@@ -63,7 +63,7 @@ export const SectionAnimations = styled.section`
 export const Sections = styled.div`
 	color: var(--text-color);
 	line-height: 140%;
-	max-width: 1500px;
+	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	opacity: 0;

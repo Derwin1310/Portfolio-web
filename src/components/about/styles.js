@@ -6,6 +6,7 @@ export const Desc = styled.div`
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 3rem;
+    line-height: normal;
 
     h4 {
         color: var(--secondary);
@@ -59,4 +60,12 @@ export const GridTechs = styled.div`
     place-items: center;
     row-gap: 1rem;
     width: 100%;
+    
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: repeat( 3, minmax(100px, 1fr) );
+    }
+
+    @media only screen and (max-width: 488px) {
+        grid-template-columns: repeat( 2, minmax(100px, 1fr) );
+    }
 `

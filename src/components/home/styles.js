@@ -33,13 +33,14 @@ export const Header = styled.header`
 	animation-duration: 2s;
 	display: flex;
 	flex-direction: column;
-	font-size: 5rem;
+	padding-top: 5rem;
+	font-size: 4rem;
 	line-height: 120%;
-	max-width: 1600px;
+	max-width: 1000px;
 
 	@media only screen and (max-width: 768px) {
-		justify-content: space-between;
 		height: 50%;
+		gap: 1rem;
 		max-width: 768px;
 		margin-top: 5rem;
 	}
@@ -50,8 +51,8 @@ export const Header = styled.header`
 `
 
 export const Logo = styled.img`
-	height: 90px;
-	width: 90px;
+	height: 80px;
+	width: 80px;
 
 	@media only screen and (max-width: 1280px) {
 		height: 70px;
@@ -66,7 +67,7 @@ export const Logo = styled.img`
 
 export const Name = styled.h1`
 	display: inline;
-	font-size: 6rem;
+	font-size: 5rem;
 	font-weight: 100;
 	line-height: 120%;
 
@@ -106,7 +107,7 @@ export const Div = styled.div`
 
 export const Button = styled.a`
 	animation-name: fade, fadeIn;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	background-color: transparent;
 	border: 3px solid var(--light-text);
 	border-radius: 5px;
@@ -141,12 +142,7 @@ export const Button = styled.a`
 		&:active {
 			transform: scale(1.1);
 		}
-
 	}
-
-    @media only screen and (max-width: 1280px) {
-        padding: .5rem 2.5rem;
-    }
 
     @media only screen and (max-width: 480px) {
         margin: 2rem 0;
