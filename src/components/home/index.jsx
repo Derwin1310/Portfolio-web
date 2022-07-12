@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { appContext } from '/src/context'
-import { Button, Div, Header, HomePage, Logo, Name, Slogan } from './styles';
+import { Button, NameWrapper, Header, HomePage, Logo, Name, Slogan } from './styles';
 
 export function Home() {
 	const { language } = useContext(appContext);
@@ -11,13 +11,13 @@ export function Home() {
 	return (
 		<HomePage id='home'>
 			<Header>
-				<Div>
+				<NameWrapper>
 					<Logo
 						src='https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/logo.webp'
 						alt='niceLogo'
 					/>
 					<Name>Derwin Romero</Name>
-				</Div>
+				</NameWrapper>
 				<Slogan>{title}</Slogan>
 			</Header>
 

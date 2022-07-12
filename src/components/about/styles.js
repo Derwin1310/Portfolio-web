@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Desc = styled.div`
+export const Desc = styled.div.attrs({
+	className: '| Desc |'
+})`
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -24,7 +26,9 @@ export const Desc = styled.div`
     }
 `
 
-export const IconsSection = styled.section`
+export const IconsSection = styled.section.attrs({
+	className: '| IconsSection |'
+})`
     display: flex;
     justify-content: space-between;
     gap: 1rem;
@@ -40,7 +44,9 @@ export const IconsSection = styled.section`
     }
 `
 
-export const IconWrapper = styled.div`
+export const IconWrapper = styled.div.attrs({
+	className: '| IconWrapper |'
+})`
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -53,7 +59,9 @@ export const IconWrapper = styled.div`
     }
 `
 
-export const GridTechs = styled.div`
+export const GridTechs = styled.div.attrs({
+	className: '| GridTechs |'
+})`
     column-gap: 1rem;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );

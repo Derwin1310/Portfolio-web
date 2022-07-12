@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const TextWrapper = styled.div`
+export const TextWrapper = styled.div.attrs({
+	className: '| TextWrapper |'
+})`
 	color: var(--light-text);
 	display: flex;
 	flex-direction: column;
@@ -16,7 +18,9 @@ export const TextWrapper = styled.div`
 	}
 `;
 
-export const SocialProfiles = styled.div`
+export const SocialProfiles = styled.div.attrs({
+	className: '| SocialProfiles |'
+})`
 	color: var(--light-text);
 	display: flex;
 	flex-direction: row;
@@ -41,7 +45,9 @@ export const SocialProfiles = styled.div`
 	}
 `;
 
-export const Form = styled.form`
+export const Form = styled.form.attrs({
+	className: '| Form |'
+})`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -68,7 +74,9 @@ export const Form = styled.form`
 	}
 `;
 
-export const Submit = styled.button`
+export const Submit = styled.button.attrs({
+	className: '| Submit |'
+})`
 	background-color: transparent;
 	border: 3px solid var(--primary);
 	border-radius: 0.3rem;
@@ -86,7 +94,9 @@ export const Submit = styled.button`
 	}
 `;
 
-export const Copyright = styled.div`
+export const Copyright = styled.div.attrs({
+	className: '| Copyright |'
+})`
 	color: var(--secondary);
 	display: flex;
 	flex-direction: column;

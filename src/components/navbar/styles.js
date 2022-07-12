@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const NavbarBg = styled.div`
+export const NavbarBg = styled.div.attrs({
+	className: '| NavbarBg |'
+})`
     background-color: #000000bb;
     box-shadow: 0px 10px 10px  #0007;
     display: flex;
@@ -9,9 +11,15 @@ export const NavbarBg = styled.div`
     position: sticky;
     top: -1px;
     z-index: 100;
+
+    @media only screen and (max-width: 768px) {
+        /* margin: 0; */
+    }
 `
 
-export const Navigator = styled.nav`
+export const Navigator = styled.nav.attrs({
+	className: '| Navigator |'
+})`
     animation-name: fade, fadeIn;
     animation-duration: 2s;
     display: flex;
@@ -36,7 +44,9 @@ export const Navigator = styled.nav`
     }
 `
 
-export const NavWrapper = styled.ul`
+export const NavWrapper = styled.ul.attrs({
+	className: '| NavWrapper |'
+})`
     align-items: center;
     display: flex;
     gap: 0.5rem;
@@ -48,7 +58,9 @@ export const NavWrapper = styled.ul`
     }
 `
 
-export const NavLogo = styled.img`
+export const NavLogo = styled.img.attrs({
+	className: '| NavLogo |'
+})`
     cursor: pointer;
     width: 2rem;
 
@@ -57,7 +69,9 @@ export const NavLogo = styled.img`
     }
 `
 
-export const Link = styled.a`
+export const Link = styled.a.attrs({
+	className: '| Link |'
+})`
     color: var(--light-text);
     font-size: 1.2rem;
     text-decoration: none;
@@ -73,7 +87,9 @@ export const Link = styled.a`
 
 `
 
-export const Lang_Theme = styled.div`
+export const Lang_Theme = styled.div.attrs({
+	className: '| Lang_Theme |'
+})`
     align-items: center;
     display: flex;
     gap: 2rem;
@@ -121,7 +137,9 @@ export const Lang_Theme = styled.div`
     }
 `
 
-export const ThemeSelect = styled.div`
+export const ThemeSelect = styled.div.attrs({
+	className: '| ThemeSelect |'
+})`
     align-items: center;
     border: 2px solid ${({variant}) => variant ? 'var(--light-text)' : 'var(--primary)'};
     background-color: ${({variant}) => variant ? 'var(--links)' : '#420A1A' };

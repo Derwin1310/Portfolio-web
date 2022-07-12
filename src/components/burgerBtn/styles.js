@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const MenuBtn = styled.div`
+export const MenuBtn = styled.div.attrs({
+	className: '| MenuBtn |'
+})`
 	background-color: var(--bg-color1);
     border: 2px solid var(--text-color);
 	border-radius: 50%;

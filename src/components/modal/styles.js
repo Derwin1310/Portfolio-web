@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const ModalWrapper = styled.div`
+export const ModalWrapper = styled.div.attrs({
+	className: '| ModalWrapper |'
+})`
     align-items: center;
     animation-name: fade;
 	animation-duration: 1.5s;
@@ -16,7 +18,9 @@ export const ModalWrapper = styled.div`
     z-index: 5000;
 `
 
-export const ModalInner = styled.div`
+export const ModalInner = styled.div.attrs({
+	className: '| ModalInner |'
+})`
     animation-name: fade;
 	animation-duration: .5s;
     border-radius: 8px;

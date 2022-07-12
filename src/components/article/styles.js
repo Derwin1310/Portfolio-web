@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Articles = styled.article`
+export const Articles = styled.article.attrs({
+	className: '| Articles |'
+})`
 	display: grid;
 	grid-template-columns: repeat(1, 350px);
 	gap: 2rem;
@@ -16,7 +18,9 @@ export const Articles = styled.article`
 	}
 `;
 
-export const ArticlesWrapper = styled.div`
+export const ArticlesWrapper = styled.div.attrs({
+	className: '| ArticlesWrapper |'
+})`
 	overflow: hidden;
 
 	img {
@@ -40,7 +44,9 @@ export const ArticlesWrapper = styled.div`
 	}
 `;
 
-export const ArticleDesc = styled.div`
+export const ArticleDesc = styled.div.attrs({
+	className: '| ArticleDesc |'
+})`
 	gap: .5rem;
 	display: flex;
 	flex-direction: column;
@@ -59,14 +65,11 @@ export const ArticleDesc = styled.div`
 	}
 `
 
-export const ShareIcons = styled.div`
+export const ShareIcons = styled.div.attrs({
+	className: '| ShareIcons |'
+})`
 	align-items: center;
 	color: var(--secondary);
 	display: flex;
 	gap: 1rem;
-
-	@media only screen and (max-width: 768px) {
-		/* padding: 0 1rem;
-		padding-bottom: 1rem; */
-	}
 `;

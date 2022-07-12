@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const ProjectsWrapper = styled.section `
+export const ProjectsWrapper = styled.section.attrs({
+	className: '| ProjectsWrapper |'
+})`
     display: grid;
     grid-template-columns: repeat(1, 350px);
     gap: 2rem;
@@ -22,7 +24,9 @@ export const ProjectsWrapper = styled.section `
     }
 `
 
-export const Projects = styled.article`
+export const Projects = styled.article.attrs({
+	className: '| Projects |'
+})`
     @media only screen and (min-width: 769px) {
         align-items: center;
         display: flex;
@@ -58,7 +62,9 @@ export const Projects = styled.article`
         }
     }
 `
-export const ProjectsDesc = styled.div`
+export const ProjectsDesc = styled.div.attrs({
+	className: '| ProjectsDesc |'
+})`
     @media only screen and (min-width: 769px) {
         opacity: 0;
         position: absolute;
@@ -96,7 +102,9 @@ export const ProjectsDesc = styled.div`
     }
 `
 
-export const ViewSite  = styled.a`
+export const ViewSite  = styled.a.attrs({
+	className: '| ViewSite |'
+})`
     @media only screen and (min-width: 769px) {
         border: 3px solid var(--primary);
         border-radius: 3px;

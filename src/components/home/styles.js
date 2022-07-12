@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
-export const HomePage = styled.div`
+export const HomePage = styled.div.attrs({
+	className: '| HomePage |'
+})`
 	align-items: center;
 	background-color: #000000bb;
 	display: flex;
@@ -8,7 +10,7 @@ export const HomePage = styled.div`
 	flex-direction: column;
 	height: 94vh;
 	justify-content: space-around;
-	padding: 0 1rem;
+	padding: 1rem;
 	width: 100%;
 
 	&::before {
@@ -22,35 +24,32 @@ export const HomePage = styled.div`
 	}
 
 	@media only screen and (max-width: 768px) {
-		box-shadow: 0px 20px 20px #0007;
+		box-shadow: 0 10px 10px #0007;
 		height: 100vh;
-		justify-content: space-between;
 	}
 `
 
-export const Header = styled.header`
+export const Header = styled.header.attrs({
+	className: '| Header |'
+})`
 	animation-name: fade, fadeIn;
 	animation-duration: 2s;
 	display: flex;
 	flex-direction: column;
-	padding-top: 5rem;
 	font-size: 4rem;
 	line-height: 120%;
 	max-width: 1000px;
 
 	@media only screen and (max-width: 768px) {
-		height: 50%;
-		gap: 1rem;
-		max-width: 768px;
-		margin-top: 5rem;
-	}
-
-	@media only screen and (max-width: 480px) {
 		height: 100%;
+		gap: 1rem;
+		justify-content: center;
 	}
 `
 
-export const Logo = styled.img`
+export const Logo = styled.img.attrs({
+	className: '| Logo |'
+})`
 	height: 80px;
 	width: 80px;
 
@@ -65,7 +64,9 @@ export const Logo = styled.img`
 	}
 `
 
-export const Name = styled.h1`
+export const Name = styled.h1.attrs({
+	className: '| Name |'
+})`
 	display: inline;
 	font-size: 5rem;
 	font-weight: 100;
@@ -84,7 +85,9 @@ export const Name = styled.h1`
 	}
 `
 
-export const Slogan = styled.q`
+export const Slogan = styled.q.attrs({
+	className: '| Slogan |'
+})`
 	@media only screen and (max-width: 1280px) {
 		font-size: 3.5rem;
 	}
@@ -95,7 +98,9 @@ export const Slogan = styled.q`
 	}
 `
 
-export const Div = styled.div`
+export const NameWrapper = styled.div.attrs({
+	className: '| TextWrapper |'
+})`
 	align-items: center;
 	display: flex;
 	gap: 2rem;
@@ -105,7 +110,9 @@ export const Div = styled.div`
 	}
 `
 
-export const Button = styled.a`
+export const Button = styled.a.attrs({
+	className: '| Button |'
+})`
 	animation-name: fade, fadeIn;
 	animation-duration: 2s;
 	background-color: transparent;
@@ -131,7 +138,6 @@ export const Button = styled.a`
 		color: var(--primary);
 		font-size: 1.5rem;
 		padding: 0.8rem 0;
-		margin-bottom: 2rem;
 		text-align: center;
 		width: 100%;
 
@@ -143,8 +149,4 @@ export const Button = styled.a`
 			transform: scale(1.1);
 		}
 	}
-
-    @media only screen and (max-width: 480px) {
-        margin: 2rem 0;
-    }
 `

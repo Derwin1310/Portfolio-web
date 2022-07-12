@@ -1,13 +1,17 @@
 import styled from 'styled-components'
 
-export const Quote = styled.q`
+export const Quote = styled.q.attrs({
+	className: '| Quote |'
+})`
 	display: block;
 	text-align: center;
 	max-width: 75ch;
 	margin: 0 auto;
 `
 
-export const SectionTitle = styled.h3`
+export const SectionTitle = styled.h3.attrs({
+	className: '| SectionTitle |'
+})`
 	max-width: 1200px;
 	${({ variant }) =>
 		variant
@@ -22,7 +26,9 @@ export const SectionTitle = styled.h3`
 	};
 `
 
-export const JobsAndEducation = styled.article`
+export const JobsAndEducation = styled.article.attrs({
+	className: '| JobsAndEducation |'
+})`
 	display: flex;
 	gap: 3rem;
 	max-width: 1200px;
@@ -36,13 +42,17 @@ export const JobsAndEducation = styled.article`
 	}
 `
 
-export const CourseAndJob = styled.h4`
+export const CourseAndJob = styled.h4.attrs({
+	className: '| CourseAndJob |'
+})`
 	color: var(--primary);
 	margin-bottom: 1rem;
 	width: 13rem;
 `
 
-export const Organization = styled.h4`
+export const Organization = styled.h4.attrs({
+	className: '| Organization |'
+})`
 	color: var(--secondary);
 	margin-bottom: 1rem;
 `

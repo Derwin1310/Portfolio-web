@@ -23,7 +23,9 @@ export const Subtitles = styled.h2`
 	}
 `;
 
-export const SectionAnimations = styled.section`
+export const SectionAnimations = styled.section.attrs({
+	className: '| SectionAnimations |'
+})`
 	> div {
 		${({ variant }) =>
 			variant &&
@@ -60,7 +62,9 @@ export const SectionAnimations = styled.section`
 	}
 `;
 
-export const Sections = styled.div`
+export const Sections = styled.div.attrs({
+	className: '| Sections |'
+})`
 	color: var(--text-color);
 	line-height: 140%;
 	max-width: 1000px;
@@ -92,7 +96,9 @@ export const Sections = styled.div`
 	}
 `;
 
-export const InputWrapper = styled.label`
+export const InputWrapper = styled.label.attrs({
+	className: '| InputWrapper |'
+})`
 	color: var(--light-text);
 	display: flex;
 	flex-direction: column;
