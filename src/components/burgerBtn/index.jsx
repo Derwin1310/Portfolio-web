@@ -3,7 +3,7 @@ import { appContext } from '/src/context';
 import { MenuBtn } from './styles';
 
 export function BurgerBtn() {
-    const { effects: { setActiveBtn }, activeBtn } = useContext(appContext)
+    const { activeBtn, effects: { setActiveBtn } } = useContext(appContext)
 
     const setBtnClass = () => setActiveBtn(!activeBtn)
 

@@ -6,7 +6,7 @@ import { appContext } from '/src/context';
 import { NavbarBg, Navigator, NavLogo, NavWrapper, Lang_Theme } from './styles';
 
 export function Navbar() {
-	const { effects: { setLanguage }, locale, activeBtn } = useContext(appContext);
+	const { locale, activeBtn, effects: { setLanguage } } = useContext(appContext);
 
 	const option = [
 		{ value: 'en', label: 'US' },

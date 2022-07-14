@@ -5,7 +5,7 @@ import { Submit } from '/src/components/footer/styles'
 import { ModalInner, ModalWrapper } from './styles'
 
 export function Modal() {
-	const { effects: { setShowModal }, modalText, showModal, language } = useContext(appContext)
+	const { modalText, showModal, language, effects: { setShowModal } } = useContext(appContext)
 	const { textBtn } = language.modal
 
 	const closeModal = () => setShowModal(false)
