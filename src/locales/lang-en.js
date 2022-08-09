@@ -63,8 +63,16 @@ export const enLang ={
                 techs: ['React js', 'Sass', 'Git'],
                 about: 'A fun project that i made while experimenting with the PokeApi',
                 view: 'View site',
-                projectLink: 'https://derwin1310.github.io/Pokeapi/', 
-            }
+                projectLink: 'https://derwin1310.github.io/Pokeapi/',
+            },
+            {
+                name: 'Gif Buddy',
+                src: 'https://raw.githubusercontent.com/Derwin1310/assets-for-portfolio/main/about-imgs/gif-buddy-img.webp',
+                techs: ['React js', 'Css', 'Git', 'Vite'],
+                about: 'A gif searcher application made with react-js and vanilla css',
+                view: 'View site',
+                projectLink: 'https://gif-buddy-app.netlify.app/',
+            },
         ],
     },
     experience: {

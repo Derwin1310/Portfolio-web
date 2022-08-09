@@ -4,13 +4,14 @@ export const ProjectsWrapper = styled.section.attrs({
 	className: '| ProjectsWrapper |'
 })`
     display: grid;
-    grid-template-columns: repeat(1, 350px);
+    grid-template-columns: repeat(auto-fill, 350px);
     gap: 2rem;
     justify-content: center;
 
     img {
         height: 300px;
         object-fit: cover;
+        object-position: top;
         width: 100%;
         z-index: -1;
     }
@@ -33,7 +34,7 @@ export const Projects = styled.article.attrs({
         flex-direction: column;
         position: relative;
         text-align: center;
-        
+
         &:hover img {
             opacity: 0;
             transition: all .5s;
