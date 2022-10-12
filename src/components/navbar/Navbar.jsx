@@ -1,9 +1,7 @@
 import React, { useContext } from 'react';
 import Select from 'react-select';
-import { NavLinks } from './navLinks';
-import { ThemeButton } from './themeButton';
+import { NavLinks, ThemeButton, NavbarBg, Navigator, NavLogo, NavWrapper, Lang_Theme } from './';
 import { appContext } from '/src/context';
-import { NavbarBg, Navigator, NavLogo, NavWrapper, Lang_Theme } from './styles';
 
 export function Navbar() {
 	const { locale, activeBtn, effects: { setLanguage } } = useContext(appContext);

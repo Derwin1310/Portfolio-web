@@ -64,11 +64,11 @@ export const GridTechs = styled.div.attrs({
 })`
     column-gap: 1rem;
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+    grid-template-columns: repeat( 5, minmax(100px, 1fr) );
     place-items: center;
-    row-gap: 1rem;
+    row-gap: 2rem;
     width: 100%;
-    
+
     @media only screen and (max-width: 768px) {
         grid-template-columns: repeat( 3, minmax(100px, 1fr) );
     }

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { appContext } from '/src/context'
-import { Button, NameWrapper, Header, HomePage, Logo, Name, Slogan } from './styles';
+import { Button, NameWrapper, Header, HomePage, Logo, Name, Slogan } from './';
 
-export function Home() {
+export function HomeView() {
 	const { language } = useContext(appContext);
 	const { title, resume, resumePhone } = language.home;
 

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Icono } from '/src/helpers'
 import { appContext } from '/src/context'
-import { ArticleDesc, Articles, ArticlesWrapper, ShareIcons } from './styles'
+import { ArticleDesc, Articles, ArticlesWrapper, ShareIcons } from './'
 
 export function ListArticle() {
 	const { language } = useContext(appContext)

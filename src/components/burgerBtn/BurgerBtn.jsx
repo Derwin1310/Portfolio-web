@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { appContext } from '/src/context';
-import { MenuBtn } from './styles';
+import { MenuBtn } from './';
 
 export function BurgerBtn() {
     const { activeBtn, effects: { setActiveBtn } } = useContext(appContext)

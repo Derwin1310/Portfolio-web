@@ -1,10 +1,9 @@
 import React, { Fragment, useContext } from 'react'
-import { CoffeMachine } from './coffeeAnimation'
+import { CoffeMachine, ModalInner, ModalWrapper } from './'
 import { appContext } from '/src/context'
-import { Submit } from '/src/components/footer/styles'
-import { ModalInner, ModalWrapper } from './styles'
+import { Submit } from '/src/components/footer'
 
-export function Modal() {
+export function ModalView() {
 	const { modalText, showModal, language, effects: { setShowModal } } = useContext(appContext)
 	const { textBtn } = language.modal
 

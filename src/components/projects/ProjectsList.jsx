@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { appContext } from '/src/context'
 import { ProjectsWrapper, Projects, ProjectsDesc, ViewSite } from './styles';
 
-export function ListProjects() {
+export function ProjectsList() {
 	const { language } = useContext(appContext);
 	const { wrapper } = language.projects;
 	const { seeMore } = language;

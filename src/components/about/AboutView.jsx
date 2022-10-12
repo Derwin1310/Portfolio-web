@@ -1,12 +1,10 @@
 import React, { useContext } from 'react';
-import { SectionIcons } from './sectionIcons';
-import { TechIcons } from './techIcons';
+import { SectionIcons, TechIcons, Desc } from './';
 import { appContext } from '/src/context'
 import { SectionsStyles } from '/src/helpers';
 import { Subtitles } from '/src/globalStyles.js';
-import { Desc } from './styles';
 
-export function About() {
+export function AboutView() {
 	const { language } = useContext(appContext);
 	const { title, shortDesc, spanDesc } = language.about;
 

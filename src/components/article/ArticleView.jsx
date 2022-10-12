@@ -1,17 +1,17 @@
 import React, { useContext } from 'react';
-import { ListProjects } from './listProjects';
-import { Subtitles } from '/src/globalStyles';
+import { ListArticle } from './';
 import { SectionsStyles } from '/src/helpers';
 import { appContext } from '/src/context'
+import { Subtitles } from '/src/globalStyles';
 
-export function Projects() {
+export function ArticleView() {
 	const { language } = useContext(appContext);
-	const { title } = language.projects;
+	const { title } = language.articles;
 
 	return (
-		<SectionsStyles name='projects'>
+		<SectionsStyles name='article'>
 			<Subtitles>{title}</Subtitles>
-			<ListProjects />
+			<ListArticle />
 		</SectionsStyles>
 	);
 }

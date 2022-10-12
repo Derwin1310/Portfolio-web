@@ -90,7 +90,7 @@ table {
         transform: translateX(40%);
     }
     to {
-		opacity: 1;
+				opacity: 1;
         transform: translateX(0);
     }
 }
@@ -101,7 +101,7 @@ table {
         transform: translateX(-40%);
     }
     to {
-		opacity: 1;
+				opacity: 1;
         transform: translateX(0);
     }
 }
@@ -109,11 +109,11 @@ table {
 @keyframes fadeExit {
     from {
         opacity: 1;
-		transform: translateX(0);
+				transform: translateX(0);
     }
     to {
-		opacity: 0;
-		transform: translateX(20%);
+				opacity: 0;
+				transform: translateX(20%);
     }
 }
 

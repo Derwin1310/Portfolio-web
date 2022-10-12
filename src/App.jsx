@@ -1,14 +1,14 @@
 import React from 'react'
 import {
-	Home,
+	HomeView,
 	BurgerBtn,
 	Navbar,
-	About,
-	Projects,
-	Experience,
-	Article,
+	AboutView,
+	ProjectsView,
+	ExperienceView,
+	ArticleView,
 	Footer,
-	Modal,
+	ModalView,
 } from '/src/components'
 import { ContextProvider } from '/src/context'
 import { Theme } from '/src/globalStyles'
@@ -18,14 +18,14 @@ export function App() {
 	return (
 		<ContextProvider>
 			<Theme id='theme'>
-				<Home />
+				<HomeView />
 				<BurgerBtn />
 				<Navbar />
-				<About />
-				<Projects />
-				<Experience />
-				<Article />
-				<Modal />
+				<AboutView />
+				<ProjectsView />
+				<ExperienceView/>
+				<ArticleView />
+				<ModalView />
 				<Footer />
 			</Theme>
 		</ContextProvider>

@@ -32,7 +32,7 @@ export const SectionAnimations = styled.section.attrs({
 			`
 			animation-name: fadeToLeft;
 			animation-duration: 2s;
-			opacity: 1 !important;
+			opacity: 1;
 		`}
 	}
 

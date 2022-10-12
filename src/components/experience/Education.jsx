@@ -1,6 +1,6 @@
 import React, { Fragment, useContext } from 'react';
 import { appContext } from '/src/context'
-import { CourseAndJob, JobsAndEducation, SectionTitle } from './styles';
+import { CourseAndJob, JobsAndEducation, SectionTitle } from './';
 
 export function Education() {
 	const { language } = useContext(appContext);
